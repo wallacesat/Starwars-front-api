@@ -22,7 +22,6 @@ class MainView extends Component {
   }
 
   componentDidMount() {
-
     swapiRequest().then((value) => {
       value.titlesTable = (value.object === "Peoples" ? ['Name', 'Gender', 'Eyes Color'] :
         value.object === "Starships" ? ['Name', 'Model', 'Starship Class'] :
@@ -73,7 +72,6 @@ class MainView extends Component {
   }
 
   render() {
-
     return this.state.requestObject ? (
       <div className="d-flex flex-column" >
         <div className="col-12 bg-dark">

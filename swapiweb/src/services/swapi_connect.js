@@ -2,11 +2,12 @@ import axios from 'axios';
 
 export const swapiRequest = async (urlChange=false, page, object="people") => {
 
+    // let cors = '';
     let cors = `https://cors-anywhere.herokuapp.com/`; //Cors router para acessar a api
     let urlRequest = `${cors}https://swapi.co/api/${object}?page=1`;
 
     urlChange ? (() => { //Se houver urlChange a consulta será por essa url
-        urlRequest = `${cors}${urlChange}`;
+        urlRequest = cors+urlRequest;
     })() :
 
         (() => { // Se não houver urlChange, varifica se há algo no page
@@ -33,5 +34,29 @@ export const swapiRequest = async (urlChange=false, page, object="people") => {
         return res.data;
     } catch (e) {
         console.log(e);
+    }
+}
+
+export const detailsRequest = async (url) => {
+
+    let decrypt = url;
+
+    while(decrypt.includes('$sl$')) {
+        decrypt = decrypt.replace('$sl$', '/');
+    }
+
+    let cors = `https://cors-anywhere.herokuapp.com/`; //Cors router para acessar a api
+    let urlRequest = `${cors}${decrypt}`;
+
+    try {
+        console.log(urlRequest);
+        let res = await axios.get(urlRequest);
+
+        let i = Math.random(30);
+        res.data.avatar = `http://i.pravatar.cc/120?img=${i}`; // Cria um parâmetro avatar com valor aleatório para cada item do objeto
+        return res;
+        
+    } catch (error) {
+        console.log(error);
     }
 }

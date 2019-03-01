@@ -6,8 +6,8 @@ import DetailsView from '../views/DetailsView';
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={() => <MainView />} />
-            <Route exact path="/details" component={() => <DetailsView />} />
+            <Route exact path="/" component={MainView} />
+            <Route exact path="/details/:object/:url" component={DetailsView} />
         </Switch>
     </BrowserRouter>
 );
