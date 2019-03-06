@@ -4,7 +4,10 @@ import { TextField, Grid } from '@material-ui/core';
 
 class SearchComponent extends Component {
 
+   
+
     render() {
+ 
         const { onSearch } = this.props;
         return (
             <Grid container spacing={8} alignItems="flex-end">
@@ -12,7 +15,7 @@ class SearchComponent extends Component {
                     <SearchIcon />
                 </Grid>
                 <Grid item>
-                    <TextField label="Search for 'Name' ..." onChange= {(event) => onSearch(event.target.value)}/>
+                    <TextField label="Search for 'Name' ..." onChange= {(event) => onSearch(event.target.value)} />
                 </Grid>
             </Grid>
         );

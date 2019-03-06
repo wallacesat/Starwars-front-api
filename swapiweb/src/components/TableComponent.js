@@ -16,19 +16,21 @@ class TableComponent extends Component {
     handleUrl(url) {
         let crypt = "";
         for (let char of url) {
-            char === '/' ? crypt+= '$sl$' : crypt += char;
+            char === '/' ? crypt += '$sl$' : crypt += char;
         }
         return crypt;
     }
 
     handleTable() {
         let { results, object } = this.object;
-        let { page } = this.props.object.consultTable;
         console.log(results);
 
         return object === 'Peoples' ?
             results.map((result, i) =>
-                <Link to={`/details/${object}/${this.handleUrl(result.url)}`} style={{ textDecoration: 'none', }}
+                <Link to={{
+                    pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                    state: this.props.object
+                }} style={{ textDecoration: 'none', }}
                     className="d-flex width={1}">
                     <TableRow key={i} hover className="d-flex w-100 align-items-end">
 
@@ -43,7 +45,10 @@ class TableComponent extends Component {
                 </Link>
             ) : object === 'Starships' ?
                 results.map((result, i) =>
-                    <Link to={`/details/${object}/${this.handleUrl(result.url)}`} style={{ textDecoration: 'none', }}
+                    <Link to={{
+                        pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                        state: this.props.object
+                    }} style={{ textDecoration: 'none', }}
                         className="d-flex width={1}">
                         <TableRow key={i} hover className="d-flex w-100 align-items-end">
                             <TableCell className="col-2">
@@ -55,7 +60,10 @@ class TableComponent extends Component {
                         </TableRow>
                     </Link>) : object === 'Planets' ?
                     results.map((result, i) =>
-                        <Link to={`/details/${object}/${this.handleUrl(result.url)}`} style={{ textDecoration: 'none', }}
+                        <Link to={{
+                            pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                            state: this.props.object
+                        }} style={{ textDecoration: 'none', }}
                             className="d-flex width={1}">
                             <TableRow key={i} hover className="d-flex w-100 align-items-end">
                                 <TableCell className="col-2">
@@ -67,7 +75,10 @@ class TableComponent extends Component {
                             </TableRow>
                         </Link>) : object === 'Vehicles' ?
                         results.map((result, i) =>
-                            <Link to={`/details/${object}/${this.handleUrl(result.url)}`} style={{ textDecoration: 'none', }}
+                            <Link to={{
+                                pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                                state: this.props.object
+                            }} style={{ textDecoration: 'none', }}
                                 className="d-flex width={1}">
                                 <TableRow key={i} hover className="d-flex w-100 align-items-end">
                                     <TableCell className="col-2">
@@ -77,7 +88,7 @@ class TableComponent extends Component {
                                     <TableCell className="col-4">{result.model}</TableCell>
                                     <TableCell className="col-2">{result.passengers}</TableCell>
                                 </TableRow>
-                            </Link>) : null;;
+                            </Link>) : null;
     }
 
     render() {

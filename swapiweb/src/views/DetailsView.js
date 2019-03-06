@@ -13,7 +13,7 @@ class DetailsView extends Component {
         super();
 
         this.state = {
-            data: null
+            data: null,
         }
     }
 
@@ -32,9 +32,17 @@ class DetailsView extends Component {
 
         const { data } = this.state;
         const {object} = this.props.match.params;
-        console.log(data);
+        const { state } = this.props.location;
+        console.log(state);
 
         return this.state.data ? (
+            <div style={{
+                position: "fixed",
+                width: "100%",
+                height: "100%",
+                zIndex: "-10",
+                background: "#343a40"
+            }}>
             <div className="d-flexflex-column">
                 <div className="col-12 bg-dark">
                     <label className="lead" style={{ color: 'white' }}>
@@ -178,7 +186,10 @@ class DetailsView extends Component {
                                 </div> : null
                         }
                         <div style={{ marginBottom: 20 }}>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to={{
+                                pathname: '/',
+                                state: state
+                            }} style={{textDecoration: 'none'}}>
                                 <Button variant="contained">
                                     To Back
                                 </Button>
@@ -186,6 +197,7 @@ class DetailsView extends Component {
                         </div>
                     </Paper>
                 </div>
+            </div>
             </div>
         ) : <LoadingComponent />;
     }
