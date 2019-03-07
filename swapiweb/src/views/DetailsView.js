@@ -199,7 +199,16 @@ class DetailsView extends Component {
                 </div>
             </div>
             </div>
-        ) : <LoadingComponent />;
+        ) : 
+        <div style={{
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            zIndex: "-10",
+            background: "#343a40"
+        }}>
+            <LoadingComponent />;
+        </div>
     }
 }
 

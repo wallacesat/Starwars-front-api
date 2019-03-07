@@ -2,7 +2,6 @@ import axios from 'axios';
 
 export const swapiRequest = async (urlChange=false, page, object="people") => {
 
-    // let cors = '';
     let cors = `https://cors-anywhere.herokuapp.com/`; //Cors router para acessar a api
     let urlRequest = `${cors}https://swapi.co/api/${object}?page=1`;
 
