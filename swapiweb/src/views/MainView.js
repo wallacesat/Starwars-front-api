@@ -23,9 +23,7 @@ class MainView extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.location);
     const { state } = this.props.location;
-
     state ? this.setState(state) :
 
       swapiRequest().then((value) => {

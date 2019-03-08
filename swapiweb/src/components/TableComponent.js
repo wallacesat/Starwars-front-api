@@ -14,21 +14,22 @@ import { Link } from 'react-router-dom';
 class TableComponent extends Component {
 
     handleUrl(url) {
-        let crypt = "";
-        for (let char of url) {
-            char === '/' ? crypt += '$sl$' : crypt += char;
-        }
-        return crypt;
+
+
+
+
+        let id = url.replace('https://swapi.co/api', '');
+        return `/details${id}`;
+
     }
 
     handleTable() {
         let { results, object } = this.object;
-        console.log(results);
 
         return object === 'Peoples' ?
             results.map((result, i) =>
-                <Link to={{
-                    pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                <Link key={i} to={{
+                    pathname: `${this.handleUrl(result.url)}`,
                     state: this.props.object
                 }} style={{ textDecoration: 'none', }}
                     className="d-flex width={1}">
@@ -45,8 +46,8 @@ class TableComponent extends Component {
                 </Link>
             ) : object === 'Starships' ?
                 results.map((result, i) =>
-                    <Link to={{
-                        pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                    <Link key={i} to={{
+                        pathname: `${this.handleUrl(result.url)}`,
                         state: this.props.object
                     }} style={{ textDecoration: 'none', }}
                         className="d-flex width={1}">
@@ -60,8 +61,8 @@ class TableComponent extends Component {
                         </TableRow>
                     </Link>) : object === 'Planets' ?
                     results.map((result, i) =>
-                        <Link to={{
-                            pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                        <Link key={i} to={{
+                            pathname: `${this.handleUrl(result.url)}`,
                             state: this.props.object
                         }} style={{ textDecoration: 'none', }}
                             className="d-flex width={1}">
@@ -75,8 +76,8 @@ class TableComponent extends Component {
                             </TableRow>
                         </Link>) : object === 'Vehicles' ?
                         results.map((result, i) =>
-                            <Link to={{
-                                pathname: `/details/${object}/${this.handleUrl(result.url)}`,
+                            <Link key={i} to={{
+                                pathname: `${this.handleUrl(result.url)}`,
                                 state: this.props.object
                             }} style={{ textDecoration: 'none', }}
                                 className="d-flex width={1}">
@@ -92,8 +93,8 @@ class TableComponent extends Component {
     }
 
     render() {
-        this.resApi = this.props.object;
-        const { results, titlesTable, object } = this.resApi.consultTable;
+        this.detailsRequest = this.props.object;
+        const { results, titlesTable, object } = this.detailsRequest.consultTable;
 
         this.object = {
             results,

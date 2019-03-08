@@ -17,10 +17,16 @@ export const swapiRequest = async (urlChange=false, page, object="people") => {
 
     try {
         let res = await axios.get(urlRequest);
+        
+        let obj = object === 'peoples' ? 'people' : object;
         res.data.results.map(item => {
             let i = Math.random(30);
-
             item.avatar = `http://i.pravatar.cc/40?img=${i}`; // Cria um parâmetro avatar com valor aleatório para cada item do objeto
+
+            let url = item.url;
+            url = url.replace(`https://swapi.co/api/${obj}/`, '');
+            item.idItem = url.replace('/', '');
+            
         })
         page ? (() => res.data.page = page)() : (() => res.data.page = 1)();
 
@@ -36,25 +42,18 @@ export const swapiRequest = async (urlChange=false, page, object="people") => {
     }
 }
 
-export const detailsRequest = async (url) => {
-
-    let decrypt = url;
-
-    while(decrypt.includes('$sl$')) {
-        decrypt = decrypt.replace('$sl$', '/');
-    }
+export const detailsRequest = async (object, id) => {
 
     let cors = `https://cors-anywhere.herokuapp.com/`; //Cors router para acessar a api
-    let urlRequest = `${cors}${decrypt}`;
+    let urlRequest = `${cors}https://swapi.co/api/${object}/${id}`;
 
     try {
-        console.log(urlRequest);
         let res = await axios.get(urlRequest);
 
         let i = Math.random(30);
         res.data.avatar = `http://i.pravatar.cc/120?img=${i}`; // Cria um parâmetro avatar com valor aleatório para cada item do objeto
-        return res;
         
+        return res;
     } catch (error) {
         console.log(error);
     }

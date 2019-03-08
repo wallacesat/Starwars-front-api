@@ -28,16 +28,16 @@ class PaginationComponent extends Component {
         let { onSelected } = this.props;
         return (
             <Pagination>
-                <PaginationItem disabled={data.page === 1 ? true : false}>
-                    <PaginationLink first onClick={() => onSelected(1, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))} >
+                <PaginationItem {...data.page === 1 ? 'disabled' : ''}>
+                    <PaginationLink first='true' onClick={() => onSelected(1, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))} >
                         First
                     </PaginationLink>
                 </PaginationItem>
                 {
                     this.handlePagination(data)
                 }
-                <PaginationItem disabled={data.page === data.pageCount ? true : false}>
-                    <PaginationLink last onClick={() => onSelected(data.pageCount, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))} >
+                <PaginationItem {...data.page === data.pageCount ? 'disabled' : ''}>
+                    <PaginationLink last='true' onClick={() => onSelected(data.pageCount, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))} >
                         Last
                     </PaginationLink>
                 </PaginationItem>
