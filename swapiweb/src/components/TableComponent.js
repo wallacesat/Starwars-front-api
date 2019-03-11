@@ -5,7 +5,6 @@ import {
     TableRow,
     TableCell,
     TableBody,
-    Paper,
     TableFooter
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -14,9 +13,6 @@ import { Link } from 'react-router-dom';
 class TableComponent extends Component {
 
     handleUrl(url) {
-
-
-
 
         let id = url.replace('https://swapi.co/api', '');
         return `/details${id}`;
@@ -93,8 +89,10 @@ class TableComponent extends Component {
     }
 
     render() {
-        this.detailsRequest = this.props.object;
-        const { results, titlesTable, object } = this.detailsRequest.consultTable;
+        // this.detailsRequest = this.props.object;
+        // const { results, titlesTable, object } = this.detailsRequest.consultTable;
+
+        const {results, titlesTable, object} = this.props.object;
 
         this.object = {
             results,
@@ -103,8 +101,7 @@ class TableComponent extends Component {
         }
 
         return (
-            <Paper>
-                <Table>
+                <Table className="table-responsive">
                     <TableHead className="d-flex witdh={1}">
                         <TableRow className="d-flex align-items-end w-100">
                             <TableCell className="col-2">Avatar</TableCell>
@@ -125,7 +122,6 @@ class TableComponent extends Component {
                         </TableRow>
                     </TableFooter>
                 </Table>
-            </Paper>
         );
     }
 }
