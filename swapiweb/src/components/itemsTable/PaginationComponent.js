@@ -16,7 +16,7 @@ class PaginationComponent extends Component {
 
         return arr.map((item, i) =>
             <PaginationItem key={i} active={item === data.page}>
-                <PaginationLink onClick={() => onSelected(item, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))}>
+                <PaginationLink onClick={() => onSelected(null, item)}>
                     {item}
                 </PaginationLink>
             </PaginationItem>
@@ -29,7 +29,7 @@ class PaginationComponent extends Component {
         return (
             <Pagination>
                 <PaginationItem {...data.page === 1 ? 'disabled' : ''}>
-                    <PaginationLink first='true' onClick={() => onSelected(1, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))} >
+                    <PaginationLink first='true' onClick={() => onSelected(null, 1)} >
                         First
                     </PaginationLink>
                 </PaginationItem>
@@ -37,7 +37,7 @@ class PaginationComponent extends Component {
                     this.handlePagination(data)
                 }
                 <PaginationItem {...data.page === data.pageCount ? 'disabled' : ''}>
-                    <PaginationLink last='true' onClick={() => onSelected(data.pageCount, `${data.object}`.charAt(0).toLowerCase() + `${data.object}`.slice(1))} >
+                    <PaginationLink last='true' onClick={() => onSelected(null, data.pageCount)} >
                         Last
                     </PaginationLink>
                 </PaginationItem>

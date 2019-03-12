@@ -18,7 +18,6 @@ class HomeView extends Component {
             starships: null,
             vehicles: null,
         }
-
     }
 
     componentDidMount() {
@@ -43,10 +42,6 @@ class HomeView extends Component {
     }
 
     render() {
-
-        console.log(this.state);
-        
-
         return (
             <div style={{
                 position: "fixed",
@@ -62,22 +57,12 @@ class HomeView extends Component {
                     <img src={swlogo} alt="" style={{ height: 'auto', width: 300 }} />
                 </div>
                 <div className="d-flex flex-row justify-content-center h-50">
-                    {
-                        this.state ?
-                            <div className="d-flex bg-dark w-75 h-100 flex-row align-items-center">
-                                <MenuComponent itemName='Peoples' itemImage={people} object={this.state} />
-                                <MenuComponent itemName='Planets' itemImage={planet} object={this.state} />
-                                <MenuComponent itemName='Starships' itemImage={starship} object={this.state} />
-                                <MenuComponent itemName='Vehicles' itemImage={vehicle} object={this.state} />
-                            </div>
-                            :
-                            <div className="d-flex bg-dark w-75 h-100 flex-row align-items-center">
-                                <MenuComponent itemName='Peoples' itemImage={people} />
-                                <MenuComponent itemName='Planets' itemImage={planet} />
-                                <MenuComponent itemName='Starships' itemImage={starship} />
-                                <MenuComponent itemName='Vehicles' itemImage={vehicle} />
-                            </div>
-                    }
+                    <div className="d-flex bg-dark w-75 h-100 flex-row align-items-center">
+                        <MenuComponent itemName='Peoples' itemImage={people} object={this.state} />
+                        <MenuComponent itemName='Planets' itemImage={planet} object={this.state} />
+                        <MenuComponent itemName='Starships' itemImage={starship} object={this.state} />
+                        <MenuComponent itemName='Vehicles' itemImage={vehicle} object={this.state} />
+                    </div>
                 </div>
             </div>
         );

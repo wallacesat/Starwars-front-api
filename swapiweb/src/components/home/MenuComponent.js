@@ -10,12 +10,11 @@ class MenuComponent extends Component {
         const object = this.props.object;
 
         return name === 'Peoples' ? object.peoples :
-            name === 'Planets' ? object.planets :
-            name === 'Starships' ? object.starships : object.vehicles;
+        name === 'Planets' ? object.planets :
+        name === 'Starships' ? object.starships : object.vehicles;
     }
 
     render() {
-
         return (
             <div className="d-flex h-50 w-25 m-2 paper">
                 <Link

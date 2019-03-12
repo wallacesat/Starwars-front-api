@@ -36,9 +36,15 @@ class DetailsView extends Component {
 
             let { results } = this.handleState();
 
+            console.log(results);
+            
+
             let res = results.filter((item) => {
                 return item.idItem === id;
             });
+
+            console.log(res);
+            
 
             this.setState({ data: res[0] });
         })() : detailsRequest(itemName, id).then((value) => {
@@ -72,7 +78,7 @@ class DetailsView extends Component {
                         <Paper elevation={1} className="w-50 h-100 d-flex flex-column align-items-center" style={{ margin: 20 }}>
                             <div className="d-flex h-50 flex-column align-items-center justify-content-start" style={{ marginTop: 10 }}>
                                 <div>
-                                    <img src={data.avatar.replace('40?', '120?')} className="img-fluid border border-ligth rounded-circle" />
+                                    <img alt="" src={data.avatar.replace('40?', '120?')} className="img-fluid border border-ligth rounded-circle" />
                                 </div>
                                 <div>
                                     <label className="display-4">

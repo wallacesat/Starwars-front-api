@@ -87,7 +87,7 @@ class MainView extends Component {
       <div className="d-flex flex-column bg-dark pb-3" >
         <div className="col-xs-12 bg-dark header p-0 flex-row d-flex align-items-center">
           <div className="col-2 justify-content-center d-flex pt-1">
-            <img src={logo} className="img-fluid" style={{ height: 70, width: 70 }} />
+            <img src={logo} className="img-fluid" style={{ height: 70, width: 70 }} alt="" />
           </div>
           <div className="pl-3 col-10">
             <label className="lead" style={{ color: 'white' }}>

@@ -20,9 +20,11 @@ class TableComponent extends Component {
     }
 
     handleState() {
-        const {object, itemName} = this.props;
-
-        console.log(object.peoples, itemName);
+        let {object, itemName, statePagination} = this.props;
+        
+        if (statePagination !== null ) {
+            return statePagination;
+        }
 
         return itemName === 'peoples' ? object.peoples :
             itemName === 'planets' ? object.planets :
@@ -31,6 +33,9 @@ class TableComponent extends Component {
 
     handleTable() {
         let { results, object } = this.object;
+
+        console.log(this.props.object);
+        
 
         return object === 'Peoples' ?
             results.map((result, i) =>
@@ -42,7 +47,7 @@ class TableComponent extends Component {
                     <TableRow key={i} hover className="d-flex w-100 align-items-end">
 
                         <TableCell className="col-2">
-                            <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" />
+                            <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
                         </TableCell>
                         <TableCell className="col-4">{result.name}</TableCell>
                         <TableCell className="col-4">{result.gender}</TableCell>
@@ -59,7 +64,7 @@ class TableComponent extends Component {
                         className="d-flex width={1}">
                         <TableRow key={i} hover className="d-flex w-100 align-items-end">
                             <TableCell className="col-2">
-                                <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" />
+                                <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
                             </TableCell>
                             <TableCell className="col-4">{result.name}</TableCell>
                             <TableCell className="col-4">{result.model}</TableCell>
@@ -74,7 +79,7 @@ class TableComponent extends Component {
                             className="d-flex width={1}">
                             <TableRow key={i} hover className="d-flex w-100 align-items-end">
                                 <TableCell className="col-2">
-                                    <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" />
+                                    <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
                                 </TableCell>
                                 <TableCell className="col-4">{result.name}</TableCell>
                                 <TableCell className="col-4">{result.climate}</TableCell>
@@ -89,7 +94,7 @@ class TableComponent extends Component {
                                 className="d-flex width={1}">
                                 <TableRow key={i} hover className="d-flex w-100 align-items-end">
                                     <TableCell className="col-2">
-                                        <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" />
+                                        <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
                                     </TableCell>
                                     <TableCell className="col-4">{result.name}</TableCell>
                                     <TableCell className="col-4">{result.model}</TableCell>
@@ -102,16 +107,11 @@ class TableComponent extends Component {
 
         const {results, titlesTable, object} = this.handleState();
 
-        console.log(this.props.object);
-        
-
         this.object = {
             results,
             titlesTable,
             object
         }
-
-        console.log(this.object);
         
         return (
                 <Table className="table-responsive">
