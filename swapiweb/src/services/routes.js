@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import MainView from '../views/MainView';
-import DetailsView from '../views/DetailsView';
+import DetailsView from '../views/details/DetailsView';
 import HomeView from '../views/home/HomeView';
 import TablesView from '../views/itemsTable/TablesView';
 
@@ -11,7 +11,7 @@ const Routes = () => (
             <Route exact path="/" component={HomeView} />
             <Route path="/mainview" component={MainView} />
             <Route path="/:object/table" component={TablesView} />
-            <Route exact path="/details/:object/:id" component={DetailsView} />
+            <Route exact path="/details/:itemName/:id" component={DetailsView} />
         </Switch>
     </BrowserRouter>
 );

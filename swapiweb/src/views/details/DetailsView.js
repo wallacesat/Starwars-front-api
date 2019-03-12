@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { detailsRequest } from '../services/swapi_connect';
+import { detailsRequest } from '../../services/swapi_connect';
 import {
     Paper,
     Button,
     Divider
 } from '@material-ui/core';
-import LoadingComponent from '../components/LoadingComponent';
+import LoadingComponent from '../../components/LoadingComponent';
 
 class DetailsView extends Component {
     constructor() {
@@ -17,21 +17,31 @@ class DetailsView extends Component {
         }
     }
 
+    handleState() {
+        const {itemName} = this.props.match.params;
+        const {state} = this.props.location;
+
+        return itemName === 'people' ? state.peoples :
+            itemName === 'planets' ? state.planets :
+            itemName === 'starships' ? state.starships : state.vehicles;
+    }
+
     componentDidMount() {
-        const { object, id } = this.props.match.params;
+        const { itemName, id } = this.props.match.params;
+        const {object} = this.handleState();
 
-        let obj = object === 'people' ? 'peoples' : object;
+        let item = itemName === 'people' ? 'peoples' : itemName;
 
-        this.props.location.state && obj.toUpperCase() === this.props.location.state.consultTable.object.toUpperCase() ? (() => {
+        this.props.location.state && item.toUpperCase() === object.toUpperCase() ? (() => {
 
-            let { results } = this.props.location.state.consultTable;
+            let { results } = this.handleState();
 
             let res = results.filter((item) => {
                 return item.idItem === id;
             });
 
             this.setState({ data: res[0] });
-        })() : detailsRequest(object, id).then((value) => {
+        })() : detailsRequest(itemName, id).then((value) => {
             const { data } = value;
             this.setState({ data });
         });
@@ -41,7 +51,7 @@ class DetailsView extends Component {
     render() {
 
         const { data } = this.state;
-        const { object } = this.props.match.params;
+        const { itemName } = this.props.match.params;
         const { state } = this.props.location;
 
         return data ? (
@@ -55,7 +65,7 @@ class DetailsView extends Component {
                 <div className="d-flexflex-column">
                     <div className="col-12 bg-dark">
                         <label className="lead" style={{ color: 'white' }}>
-                            <strong>Details Page: {object} </strong>
+                            <strong>Details Page: {itemName} </strong>
                         </label>
                     </div>
                     <div className="d-flex justify-content-center align-items-stretch" style={{ height: 600 }}>
@@ -74,7 +84,7 @@ class DetailsView extends Component {
                                 <Divider variant="inset" />
                             </div>
                             {
-                                object === 'planets' ?
+                                itemName === 'planets' ?
                                     <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
                                         <div className="d-flex flex-column">
                                             <label className="lead">
@@ -104,7 +114,7 @@ class DetailsView extends Component {
                                         </div>
                                     </div> :
 
-                                    object === 'vehicles' ?
+                                    itemName === 'vehicles' ?
                                         <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
                                             <div className="d-flex flex-column">
                                                 <label className="lead">
@@ -134,7 +144,7 @@ class DetailsView extends Component {
                                             </div>
                                         </div> :
 
-                                        object === 'starships' ?
+                                        itemName === 'starships' ?
                                             <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
                                                 <div className="d-flex flex-column">
                                                     <label className="lead">
@@ -164,7 +174,7 @@ class DetailsView extends Component {
                                                 </div>
                                             </div> :
 
-                                            object === 'people' ?
+                                            itemName === 'people' ?
                                                 <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
                                                     <div className="d-flex flex-column">
                                                         <label className="lead">
@@ -196,8 +206,8 @@ class DetailsView extends Component {
                             }
                             <div style={{ marginBottom: 20 }}>
                                 <Link to={{
-                                    pathname: '/',
-                                    state: state
+                                    pathname: `/${this.props.match.params.itemName}/table`,
+                                    state
                                 }} style={{ textDecoration: 'none' }}>
                                     <Button variant="contained">
                                         To Back

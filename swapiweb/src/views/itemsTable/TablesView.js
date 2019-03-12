@@ -6,24 +6,15 @@ import people from '../../images/_people.png';
 import swlogo from '../../images/swlogo.png';
 import { Paper, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import TableComponent from '../../components/TableComponent';
+import TableComponent from '../../components/itemsTable/TableComponent';
 
 class TablesView extends Component {
 
     getImage() {
-        return this.props.location.state.object === 'Planets' ? planet :
-            this.props.location.state.object === 'Starships' ? starship :
-                this.props.location.state.object === 'Vehicles' ? vehicle : people;
+        return this.props.match.params.object === 'planets' ? planet :
+            this.props.match.params.object === 'starships' ? starship :
+                this.props.match.params.object === 'vehicles' ? vehicle : people;
     }
-
-    // handleState() {
-    //     const {object} = this.props.match.params;
-    //     const item = this.props.location.state;
-
-    //     return object === 'Peoples' ? item.peoples :
-    //         object === 'Planets' ? item.planets :
-    //         object === 'Starships' ? item.starships : item.vehicles;
-    // }
 
     render() {
         const {state} = this.props.location;
@@ -45,8 +36,11 @@ class TablesView extends Component {
                 </div>
                 <div className="d-block bg-light h-75 align-items-center justify-content-center">
                     <div className="d-flex bg-light" style={{ borderRadius: 8 }}>
-                        <TableComponent object={state} item={this.props.match.params.object}/>
+                        <TableComponent object={state} itemName={this.props.match.params.object}/>
                     </div>
+                    {/* <div className="h-25 w-50 bg-secondary pt-3 pl-3">
+                        blablabla
+                    </div> */}
                 </div>
                 <div className="d-block">
                     <div className="d-flex justify-content-center pt-3">

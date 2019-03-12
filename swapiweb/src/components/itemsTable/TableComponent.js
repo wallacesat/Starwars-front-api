@@ -11,35 +11,22 @@ import { Link } from 'react-router-dom';
 
 
 class TableComponent extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            estado: null,
-            object: null
-        }
-    }
-
-    componentDidMount() {
-        const {state: estado} = this.props;
-        
-    }
-
+ 
     handleUrl(url) {
 
-        let id = url.replace('https://swapi.co/api', '');
+        const id = url.replace('https://swapi.co/api', '');
         return `/details${id}`;
 
     }
 
     handleState() {
-        const {object, item} = this.props;
+        const {object, itemName} = this.props;
 
-        console.log(object, item);
+        console.log(object.peoples, itemName);
 
-        return item === 'peoples' ? object.peoples :
-            item === 'planets' ? object.planets :
-            item === 'starships' ? object.starships : object.vehicles;
+        return itemName === 'peoples' ? object.peoples :
+            itemName === 'planets' ? object.planets :
+            itemName === 'starships' ? object.starships : object.vehicles;
     }
 
     handleTable() {

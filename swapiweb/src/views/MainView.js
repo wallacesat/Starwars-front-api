@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import LoadingComponent from '../components/LoadingComponent';
 import DividerComponent from '../components/DividerComponent';
-import TableComponent from '../components/TableComponent';
-import PaginationComponent from '../components/PaginationComponent';
+import TableComponent from '../components/itemsTable/TableComponent';
+import PaginationComponent from '../components/itemsTable/PaginationComponent';
 import { swapiRequest } from '../services/swapi_connect';
-import SearchComponent from '../components/SearchComponent';
+import SearchComponent from '../components/itemsTable/SearchComponent';
 import { CircularProgress } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';

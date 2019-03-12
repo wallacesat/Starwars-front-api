@@ -6,7 +6,6 @@ import vehicle from '../../images/_vehicle.png';
 import people from '../../images/_people.png';
 import { swapiRequest } from '../../services/swapi_connect';
 import MenuComponent from '../../components/home/MenuComponent';
-import { CircularProgress } from '@material-ui/core';
 import './HomeView.css';
 
 class HomeView extends Component {
@@ -18,7 +17,6 @@ class HomeView extends Component {
             planets: null,
             starships: null,
             vehicles: null,
-            isDone: false,
         }
 
     }
@@ -45,7 +43,9 @@ class HomeView extends Component {
     }
 
     render() {
-        let { peoples, planets, starships, vehicles } = this.state;
+
+        console.log(this.state);
+        
 
         return (
             <div style={{
