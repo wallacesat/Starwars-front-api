@@ -11,12 +11,35 @@ import { Link } from 'react-router-dom';
 
 
 class TableComponent extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            estado: null,
+            object: null
+        }
+    }
+
+    componentDidMount() {
+        const {state: estado} = this.props;
+        
+    }
 
     handleUrl(url) {
 
         let id = url.replace('https://swapi.co/api', '');
         return `/details${id}`;
 
+    }
+
+    handleState() {
+        const {object, item} = this.props;
+
+        console.log(object, item);
+
+        return item === 'peoples' ? object.peoples :
+            item === 'planets' ? object.planets :
+            item === 'starships' ? object.starships : object.vehicles;
     }
 
     handleTable() {
@@ -89,10 +112,11 @@ class TableComponent extends Component {
     }
 
     render() {
-        // this.detailsRequest = this.props.object;
-        // const { results, titlesTable, object } = this.detailsRequest.consultTable;
 
-        const {results, titlesTable, object} = this.props.object;
+        const {results, titlesTable, object} = this.handleState();
+
+        console.log(this.props.object);
+        
 
         this.object = {
             results,
@@ -100,6 +124,8 @@ class TableComponent extends Component {
             object
         }
 
+        console.log(this.object);
+        
         return (
                 <Table className="table-responsive">
                     <TableHead className="d-flex witdh={1}">

@@ -17,13 +17,13 @@ class MainView extends Component {
     this.state = {
       requestObject: null,
       consultTable: null,
-      loading: false
     }
 
   }
 
   componentDidMount() {
     const { state } = this.props.location;
+    
     state ? this.setState(state) :
 
       swapiRequest().then((value) => {

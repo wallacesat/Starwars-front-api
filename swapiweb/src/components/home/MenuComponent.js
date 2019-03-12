@@ -15,7 +15,7 @@ class MenuComponent extends Component {
     }
 
     render() {
-        
+
         return (
             <div className="d-flex h-50 w-25 m-2 paper">
                 <Link
@@ -34,7 +34,7 @@ class MenuComponent extends Component {
                     <Fade in={true} style={{ transitionDelay: '200ms' }}>
                         <Paper elevation={5} className="flex-grow-1 d-flex flex-column justify-content-around align-items-center">
                             {
-                                !this.props.object ?
+                                !this.props.object.isDone ?
                                     <div className="d-flex justify-content-center align-items-center" style={{ width: 250, height: 130 }}>
                                         <CircularProgress color="inherit" />
                                     </div>

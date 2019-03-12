@@ -18,6 +18,7 @@ class HomeView extends Component {
             planets: null,
             starships: null,
             vehicles: null,
+            isDone: false,
         }
 
     }
@@ -36,7 +37,7 @@ class HomeView extends Component {
                         starships.titlesTable = ['Name', 'Model', 'Starship Class'];
                         swapiRequest(null, null, 'vehicles').then((vehicles) => {
                             vehicles.titlesTable = ['Name', 'Model', 'Passengers'];
-                            this.setState({ peoples, planets, starships, vehicles, loading: false });;
+                            this.setState({ peoples, planets, starships, vehicles, isDone: true });;
                         });
                     });
                 });

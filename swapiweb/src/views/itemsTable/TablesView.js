@@ -16,14 +16,14 @@ class TablesView extends Component {
                 this.props.location.state.object === 'Vehicles' ? vehicle : people;
     }
 
-    handleState() {
-        const {object} = this.props.match.params;
-        const item = this.props.location.state;
+    // handleState() {
+    //     const {object} = this.props.match.params;
+    //     const item = this.props.location.state;
 
-        return object === 'Peoples' ? item.peoples :
-            object === 'Planets' ? item.planets :
-            object === 'Starships' ? item.starships : item.vehicles;
-    }
+    //     return object === 'Peoples' ? item.peoples :
+    //         object === 'Planets' ? item.planets :
+    //         object === 'Starships' ? item.starships : item.vehicles;
+    // }
 
     render() {
         const {state} = this.props.location;
@@ -45,7 +45,7 @@ class TablesView extends Component {
                 </div>
                 <div className="d-block bg-light h-75 align-items-center justify-content-center">
                     <div className="d-flex bg-light" style={{ borderRadius: 8 }}>
-                        <TableComponent object={this.handleState()} />
+                        <TableComponent object={state} item={this.props.match.params.object}/>
                     </div>
                 </div>
                 <div className="d-block">
