@@ -63,9 +63,6 @@ class TablesView extends Component {
 
     render() {
 
-        console.log(this.getStateNavigation());
-        
-
         return (
             <div style={{
                 position: "fixed",

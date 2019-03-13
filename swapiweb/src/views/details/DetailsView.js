@@ -7,6 +7,7 @@ import {
     Divider
 } from '@material-ui/core';
 import LoadingComponent from '../../components/LoadingComponent';
+import DetailsComponent from '../../components/details/detailsComponent';
 
 class DetailsView extends Component {
     constructor() {
@@ -36,15 +37,9 @@ class DetailsView extends Component {
 
             let { results } = this.handleState();
 
-            console.log(results);
-            
-
             let res = results.filter((item) => {
                 return item.idItem === id;
             });
-
-            console.log(res);
-            
 
             this.setState({ data: res[0] });
         })() : detailsRequest(itemName, id).then((value) => {
@@ -86,130 +81,7 @@ class DetailsView extends Component {
                                     </label>
                                 </div>
                             </div>
-                            <div className="d-flex w-100">
-                                <Divider variant="inset" />
-                            </div>
-                            {
-                                itemName === 'planets' ?
-                                    <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
-                                        <div className="d-flex flex-column">
-                                            <label className="lead">
-                                                <strong>Terrain:</strong> {data.terrain}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Gravity:</strong> {data.gravity}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Diameter:</strong> {data.diameter}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Climate:</strong> {data.climate}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Popularion:</strong> {data.population}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Orbital Period:</strong> {`${data.orbital_period} Days`}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Rotation Period:</strong> {`${data.rotation_period} Days`}
-                                            </label>
-                                            <label className="lead">
-                                                <strong>Surface Water:</strong> {data.surface_water}
-                                            </label>
-                                        </div>
-                                    </div> :
-
-                                    itemName === 'vehicles' ?
-                                        <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
-                                            <div className="d-flex flex-column">
-                                                <label className="lead">
-                                                    <strong>Vehicle Class:</strong> {data.vehicle_class}
-                                                </label>
-                                                <label className="lead">
-                                                    <strong>Model:</strong> {data.model}
-                                                </label>
-                                                <label className="lead">
-                                                    <strong>Manufacturer:</strong> {data.manufacturer}
-                                                </label>
-                                                <label className="lead">
-                                                    <strong>Cargo Capacity:</strong> {data.cargo_capacity} Pounds
-                                        </label>
-                                                <label className="lead">
-                                                    <strong>Passengers:</strong> {data.passengers} Persons
-                                        </label>
-                                                <label className="lead">
-                                                    <strong>Length:</strong> {data.length} Meters
-                                        </label>
-                                                <label className="lead">
-                                                    <strong>Consumables:</strong> {data.consumables}
-                                                </label>
-                                                <label className="lead">
-                                                    <strong>Max Atmosphering Speed:</strong> {data.max_atmosphering_speed}
-                                                </label>
-                                            </div>
-                                        </div> :
-
-                                        itemName === 'starships' ?
-                                            <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
-                                                <div className="d-flex flex-column">
-                                                    <label className="lead">
-                                                        <strong>Starship Class:</strong> {data.starship_class}
-                                                    </label>
-                                                    <label className="lead">
-                                                        <strong>Model:</strong> {data.model}
-                                                    </label>
-                                                    <label className="lead">
-                                                        <strong>Manufacturer:</strong> {data.manufacturer}
-                                                    </label>
-                                                    <label className="lead">
-                                                        <strong>Cargo Capacity:</strong> {data.cargo_capacity} Pounds
-                                        </label>
-                                                    <label className="lead">
-                                                        <strong>Passengers:</strong> {data.passengers} Persons
-                                        </label>
-                                                    <label className="lead">
-                                                        <strong>Length:</strong> {data.length} Meters
-                                        </label>
-                                                    <label className="lead">
-                                                        <strong>Consumables:</strong> {data.consumables}
-                                                    </label>
-                                                    <label className="lead">
-                                                        <strong>Max Atmosphering Speed:</strong> {data.max_atmosphering_speed}
-                                                    </label>
-                                                </div>
-                                            </div> :
-
-                                            itemName === 'people' ?
-                                                <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
-                                                    <div className="d-flex flex-column">
-                                                        <label className="lead">
-                                                            <strong>Gender:</strong> {data.gender}
-                                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Eye Color:</strong> {data.eye_color}
-                                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Hair Color:</strong> {data.hair_color}
-                                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Height:</strong> {data.height} Centimeters
-                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Skin Color:</strong> {data.skin_color}
-                                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Mass:</strong> {data.mass} pounds
-                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Birth Year:</strong> {data.birth_year}
-                                                        </label>
-                                                        <label className="lead">
-                                                            <strong>Vehicles:</strong> n/a
-                                        </label>
-                                                    </div>
-                                                </div> : null
-                            }
+                                <DetailsComponent data={data} itemName={itemName}/>
                             <div style={{ marginBottom: 20 }}>
                                 <Link to={{
                                     pathname: `/${this.props.match.params.itemName}/table`,

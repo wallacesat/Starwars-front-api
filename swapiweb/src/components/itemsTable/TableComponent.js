@@ -5,7 +5,6 @@ import {
     TableRow,
     TableCell,
     TableBody,
-    TableFooter
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
@@ -32,87 +31,46 @@ class TableComponent extends Component {
     }
 
     handleTable() {
-        let { results, object } = this.object;
+        const { results } = this.handleState();
+        const { itemName } = this.props;
 
-        console.log(this.props.object);
+        let data = [];
+        results.map((item, i)=> {
+            data.push(
+                {
+                    name: item.name,
+                    avatar: item.avatar,
+                    url: item.url,
+                    attributes: itemName === 'planets' ? [ item.climate, item.orbital_period] :
+                                itemName === 'vehicles' ?[ item.model, item.passengers ] :
+                                itemName === 'starships' ?[ item.model, item.starship_class ] : [ item.gender, item.eye_color ]
+                }
+            );
+        })
         
+        return data.map((item, i)=> 
 
-        return object === 'Peoples' ?
-            results.map((result, i) =>
-                <Link key={i} to={{
-                    pathname: `${this.handleUrl(result.url)}`,
-                    state: this.props.object
-                }} style={{ textDecoration: 'none', }}
-                    className="d-flex width={1}">
-                    <TableRow key={i} hover className="d-flex w-100 align-items-end">
+            <Link key={i} to={{
+                pathname: `${this.handleUrl(item.url)}`,
+                state: this.props.object
+            }} style={{ textDecoration: 'none', }}
+                className="d-flex width={1}">
+                <TableRow key={i} hover className="d-flex w-100 align-items-end">
+                    <TableCell className="col-2">
+                        <img src={item.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
+                    </TableCell>
+                    <TableCell className="col-4">{item.name}</TableCell>
+                    <TableCell className="col-4">{item.attributes[0]}</TableCell>
+                    <TableCell className="col-2">{item.attributes[1]}</TableCell>
+                </TableRow >
+            </Link>
 
-                        <TableCell className="col-2">
-                            <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
-                        </TableCell>
-                        <TableCell className="col-4">{result.name}</TableCell>
-                        <TableCell className="col-4">{result.gender}</TableCell>
-                        <TableCell className="col-2">{result.eye_color}</TableCell>
-
-                    </TableRow >
-                </Link>
-            ) : object === 'Starships' ?
-                results.map((result, i) =>
-                    <Link key={i} to={{
-                        pathname: `${this.handleUrl(result.url)}`,
-                        state: this.props.object
-                    }} style={{ textDecoration: 'none', }}
-                        className="d-flex width={1}">
-                        <TableRow key={i} hover className="d-flex w-100 align-items-end">
-                            <TableCell className="col-2">
-                                <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
-                            </TableCell>
-                            <TableCell className="col-4">{result.name}</TableCell>
-                            <TableCell className="col-4">{result.model}</TableCell>
-                            <TableCell className="col-2">{result.starship_class}</TableCell>
-                        </TableRow>
-                    </Link>) : object === 'Planets' ?
-                    results.map((result, i) =>
-                        <Link key={i} to={{
-                            pathname: `${this.handleUrl(result.url)}`,
-                            state: this.props.object
-                        }} style={{ textDecoration: 'none', }}
-                            className="d-flex width={1}">
-                            <TableRow key={i} hover className="d-flex w-100 align-items-end">
-                                <TableCell className="col-2">
-                                    <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
-                                </TableCell>
-                                <TableCell className="col-4">{result.name}</TableCell>
-                                <TableCell className="col-4">{result.climate}</TableCell>
-                                <TableCell className="col-2">{result.orbital_period} days</TableCell>
-                            </TableRow>
-                        </Link>) : object === 'Vehicles' ?
-                        results.map((result, i) =>
-                            <Link key={i} to={{
-                                pathname: `${this.handleUrl(result.url)}`,
-                                state: this.props.object
-                            }} style={{ textDecoration: 'none', }}
-                                className="d-flex width={1}">
-                                <TableRow key={i} hover className="d-flex w-100 align-items-end">
-                                    <TableCell className="col-2">
-                                        <img src={result.avatar} className="img-fluid border border-ligth rounded-circle" alt=""/>
-                                    </TableCell>
-                                    <TableCell className="col-4">{result.name}</TableCell>
-                                    <TableCell className="col-4">{result.model}</TableCell>
-                                    <TableCell className="col-2">{result.passengers}</TableCell>
-                                </TableRow>
-                            </Link>) : null;
+        );
     }
 
     render() {
+        const {titlesTable} = this.handleState();
 
-        const {results, titlesTable, object} = this.handleState();
-
-        this.object = {
-            results,
-            titlesTable,
-            object
-        }
-        
         return (
                 <Table className="table-responsive">
                     <TableHead className="d-flex witdh={1}">
@@ -129,11 +87,6 @@ class TableComponent extends Component {
                     <TableBody>
                         {this.handleTable()}
                     </TableBody>
-                    <TableFooter>
-                        <TableRow>
-
-                        </TableRow>
-                    </TableFooter>
                 </Table>
         );
     }
