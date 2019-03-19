@@ -1,112 +1,116 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { detailsRequest } from '../../services/swapi_connect';
-import {
-    Paper,
-    Button,
-    Divider
-} from '@material-ui/core';
-import LoadingComponent from '../../components/LoadingComponent';
-import DetailsComponent from '../../components/details/detailsComponent';
+import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import { detailsRequest } from "../../services/swapi_connect";
+import { Paper, Button, Divider } from "@material-ui/core";
+import LoadingComponent from "../../components/details/LoadingComponent";
+import DetailsComponent from "../../components/details/detailsComponent";
 
 class DetailsView extends Component {
-    constructor() {
-        super();
+  // handleState() {
+  //   const { itemName } = this.props.match.params;
+  //   const { state } = this.props.location;
 
-        this.state = {
-            data: null,
-        }
-    }
+  //   return itemName === "people"
+  //     ? state.peoples
+  //     : itemName === "planets"
+  //     ? state.planets
+  //     : itemName === "starships"
+  //     ? state.starships
+  //     : state.vehicles;
+  // }
 
-    handleState() {
-        const {itemName} = this.props.match.params;
-        const {state} = this.props.location;
+  // componentDidMount() {
+  //   const { match, location } = this.props;
+  //   let items = location.state.find(item => item.idItem == match.params.id);
 
-        return itemName === 'people' ? state.peoples :
-            itemName === 'planets' ? state.planets :
-            itemName === 'starships' ? state.starships : state.vehicles;
-    }
+  //   console.log(items);
+  //   this.setState({ items });
+  // }
 
-    componentDidMount() {
-        const { itemName, id } = this.props.match.params;
-        const {object} = this.handleState();
+  render() {
+    console.log(this.props);
 
-        let item = itemName === 'people' ? 'peoples' : itemName;
+    let data = this.props.location.state.find(
+      item => item.idItem == this.props.match.params.id
+    );
+    const resource = this.props.match.params.object;
 
-        this.props.location.state && item.toUpperCase() === object.toUpperCase() ? (() => {
-
-            let { results } = this.handleState();
-
-            let res = results.filter((item) => {
-                return item.idItem === id;
-            });
-
-            this.setState({ data: res[0] });
-        })() : detailsRequest(itemName, id).then((value) => {
-            const { data } = value;
-            this.setState({ data });
-        });
-
-    }
-
-    render() {
-
-        const { data } = this.state;
-        const { itemName } = this.props.match.params;
-        const { state } = this.props.location;
-
-        return data ? (
-            <div style={{
-                position: "fixed",
-                width: "100%",
-                height: "100%",
-                zIndex: "-10",
-                background: "#343a40"
-            }}>
-                <div className="d-flexflex-column">
-                    <div className="col-12 bg-dark">
-                        <label className="lead" style={{ color: 'white' }}>
-                            <strong>Details Page: {itemName} </strong>
-                        </label>
-                    </div>
-                    <div className="d-flex justify-content-center align-items-stretch" style={{ height: 600 }}>
-                        <Paper elevation={1} className="w-50 h-100 d-flex flex-column align-items-center" style={{ margin: 20 }}>
-                            <div className="d-flex h-50 flex-column align-items-center justify-content-start" style={{ marginTop: 10 }}>
-                                <div>
-                                    <img alt="" src={data.avatar.replace('40?', '120?')} className="img-fluid border border-ligth rounded-circle" />
-                                </div>
-                                <div>
-                                    <label className="display-4">
-                                        {data.name}
-                                    </label>
-                                </div>
-                            </div>
-                                <DetailsComponent data={data} itemName={itemName}/>
-                            <div style={{ marginBottom: 20 }}>
-                                <Link to={{
-                                    pathname: `/${this.props.match.params.itemName}/table`,
-                                    state
-                                }} style={{ textDecoration: 'none' }}>
-                                    <Button variant="contained">
-                                        To Back
-                                </Button>
-                                </Link>
-                            </div>
-                        </Paper>
-                    </div>
+    return data ? (
+      <div
+        style={{
+          position: "fixed",
+          width: "100%",
+          height: "100%",
+          zIndex: "-10",
+          background: "#343a40"
+        }}
+      >
+        <div className="d-flexflex-column">
+          <div className="col-12 bg-dark">
+            <label className="lead" style={{ color: "white" }}>
+              <strong>Details Page: {resource} </strong>
+            </label>
+          </div>
+          <div
+            className="d-flex justify-content-center align-items-stretch"
+            style={{ height: 600 }}
+          >
+            <Paper
+              elevation={1}
+              className="w-50 h-100 d-flex flex-column align-items-center"
+              style={{ margin: 20 }}
+            >
+              <div
+                className="d-flex h-50 flex-column align-items-center justify-content-start"
+                style={{ marginTop: 10 }}
+              >
+                <div>
+                  <img
+                    alt=""
+                    src={data.avatar.replace("40?", "120?")}
+                    className="img-fluid border border-ligth rounded-circle"
+                  />
                 </div>
-            </div>
-        ) :
-            <div style={{
-                position: "fixed",
-                width: "100%",
-                height: "100%",
-                zIndex: "-10",
-                background: "#343a40"
-            }}>
-                <LoadingComponent />;
+                <div>
+                  <label className="display-4">{data.name}</label>
+                </div>
+              </div>
+              <DetailsComponent data={data} resource={resource} />
+              <div style={{ marginBottom: 20 }}>
+                <Link
+                  to={{
+                    pathname: `/${this.props.match.params.object}`,
+                    state: this.props.location.state
+                  }}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button variant="contained">To Back</Button>
+                </Link>
+              </div>
+            </Paper>
+          </div>
         </div>
-    }
+      </div>
+    ) : (
+      <div
+        style={{
+          position: "fixed",
+          width: "100%",
+          height: "100%",
+          zIndex: "-10",
+          background: "#343a40"
+        }}
+      >
+        <LoadingComponent />;
+      </div>
+    );
+  }
 }
 
-export default DetailsView;
+const mapStateToProps = state => ({
+  state
+});
+
+export default withRouter(connect(mapStateToProps)(DetailsView));
+// export default DetailsView;
