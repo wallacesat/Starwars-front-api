@@ -37,6 +37,7 @@ class TableComponent extends Component {
           return values[resource];
         })()
       });
+      return null;
     });
 
     return data.map((item, i) => (

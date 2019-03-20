@@ -1,38 +1,17 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { detailsRequest } from "../../services/swapi_connect";
-import { Paper, Button, Divider } from "@material-ui/core";
+import { Paper, Button } from "@material-ui/core";
 import LoadingComponent from "../../components/details/LoadingComponent";
 import DetailsComponent from "../../components/details/detailsComponent";
 
 class DetailsView extends Component {
-  // handleState() {
-  //   const { itemName } = this.props.match.params;
-  //   const { state } = this.props.location;
-
-  //   return itemName === "people"
-  //     ? state.peoples
-  //     : itemName === "planets"
-  //     ? state.planets
-  //     : itemName === "starships"
-  //     ? state.starships
-  //     : state.vehicles;
-  // }
-
-  // componentDidMount() {
-  //   const { match, location } = this.props;
-  //   let items = location.state.find(item => item.idItem == match.params.id);
-
-  //   console.log(items);
-  //   this.setState({ items });
-  // }
 
   render() {
     console.log(this.props);
 
     let data = this.props.location.state.find(
-      item => item.idItem == this.props.match.params.id
+      item => item.idItem === this.props.match.params.id
     );
     const resource = this.props.match.params.object;
 

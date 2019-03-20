@@ -9,11 +9,31 @@ export default function peoples(state = null, action) {
 
     case peoplesAction.FETCH_PEOPLE_SUCCEEDED:
       return Object.assign({}, state, {
-        list: [...(state.list || []), ...action.people.results],
+        pages: [
+          ...(state.pages || []),
+          { page: action.people.page, list: action.people.results }
+        ],
+        pageCount: action.people.pageCount,
         isFetching: false
       });
 
     case peoplesAction.FETCH_PEOPLE_FAILED:
+      return Object.assign({}, state, {
+        isFetching: false,
+        error: action.error
+      });
+
+    case peoplesAction.UPDATE_PEOPLE_SUCCEEDED:
+      return Object.assign({}, state, {
+        pages: [
+          ...(state.pages || []),
+          { page: action.people.page, list: action.people.results }
+        ],
+        pageCount: action.people.pageCount,
+        isFetching: false
+      });
+
+    case peoplesAction.UPDATE_PEOPLE_FAILED:
       return Object.assign({}, state, {
         isFetching: false,
         error: action.error

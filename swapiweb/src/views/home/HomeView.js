@@ -10,9 +10,6 @@ import MenuComponent from "../../components/home/MenuComponent";
 import "./HomeView.css";
 
 class HomeView extends Component {
-  constructor() {
-    super();
-  }
 
   render() {
     return (

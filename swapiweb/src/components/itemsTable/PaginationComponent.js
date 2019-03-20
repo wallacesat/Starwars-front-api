@@ -1,49 +1,81 @@
-import React, { Component } from 'react';
-import {
-    Pagination,
-    PaginationItem,
-    PaginationLink
-} from 'reactstrap';
+import React, { Component, Fragment } from "react";
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+
+import { selectPagePagination } from "../../store/actions/pagination";
 
 class PaginationComponent extends Component {
+  getDataState() {
+    const { state, resource } = this.props;
 
-    handlePagination(data) {
-        let {onSelected} = this.props;
+    return !state[resource] || state[resource].isFetching
+      ? {
+          pageCount: 4,
+          selectedPage: 1
+        }
+      : {
+          pageCount: state[resource].pageCount,
+          selectedPage: state.pagination.page
+        };
+  }
 
-        let arr = data.page > 0 && data.page < 3 ? [1,2,3] :
-            data.page > 2 && data.page < data.pageCount-1 ? [data.page-1, data.page, data.page+1] : 
-                [data.pageCount-2, data.pageCount-1, data.pageCount];
+  handlePagination() {
+    const { pageCount, selectedPage } = this.getDataState();
 
-        return arr.map((item, i) =>
-            <PaginationItem key={i} active={item === data.page}>
-                <PaginationLink onClick={() => onSelected(null, item)}>
-                    {item}
-                </PaginationLink>
-            </PaginationItem>
-        )
-    }
+    let arr =
+      selectedPage > 0 && selectedPage < 3
+        ? [1, 2, 3]
+        : selectedPage > 2 && selectedPage < pageCount - 1
+        ? [selectedPage - 1, selectedPage, selectedPage + 1]
+        : [pageCount - 2, pageCount - 1, pageCount];
 
-    render() {
-        let data = this.props.data;
-        let { onSelected } = this.props;
-        return (
-            <Pagination>
-                <PaginationItem {...data.page === 1 ? 'disabled' : ''}>
-                    <PaginationLink first='true' onClick={() => onSelected(null, 1)} >
-                        First
-                    </PaginationLink>
-                </PaginationItem>
-                {
-                    this.handlePagination(data)
-                }
-                <PaginationItem {...data.page === data.pageCount ? 'disabled' : ''}>
-                    <PaginationLink last='true' onClick={() => onSelected(null, data.pageCount)} >
-                        Last
-                    </PaginationLink>
-                </PaginationItem>
-            </Pagination>
-        );
-    }
+    return arr.map((item, i) => (
+      <PaginationItem key={i} active={item === selectedPage}>
+        <PaginationLink onClick={() => this.selectPage(item)}>
+          {item}
+        </PaginationLink>
+      </PaginationItem>
+    ));
+  }
+
+  selectPage(page) {
+    const { selectPagePagination } = this.props;
+    selectPagePagination(page);
+  }
+
+  render() {
+    const { pageCount, selectedPage } = this.getDataState();
+    return (
+      <Pagination>
+        <PaginationItem {...(selectedPage === 1 ? "disabled" : "")}>
+          <PaginationLink first="true" onClick={() => this.selectPage(1)}>
+            First
+          </PaginationLink>
+        </PaginationItem>
+        {this.handlePagination()}
+        <PaginationItem {...(selectedPage === pageCount ? "disabled" : "")}>
+          <PaginationLink
+            last="true"
+            onClick={() => this.selectPage(pageCount)}
+          >
+            Last
+          </PaginationLink>
+        </PaginationItem>
+      </Pagination>
+    );
+  }
 }
 
-export default PaginationComponent;
+const mapStateToProps = state => ({ state });
+
+const mapDispatchToProps = {
+  selectPagePagination
+};
+
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(PaginationComponent)
+);

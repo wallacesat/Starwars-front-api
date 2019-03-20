@@ -20,14 +20,43 @@ export const fetchPeople = () => dispatch => {
 
   swapiRequest(null, null)
     .then(response => {
+      console.log(response);
+
       dispatch(
         fetchPeopleSucceeded({
           results: response.results,
-          total: response.count
+          page: response.page,
+          pageCount: response.pageCount
         })
       );
     })
     .catch(error => {
       dispatch(fetchPeopleFailed(error));
+    });
+};
+
+const updatePeopleSucceeded = people => ({
+  type: peoplesAction.UPDATE_PEOPLE_SUCCEED,
+  people
+});
+
+const updatePeopleFailed = error => ({
+  type: peoplesAction.UPDATE_PEOPLE_FAILED,
+  error
+});
+
+export const updatePeople = page => dispatch => {
+  swapiRequest(null, page, null)
+    .then(response => {
+      dispatch(
+        updatePeopleSucceeded({
+          results: response.results,
+          page: response.page,
+          pageCount: response.pageCount
+        })
+      );
+    })
+    .catch(error => {
+      dispatch(updatePeopleFailed(error));
     });
 };

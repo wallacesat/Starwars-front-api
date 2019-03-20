@@ -1,3 +1,14 @@
-export default function pagination(state = {}, action) {
-  return state;
+import { paginationAction } from "../actions/actionsTypes";
+
+export default function pagination(state = { page: 1 }, action) {
+  switch (action.type) {
+    case paginationAction.PAGE_SELECTED:
+      return {
+        ...state,
+        page: action.pagination.page
+      };
+
+    default:
+      return state;
+  }
 }
