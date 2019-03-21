@@ -49,13 +49,13 @@ class PaginationComponent extends Component {
     const { pageCount, selectedPage } = this.getDataState();
     return (
       <Pagination>
-        <PaginationItem {...(selectedPage === 1 ? "disabled" : "")}>
+        <PaginationItem disabled={selectedPage === 1 ? true : false}>
           <PaginationLink first="true" onClick={() => this.selectPage(1)}>
             First
           </PaginationLink>
         </PaginationItem>
         {this.handlePagination()}
-        <PaginationItem {...(selectedPage === pageCount ? "disabled" : "")}>
+        <PaginationItem disabled={selectedPage === pageCount ? true : false}>
           <PaginationLink
             last="true"
             onClick={() => this.selectPage(pageCount)}
