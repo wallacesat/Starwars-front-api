@@ -23,6 +23,10 @@ export default function peoples(state = null, action) {
         error: action.error
       });
 
+    case peoplesAction.UPDATE_PEOPLE_IS_FETCHING:
+      return Object.assign({}, state, {
+        isFetching: true
+      });
     case peoplesAction.UPDATE_PEOPLE_SUCCEEDED:
       return Object.assign({}, state, {
         pages: [

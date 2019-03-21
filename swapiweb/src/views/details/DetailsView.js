@@ -6,10 +6,7 @@ import LoadingComponent from "../../components/details/LoadingComponent";
 import DetailsComponent from "../../components/details/detailsComponent";
 
 class DetailsView extends Component {
-
   render() {
-    console.log(this.props);
-
     let data = this.props.location.state.find(
       item => item.idItem === this.props.match.params.id
     );

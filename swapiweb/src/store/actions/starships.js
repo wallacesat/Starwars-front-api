@@ -23,11 +23,43 @@ export const fetchStarships = () => dispatch => {
       dispatch(
         fetchStarshipsSucceeded({
           results: response.results,
-          total: response.count
+          page: response.page,
+          pageCount: response.pageCount
         })
       );
     })
     .catch(error => {
       dispatch(fetchStarshipsFailed(error));
+    });
+};
+
+const updateStarshipsIsFetching = () => ({
+  type: starshipsAction.UPDATE_STARSHIPS_IS_FETCHING
+});
+
+const updateStarshipsSucceeded = starships => ({
+  type: starshipsAction.UPDATE_STARSHIPS_SUCCEEDED,
+  starships
+});
+
+const updateStarshipsFailed = error => ({
+  type: starshipsAction.UPDATE_STARSHIPS_FAILED,
+  error
+});
+
+export const updateStarships = page => dispatch => {
+  dispatch(updateStarshipsIsFetching());
+  swapiRequest(null, page, "starships")
+    .then(response => {
+      dispatch(
+        updateStarshipsSucceeded({
+          results: response.results,
+          page: response.page,
+          pageCount: response.pageCount
+        })
+      );
+    })
+    .catch(error => {
+      dispatch(updateStarshipsFailed(error));
     });
 };

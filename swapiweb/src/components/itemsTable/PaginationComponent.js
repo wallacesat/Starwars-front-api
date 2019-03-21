@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -42,6 +42,7 @@ class PaginationComponent extends Component {
   selectPage(page) {
     const { selectPagePagination } = this.props;
     selectPagePagination(page);
+    this.props.handlePagination(page);
   }
 
   render() {

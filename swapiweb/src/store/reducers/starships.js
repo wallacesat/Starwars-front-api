@@ -9,11 +9,35 @@ export default function starships(state = null, action) {
 
     case starshipsAction.FETCH_STARSHIPS_SUCCEEDED:
       return Object.assign({}, state, {
-        list: [...(state.list || []), ...action.starships.results],
+        pages: [
+          ...(state.pages || []),
+          { page: action.starships.page, list: action.starships.results }
+        ],
+        pageCount: action.starships.pageCount,
         isFetching: false
       });
 
     case starshipsAction.FETCH_STARSHIPS_FAILED:
+      return Object.assign({}, state, {
+        isFetching: false,
+        error: action.error
+      });
+
+    case starshipsAction.UPDATE_STARSHIPS_IS_FETCHING:
+      return Object.assign({}, state, {
+        isFetching: true
+      });
+    case starshipsAction.UPDATE_STARSHIPS_SUCCEEDED:
+      return Object.assign({}, state, {
+        pages: [
+          ...(state.pages || []),
+          { page: action.starships.page, list: action.starships.results }
+        ],
+        pageCount: action.starships.pageCount,
+        isFetching: false
+      });
+
+    case starshipsAction.UPDATE_STARSHIPS_FAILED:
       return Object.assign({}, state, {
         isFetching: false,
         error: action.error

@@ -13,25 +13,7 @@ export const swapiRequest = async (
     : page // Se não houver urlChange, varifica se há algo no page
     ? (urlRequest = `${cors}https://swapi.co/api/${object}?page=${page}`) // Se houver page alterar a url para consultar por página
     : urlRequest; // Senão, Mantém o urlRequest definida na declaração
-
-  // Mantém o urlRequest definida na declaração
-  // urlChange
-  //   ? (() => {
-  //       //Se houver urlChange a consulta será por essa url
-  //       urlRequest = cors + urlChange;
-  //     })()
-  //   : (() => {
-  //       // Se não houver urlChange, varifica se há algo no page
-  //       page
-  //         ? (() => {
-  //             urlRequest = `${cors}https://swapi.co/api/${object}?page=${page}`;
-  //           })() // Se houver page alterar a url para consultar por página
-  //         : (() => {})();
-  //     })(); // Mantém o urlRequest definida na declaração
-
   try {
-    console.log(urlRequest);
-
     let res = await axios.get(urlRequest);
 
     let obj = object === "peoples" ? "people" : object;
@@ -64,8 +46,6 @@ export const detailsRequest = async (object, id) => {
   let urlRequest = `${cors}https://swapi.co/api/${object}/${id}`;
 
   try {
-    console.log(urlRequest);
-
     let res = await axios.get(urlRequest);
 
     let i = Math.random(30);

@@ -23,11 +23,43 @@ export const fetchVehicles = () => dispatch => {
       dispatch(
         fetchVehiclesSucceeded({
           results: response.results,
-          total: response.count
+          page: response.page,
+          pageCount: response.pageCount
         })
       );
     })
     .catch(error => {
       dispatch(fetchVehiclesFailed(error));
+    });
+};
+
+const updateVehiclesIsFetching = () => ({
+  type: vehiclesAction.UPDATE_VEHICLES_IS_FETCHING
+});
+
+const updateVehiclesSucceeded = vehicles => ({
+  type: vehiclesAction.UPDATE_VEHICLES_SUCCEEDED,
+  vehicles
+});
+
+const updateVehiclesFailed = error => ({
+  type: vehiclesAction.UPDATE_VEHICLES_FAILED,
+  error
+});
+
+export const updateVehicles = page => dispatch => {
+  dispatch(updateVehiclesIsFetching());
+  swapiRequest(null, page, "vehicles")
+    .then(response => {
+      dispatch(
+        updateVehiclesSucceeded({
+          results: response.results,
+          page: response.page,
+          pageCount: response.pageCount
+        })
+      );
+    })
+    .catch(error => {
+      dispatch(updateVehiclesFailed(error));
     });
 };

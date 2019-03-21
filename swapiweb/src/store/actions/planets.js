@@ -23,11 +23,43 @@ export const fetchPlanets = () => dispatch => {
       dispatch(
         fetchPlanetsSucceeded({
           results: response.results,
-          total: response.count
+          page: response.page,
+          pageCount: response.pageCount
         })
       );
     })
     .catch(error => {
       dispatch(fetchPlanetsFailed(error));
+    });
+};
+
+const updatePlanetsIsFetching = () => ({
+  type: planetsAction.UPDATE_PLANETS_IS_FETCHING
+});
+
+const updatePlanetsSucceeded = planets => ({
+  type: planetsAction.UPDATE_PLANETS_SUCCEEDED,
+  planets
+});
+
+const updatePlanetsFailed = error => ({
+  type: planetsAction.UPDATE_PLANETS_FAILED,
+  error
+});
+
+export const updatePlanets = page => dispatch => {
+  dispatch(updatePlanetsIsFetching());
+  swapiRequest(null, page, "planets")
+    .then(response => {
+      dispatch(
+        updatePlanetsSucceeded({
+          results: response.results,
+          page: response.page,
+          pageCount: response.pageCount
+        })
+      );
+    })
+    .catch(error => {
+      dispatch(updatePlanetsFailed(error));
     });
 };

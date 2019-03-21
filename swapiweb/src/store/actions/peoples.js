@@ -20,8 +20,6 @@ export const fetchPeople = () => dispatch => {
 
   swapiRequest(null, null)
     .then(response => {
-      console.log(response);
-
       dispatch(
         fetchPeopleSucceeded({
           results: response.results,
@@ -35,8 +33,12 @@ export const fetchPeople = () => dispatch => {
     });
 };
 
+const updatePeopleIsFetching = () => ({
+  type: peoplesAction.UPDATE_PEOPLE_IS_FETCHING
+});
+
 const updatePeopleSucceeded = people => ({
-  type: peoplesAction.UPDATE_PEOPLE_SUCCEED,
+  type: peoplesAction.UPDATE_PEOPLE_SUCCEEDED,
   people
 });
 
@@ -46,7 +48,8 @@ const updatePeopleFailed = error => ({
 });
 
 export const updatePeople = page => dispatch => {
-  swapiRequest(null, page, null)
+  dispatch(updatePeopleIsFetching());
+  swapiRequest(null, page, "people")
     .then(response => {
       dispatch(
         updatePeopleSucceeded({

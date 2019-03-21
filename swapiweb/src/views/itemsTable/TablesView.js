@@ -4,9 +4,10 @@ import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { fetchPeople, updatePeople } from "../../store/actions/peoples";
-import { fetchPlanets } from "../../store/actions/planets";
-import { fetchStarships } from "../../store/actions/starships";
-import { fetchVehicles } from "../../store/actions/vehicles";
+import { fetchPlanets, updatePlanets } from "../../store/actions/planets";
+import { fetchStarships, updateStarships } from "../../store/actions/starships";
+import { fetchVehicles, updateVehicles } from "../../store/actions/vehicles";
+import { selectPagePagination } from "../../store/actions/pagination";
 
 import planet from "../../images/_planet.png";
 import starship from "../../images/_starship.png";
@@ -17,14 +18,10 @@ import PaginationComponent from "../../components/itemsTable/PaginationComponent
 import TableComponent from "../../components/itemsTable/TableComponent";
 
 class TablesView extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      skip: 0,
-      take: 10,
-      page: null,
-      isLoading: false,
       columns: {
         peoples: ["Name", "Gender", "Eyes Color"],
         planets: ["Name", "Climate", "Orbital Peroid"],
@@ -47,6 +44,11 @@ class TablesView extends Component {
       default:
         return people;
     }
+  }
+
+  pageIsOne() {
+    const { selectPagePagination } = this.props;
+    selectPagePagination(1);
   }
 
   componentDidMount() {
@@ -88,6 +90,28 @@ class TablesView extends Component {
     }
   }
 
+  handlePaginate(page) {
+    const resource = this.props.match.params.object;
+    const {
+      updatePeople,
+      updatePlanets,
+      updateStarships,
+      updateVehicles
+    } = this.props;
+
+    const item = {
+      peoples: updatePeople,
+      planets: updatePlanets,
+      starships: updateStarships,
+      vehicles: updateVehicles
+    };
+
+    if (!this.props.findInState(page)) {
+      const itemUpdate = item[resource];
+      itemUpdate(page);
+    }
+  }
+
   isLoading() {
     const resource = this.props.match.params.object;
     const { state } = this.props;
@@ -101,20 +125,17 @@ class TablesView extends Component {
     const pages = state[resource].pages;
 
     if (!pages.find(item => item.page === selectedPage)) {
-      if (!this.state.isLoading) this.setState({ isLoading: true });
       updatePeople(selectedPage);
     }
-    if (this.state.isLoading) this.setState({ isLoading: false });
 
     const item = pages.find(item => item.page === selectedPage);
+
     return item.list;
   }
 
   render() {
     const { state } = this.props;
     const resource = this.props.match.params.object;
-    console.log(state);
-
     return (
       <div
         style={{
@@ -141,7 +162,7 @@ class TablesView extends Component {
         </div>
         <div className="d-block bg-light h-75 align-items-center justify-content-center">
           <div className="d-flex bg-light h-100" style={{ borderRadius: 8 }}>
-            {this.isLoading() || this.state.isLoading ? (
+            {this.isLoading() ? (
               <div className="d-flex flex-grow-1 justify-content-center align-content-center">
                 <div className="d-flex align-self-center flex-column align-items-center justify-content-center">
                   <label className="p-4 lead">Data table in progress ...</label>
@@ -151,16 +172,19 @@ class TablesView extends Component {
             ) : (
               <TableComponent
                 columns={this.state.columns[resource]}
-                items={this.handleItemsTable()}
+                items={state[resource].pages[this.props.currentPage()].list}
                 itemName={resource}
               />
             )}
           </div>
           <div className="h-25 w-50 pt-3 pl-3">
-            {this.isLoading() || this.state.isLoading ? (
+            {this.isLoading() ? (
               <Fragment />
             ) : (
-              <PaginationComponent resource={resource} />
+              <PaginationComponent
+                handlePagination={e => this.handlePaginate(e)}
+                resource={resource}
+              />
             )}
           </div>
         </div>
@@ -169,13 +193,13 @@ class TablesView extends Component {
             <Link
               to={{
                 pathname: "/"
-                // state: this.getStateNavigation()
               }}
               style={{
                 textDecoration: "none",
                 textDecorationStyle: "none",
                 color: "#777"
               }}
+              onClick={() => this.pageIsOne()}
             >
               <Button variant="contained" color="inherit">
                 <div className="lead">Voltar</div>
@@ -188,16 +212,33 @@ class TablesView extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  state
+const mapStateToProps = (state, ownProps) => ({
+  state,
+  findInState: page => {
+    const resource = ownProps.match.params.object;
+    const pages = state[resource].pages;
+    return pages.find(item => item.page === page);
+  },
+  currentPage: () => {
+    const resource = ownProps.match.params.object;
+    const pages = state[resource].pages;
+    const resultado = pages.findIndex(
+      item => item.page === state.pagination.page
+    );
+    return resultado < 0 ? 0 : resultado;
+  }
 });
 
 const mapDispatchToProps = {
   fetchPeople,
   updatePeople,
   fetchPlanets,
+  updatePlanets,
   fetchStarships,
-  fetchVehicles
+  updateStarships,
+  fetchVehicles,
+  updateVehicles,
+  selectPagePagination
 };
 
 export default withRouter(
