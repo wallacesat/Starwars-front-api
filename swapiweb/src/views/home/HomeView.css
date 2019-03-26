@@ -1,12 +1,11 @@
 .paper {
-    margin-top: 0px !important;
-    transition-property: all !important;
-    transition: 500ms !important
-
+  margin-top: 0px !important;
+  transition-property: all !important;
+  transition: 500ms !important;
 }
 
 .paper:hover {
-    margin-top: -100px !important;
-    transition: 200ms !important;
-    cursor: pointer;
+  margin-top: -100px !important;
+  transition: 200ms !important;
+  cursor: pointer !important;
 }

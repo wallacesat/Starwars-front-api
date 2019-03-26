@@ -1,5 +1,6 @@
 import { peoplesAction } from "./actionsTypes";
 import { swapiRequest } from "../../services/swapi_connect";
+import { getPeople } from "../../services/api/peopleService";
 
 const fetchPeopleStarted = () => ({
   type: peoplesAction.FETCH_PEOPLE_STARTED
@@ -18,13 +19,14 @@ const fetchPeopleFailed = error => ({
 export const fetchPeople = () => dispatch => {
   dispatch(fetchPeopleStarted());
 
-  swapiRequest(null, null)
+  getPeople()
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         fetchPeopleSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })
@@ -49,13 +51,15 @@ const updatePeopleFailed = error => ({
 
 export const updatePeople = page => dispatch => {
   dispatch(updatePeopleIsFetching());
-  swapiRequest(null, page, "people")
+
+  getPeople(page)
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         updatePeopleSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })

@@ -1,5 +1,5 @@
 import { planetsAction } from "./actionsTypes";
-import { swapiRequest } from "../../services/swapi_connect";
+import { getPlanets } from "../../services/api/planetsService";
 
 const fetchPlanetsStarted = () => ({
   type: planetsAction.FETCH_PLANETS_STARTED
@@ -18,13 +18,14 @@ const fetchPlanetsFailed = error => ({
 export const fetchPlanets = () => dispatch => {
   dispatch(fetchPlanetsStarted());
 
-  swapiRequest(null, null, "planets")
+  getPlanets()
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         fetchPlanetsSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })
@@ -49,13 +50,14 @@ const updatePlanetsFailed = error => ({
 
 export const updatePlanets = page => dispatch => {
   dispatch(updatePlanetsIsFetching());
-  swapiRequest(null, page, "planets")
+  getPlanets(page)
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         updatePlanetsSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })

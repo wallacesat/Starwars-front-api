@@ -25,8 +25,9 @@ class TableComponent extends Component {
     items.map((item, i) => {
       data.push({
         name: item.name,
-        avatar: item.avatar,
+        avatar: item.urlAvatar40,
         url: item.url,
+        idItem: item.idItem,
         attributes: (() => {
           const values = {
             peoples: [item.gender, item.eye_color],
@@ -44,7 +45,8 @@ class TableComponent extends Component {
       <Link
         key={i}
         to={{
-          pathname: this.getUrl(item.url),
+          // pathname: this.getUrl(item.idItem),
+          pathname: `/${resource}/${item.idItem}`,
           state: this.props.items
         }}
         style={{ textDecoration: "none" }}

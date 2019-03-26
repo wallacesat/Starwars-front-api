@@ -1,5 +1,5 @@
 import { starshipsAction } from "./actionsTypes";
-import { swapiRequest } from "../../services/swapi_connect";
+import { getStarships } from "../../services/api/starshipsService";
 
 const fetchStarshipsStarted = () => ({
   type: starshipsAction.FETCH_STARSHIPS_STARTED
@@ -18,13 +18,14 @@ const fetchStarshipsFailed = error => ({
 export const fetchStarships = () => dispatch => {
   dispatch(fetchStarshipsStarted());
 
-  swapiRequest(null, null, "starships")
+  getStarships()
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         fetchStarshipsSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })
@@ -49,13 +50,14 @@ const updateStarshipsFailed = error => ({
 
 export const updateStarships = page => dispatch => {
   dispatch(updateStarshipsIsFetching());
-  swapiRequest(null, page, "starships")
+  getStarships(page)
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         updateStarshipsSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })

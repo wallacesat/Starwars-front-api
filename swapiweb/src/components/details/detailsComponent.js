@@ -4,6 +4,8 @@ class DetailsComponent extends Component {
   handleDescryption() {
     const { data, resource } = this.props;
 
+    console.log(data);
+
     const item = {
       peoples:
         [
@@ -34,7 +36,7 @@ class DetailsComponent extends Component {
         [
           { title: "Starship Class: ", desc: data.starship_class },
           { title: "Model: ", desc: data.model },
-          { title: "Manufacturer: ", desc: data.diameter },
+          { title: "Manufacturer: ", desc: data.manufacturer },
           {
             title: "Cargo Capacity: ",
             desc: `${data.cargo_capacity} Pounds`
@@ -71,6 +73,8 @@ class DetailsComponent extends Component {
 
   render() {
     const data = this.handleDescryption();
+
+    console.log(data);
 
     return (
       <Fragment>

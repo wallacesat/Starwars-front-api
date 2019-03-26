@@ -8,7 +8,7 @@ import DetailsComponent from "../../components/details/detailsComponent";
 class DetailsView extends Component {
   render() {
     let data = this.props.location.state.find(
-      item => item.idItem === this.props.match.params.id
+      item => item.idItem === +this.props.match.params.id
     );
     const resource = this.props.match.params.object;
 
@@ -44,7 +44,7 @@ class DetailsView extends Component {
                 <div>
                   <img
                     alt=""
-                    src={data.avatar.replace("40?", "120?")}
+                    src={data.urlAvatar120}
                     className="img-fluid border border-ligth rounded-circle"
                   />
                 </div>
@@ -89,4 +89,3 @@ const mapStateToProps = state => ({
 });
 
 export default withRouter(connect(mapStateToProps)(DetailsView));
-// export default DetailsView;

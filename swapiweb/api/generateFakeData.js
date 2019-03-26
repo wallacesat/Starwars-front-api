@@ -1,34 +1,56 @@
-import faker from "json-schema-faker";
-import { yellow, red } from "chalk";
+import jsf from "json-schema-faker";
+import { red, inverse, green } from "chalk";
 import fs from "fs";
 import path from "path";
 import chance from "chance";
 
-const schema = require("./fakeData/fakeSchemaData.json");
+const schema = require("./fakeData/fakeSchema.json");
 
-faker.format("urlAvatar40", () => {
-  return "http://placehold.it/40x40";
+jsf.extend("chance", () => chance());
+
+const idAvatar = Math.random(80);
+
+jsf.format("urlAvatar40", () => {
+  return `http://i.pravatar.cc/40?img=${idAvatar}`;
 });
 
-faker.format("urlAvatar120", () => {
-  return "http://placehold.it/120x120";
+jsf.format("urlAvatar120", () => {
+  return `http://i.pravatar.cc/120?img=${idAvatar}`;
 });
 
-faker.extend("chance", () => chance());
+jsf.format("peopleUrl", () => {
+  return "https://swapi.co/api/people/11/";
+});
 
-faker.resolve(schema).then(sample => {
+jsf.format("planetsUrl", () => {
+  return "https://swapi.co/api/planets/4/";
+});
+
+jsf.format("starshipsUrl", () => {
+  return "https://swapi.co/api/starships/5/";
+});
+
+jsf.format("vehiclesUrl", () => {
+  return "hhttps://swapi.co/api/vehicles/4/";
+});
+
+jsf.resolve(schema).then(sample => {
+  console.log(sample);
+
   fs.writeFile(
     path.resolve("./api/fakeData/db.json"),
     JSON.stringify(sample),
     {
-      encoding: "uth8"
+      encoding: "utf8"
     },
     err => {
       if (err) {
-        console.log(red("Error generating fake data!"));
+        console.log(
+          inverse("\n Backend:") + red(" Error generating fake data!")
+        );
         return;
       }
-      console.log(yellow("Fake data generated!"));
+      console.log(inverse("\n Backend:") + green(" Fake data generated!"));
     }
   );
 });

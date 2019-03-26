@@ -1,5 +1,5 @@
 import { vehiclesAction } from "./actionsTypes";
-import { swapiRequest } from "../../services/swapi_connect";
+import { getVehicles } from "../../services/api/vehiclesService";
 
 const fetchVehiclesStarted = () => ({
   type: vehiclesAction.FETCH_VEHICLES_STARTED
@@ -18,13 +18,14 @@ const fetchVehiclesFailed = error => ({
 export const fetchVehicles = () => dispatch => {
   dispatch(fetchVehiclesStarted());
 
-  swapiRequest(null, null, "vehicles")
+  getVehicles()
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         fetchVehiclesSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })
@@ -49,13 +50,14 @@ const updateVehiclesFailed = error => ({
 
 export const updateVehicles = page => dispatch => {
   dispatch(updateVehiclesIsFetching());
-  swapiRequest(null, page, "vehicles")
+  getVehicles(page)
     .then(response => {
+      const { results, page, pageCount } = response;
       dispatch(
         updateVehiclesSucceeded({
-          results: response.results,
-          page: response.page,
-          pageCount: response.pageCount
+          results,
+          page,
+          pageCount
         })
       );
     })
