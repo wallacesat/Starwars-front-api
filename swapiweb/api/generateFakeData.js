@@ -8,30 +8,8 @@ const schema = require("./fakeData/fakeSchema.json");
 
 jsf.extend("chance", () => chance());
 
-const idAvatar = Math.random(80);
-
-jsf.format("urlAvatar40", () => {
-  return `http://i.pravatar.cc/40?img=${idAvatar}`;
-});
-
-jsf.format("urlAvatar120", () => {
-  return `http://i.pravatar.cc/120?img=${idAvatar}`;
-});
-
-jsf.format("peopleUrl", () => {
-  return "https://swapi.co/api/people/11/";
-});
-
-jsf.format("planetsUrl", () => {
-  return "https://swapi.co/api/planets/4/";
-});
-
-jsf.format("starshipsUrl", () => {
-  return "https://swapi.co/api/starships/5/";
-});
-
-jsf.format("vehiclesUrl", () => {
-  return "hhttps://swapi.co/api/vehicles/4/";
+jsf.format("avatar", () => {
+  return `http://i.pravatar.cc/40?img=${Math.random(80)}`;
 });
 
 jsf.resolve(schema).then(sample => {

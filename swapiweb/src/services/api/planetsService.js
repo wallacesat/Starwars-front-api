@@ -2,6 +2,8 @@ import { httpService } from "./httpService";
 
 export function getPlanets(page) {
   return page
-    ? httpService.get(`/planets/page=${page}`)
+    ? process.env.NODE_ENV === "development"
+      ? httpService.get(`/planets/page=${page}`)
+      : httpService.get(`/planets/?page=${page}`)
     : httpService.get("/planets");
 }

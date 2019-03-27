@@ -4,16 +4,16 @@
     "people": {
       "type": "object",
       "properties": {
-        "pageCount": {
+        "count": {
           "type": "number",
           "chance": {
             "integer": {
-              "min": 4,
-              "max": 4
+              "min": 40,
+              "max": 40
             }
           }
         },
-        "pages": {
+        "results": {
           "type": "array",
           "minItems": 4,
           "maxItems": 4,
@@ -27,21 +27,21 @@
           }
         }
       },
-      "required": ["pageCount", "pages"]
+      "required": ["count", "results"]
     },
     "planets": {
       "type": "object",
       "properties": {
-        "pageCount": {
+        "count": {
           "type": "number",
           "chance": {
             "integer": {
-              "min": 4,
-              "max": 4
+              "min": 40,
+              "max": 40
             }
           }
         },
-        "pages": {
+        "results": {
           "type": "array",
           "minItems": 4,
           "maxItems": 4,
@@ -55,21 +55,21 @@
           }
         }
       },
-      "required": ["pageCount", "pages"]
+      "required": ["count", "results"]
     },
     "starships": {
       "type": "object",
       "properties": {
-        "pageCount": {
+        "count": {
           "type": "number",
           "chance": {
             "integer": {
-              "min": 5,
-              "max": 5
+              "min": 50,
+              "max": 50
             }
           }
         },
-        "pages": {
+        "results": {
           "type": "array",
           "minItems": 5,
           "maxItems": 5,
@@ -83,21 +83,21 @@
           }
         }
       },
-      "required": ["pageCount", "pages"]
+      "required": ["count", "results"]
     },
     "vehicles": {
       "type": "object",
       "properties": {
-        "pageCount": {
+        "count": {
           "type": "number",
           "chance": {
             "integer": {
-              "min": 3,
-              "max": 3
+              "min": 30,
+              "max": 30
             }
           }
         },
-        "pages": {
+        "results": {
           "type": "array",
           "minItems": 3,
           "maxItems": 3,
@@ -111,7 +111,7 @@
           }
         }
       },
-      "required": ["pageCount", "pages"]
+      "required": ["count", "results"]
     }
   },
   "definitions": {
@@ -122,13 +122,9 @@
           "type": "string",
           "chance": "name"
         },
-        "urlAvatar40": {
+        "avatar": {
           "type": "string",
-          "format": "urlAvatar40"
-        },
-        "urlAvatar120": {
-          "type": "string",
-          "format": "urlAvatar120"
+          "format": "avatar"
         },
         "height": {
           "type": "number",
@@ -178,24 +174,18 @@
         "gender": {
           "type": "string",
           "chance": "gender"
-        },
-        "url": {
-          "type": "string",
-          "format": "peopleUrl"
         }
       },
       "required": [
         "name",
-        "urlAvatar40",
-        "urlAvatar120",
+        "avatar",
         "height",
         "mass",
         "hair_color",
         "skin_color",
         "eye_color",
         "birth_year",
-        "gender",
-        "url"
+        "gender"
       ]
     },
     "Planets": {
@@ -205,13 +195,9 @@
           "type": "string",
           "chance": "name"
         },
-        "urlAvatar40": {
+        "avatar": {
           "type": "string",
-          "format": "urlAvatar40"
-        },
-        "urlAvatar120": {
-          "type": "string",
-          "format": "urlAvatar120"
+          "format": "avatar"
         },
         "rotation_period": {
           "type": "number",
@@ -281,16 +267,11 @@
               "max": 100000000000
             }
           }
-        },
-        "url": {
-          "type": "string",
-          "format": "planetsUrl"
         }
       },
       "required": [
         "name",
-        "urlAvatar40",
-        "urlAvatar120",
+        "avatar",
         "rotation_period",
         "orbital_period",
         "diameter",
@@ -298,8 +279,7 @@
         "gravity",
         "terrain",
         "surface_water",
-        "population",
-        "url"
+        "population"
       ]
     },
     "Starships": {
@@ -309,13 +289,9 @@
           "type": "string",
           "chance": "name"
         },
-        "urlAvatar40": {
+        "avatar": {
           "type": "string",
-          "format": "urlAvatar40"
-        },
-        "urlAvatar120": {
-          "type": "string",
-          "format": "urlAvatar120"
+          "format": "avatar"
         },
         "model": {
           "type": "string",
@@ -373,15 +349,11 @@
         "starship_class": {
           "type": "string",
           "chance": "word"
-        },
-        "url": {
-          "format": "starshipsUrl"
         }
       },
       "required": [
         "name",
-        "urlAvatar40",
-        "urlAvatar120",
+        "avatar",
         "model",
         "manufacturer",
         "length",
@@ -389,8 +361,7 @@
         "passengers",
         "cargo_capacity",
         "consumables",
-        "starship_class",
-        "url"
+        "starship_class"
       ]
     },
     "Vehicles": {
@@ -400,13 +371,9 @@
           "type": "string",
           "chance": "name"
         },
-        "urlAvatar40": {
+        "avatar": {
           "type": "string",
-          "format": "urlAvatar40"
-        },
-        "urlAvatar120": {
-          "type": "string",
-          "format": "urlAvatar120"
+          "format": "avatar"
         },
         "model": {
           "type": "string",
@@ -464,16 +431,11 @@
         "vehicle_class": {
           "type": "string",
           "chance": "word"
-        },
-        "url": {
-          "type": "string",
-          "format": "vehiclesUrl"
         }
       },
       "required": [
         "name",
-        "urlAvatar40",
-        "urlAvatar120",
+        "avatar",
         "model",
         "manufacturer",
         "length",
@@ -481,8 +443,7 @@
         "passengers",
         "cargo_capacity",
         "consumables",
-        "vehicle_class",
-        "url"
+        "vehicle_class"
       ]
     }
   },

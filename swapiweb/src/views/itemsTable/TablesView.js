@@ -118,20 +118,20 @@ class TablesView extends Component {
     return !state[resource] || state[resource].isFetching ? true : false;
   }
 
-  handleItemsTable() {
-    const resource = this.props.match.params.object;
-    const { state, updatePeople } = this.props;
-    const selectedPage = state.pagination.page;
-    const pages = state[resource].pages;
+  // handleItemsTable() {
+  //   const resource = this.props.match.params.object;
+  //   const { state, updatePeople } = this.props;
+  //   const selectedPage = state.pagination.page;
+  //   const pages = state[resource].pages;
 
-    if (!pages.find(item => item.page === selectedPage)) {
-      updatePeople(selectedPage);
-    }
+  //   if (!pages.find(item => item.page === selectedPage)) {
+  //     updatePeople(selectedPage);
+  //   }
 
-    const item = pages.find(item => item.page === selectedPage);
+  //   const item = pages.find(item => item.page === selectedPage);
 
-    return item.list;
-  }
+  //   return item.list;
+  // }
 
   render() {
     const { state } = this.props;
@@ -173,7 +173,7 @@ class TablesView extends Component {
               <TableComponent
                 columns={this.state.columns[resource]}
                 items={state[resource].pages[this.props.currentPage()].list}
-                itemName={resource}
+                resource={resource}
               />
             )}
           </div>

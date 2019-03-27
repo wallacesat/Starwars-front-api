@@ -4,8 +4,6 @@ class DetailsComponent extends Component {
   handleDescryption() {
     const { data, resource } = this.props;
 
-    console.log(data);
-
     const item = {
       peoples:
         [
@@ -73,8 +71,6 @@ class DetailsComponent extends Component {
 
   render() {
     const data = this.handleDescryption();
-
-    console.log(data);
 
     return (
       <Fragment>

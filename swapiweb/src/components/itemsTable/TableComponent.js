@@ -9,24 +9,17 @@ import {
 import { Link } from "react-router-dom";
 
 class TableComponent extends Component {
-  getUrl(url) {
-    const resource = this.props.itemName || this.props.match.params.object;
-    const id = url.replace("https://swapi.co/api", "");
-
-    return resource === "peoples" ? `${id.replace("people", "peoples")}` : id;
-  }
-
   handleTable() {
-    const { items } = this.props || this.props.state;
+    // const { items } = this.props || this.props.state;
+    // const resource = this.props.itemName || this.props.match.params.object;
 
-    const resource = this.props.itemName || this.props.match.params.object;
+    const { items, resource } = this.props;
 
     let data = [];
     items.map((item, i) => {
       data.push({
         name: item.name,
-        avatar: item.urlAvatar40,
-        url: item.url,
+        avatar: item.avatar,
         idItem: item.idItem,
         attributes: (() => {
           const values = {
@@ -45,7 +38,6 @@ class TableComponent extends Component {
       <Link
         key={i}
         to={{
-          // pathname: this.getUrl(item.idItem),
           pathname: `/${resource}/${item.idItem}`,
           state: this.props.items
         }}

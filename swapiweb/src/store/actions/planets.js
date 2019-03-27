@@ -1,5 +1,6 @@
 import { planetsAction } from "./actionsTypes";
 import { getPlanets } from "../../services/api/planetsService";
+import { handleResulstWithId } from "../../utils/handleResultsWithId";
 
 const fetchPlanetsStarted = () => ({
   type: planetsAction.FETCH_PLANETS_STARTED
@@ -20,12 +21,12 @@ export const fetchPlanets = () => dispatch => {
 
   getPlanets()
     .then(response => {
-      const { results, page, pageCount } = response;
+      const { results, count } = response;
       dispatch(
         fetchPlanetsSucceeded({
-          results,
-          page,
-          pageCount
+          page: 1,
+          results: handleResulstWithId(results, 1),
+          pageCount: Math.ceil(count / 10)
         })
       );
     })
@@ -52,12 +53,12 @@ export const updatePlanets = page => dispatch => {
   dispatch(updatePlanetsIsFetching());
   getPlanets(page)
     .then(response => {
-      const { results, page, pageCount } = response;
+      const { results, count } = response;
       dispatch(
         updatePlanetsSucceeded({
-          results,
           page,
-          pageCount
+          results: handleResulstWithId(results, page),
+          pageCount: Math.ceil(count / 10)
         })
       );
     })

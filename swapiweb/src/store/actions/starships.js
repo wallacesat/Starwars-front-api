@@ -1,5 +1,6 @@
 import { starshipsAction } from "./actionsTypes";
 import { getStarships } from "../../services/api/starshipsService";
+import { handleResulstWithId } from "../../utils/handleResultsWithId";
 
 const fetchStarshipsStarted = () => ({
   type: starshipsAction.FETCH_STARSHIPS_STARTED
@@ -20,12 +21,12 @@ export const fetchStarships = () => dispatch => {
 
   getStarships()
     .then(response => {
-      const { results, page, pageCount } = response;
+      const { results, count } = response;
       dispatch(
         fetchStarshipsSucceeded({
-          results,
-          page,
-          pageCount
+          page: 1,
+          results: handleResulstWithId(results, 1),
+          pageCount: Math.ceil(count / 10)
         })
       );
     })
@@ -52,12 +53,12 @@ export const updateStarships = page => dispatch => {
   dispatch(updateStarshipsIsFetching());
   getStarships(page)
     .then(response => {
-      const { results, page, pageCount } = response;
+      const { results, count } = response;
       dispatch(
         updateStarshipsSucceeded({
-          results,
           page,
-          pageCount
+          results: handleResulstWithId(results, page),
+          pageCount: Math.ceil(count / 10)
         })
       );
     })

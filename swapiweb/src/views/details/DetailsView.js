@@ -44,7 +44,7 @@ class DetailsView extends Component {
                 <div>
                   <img
                     alt=""
-                    src={data.urlAvatar120}
+                    src={data.avatar.replace("/40?", "/160?")}
                     className="img-fluid border border-ligth rounded-circle"
                   />
                 </div>

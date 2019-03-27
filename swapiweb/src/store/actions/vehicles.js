@@ -1,5 +1,6 @@
 import { vehiclesAction } from "./actionsTypes";
 import { getVehicles } from "../../services/api/vehiclesService";
+import { handleResulstWithId } from "../../utils/handleResultsWithId";
 
 const fetchVehiclesStarted = () => ({
   type: vehiclesAction.FETCH_VEHICLES_STARTED
@@ -20,12 +21,12 @@ export const fetchVehicles = () => dispatch => {
 
   getVehicles()
     .then(response => {
-      const { results, page, pageCount } = response;
+      const { results, count } = response;
       dispatch(
         fetchVehiclesSucceeded({
-          results,
-          page,
-          pageCount
+          page: 1,
+          results: handleResulstWithId(results, 1),
+          pageCount: Math.ceil(count / 10)
         })
       );
     })
@@ -52,12 +53,12 @@ export const updateVehicles = page => dispatch => {
   dispatch(updateVehiclesIsFetching());
   getVehicles(page)
     .then(response => {
-      const { results, page, pageCount } = response;
+      const { results, count } = response;
       dispatch(
         updateVehiclesSucceeded({
-          results,
           page,
-          pageCount
+          results: handleResulstWithId(results, page),
+          pageCount: Math.ceil(count / 10)
         })
       );
     })
