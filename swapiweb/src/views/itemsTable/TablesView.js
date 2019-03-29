@@ -118,21 +118,6 @@ class TablesView extends Component {
     return !state[resource] || state[resource].isFetching ? true : false;
   }
 
-  // handleItemsTable() {
-  //   const resource = this.props.match.params.object;
-  //   const { state, updatePeople } = this.props;
-  //   const selectedPage = state.pagination.page;
-  //   const pages = state[resource].pages;
-
-  //   if (!pages.find(item => item.page === selectedPage)) {
-  //     updatePeople(selectedPage);
-  //   }
-
-  //   const item = pages.find(item => item.page === selectedPage);
-
-  //   return item.list;
-  // }
-
   render() {
     const { state } = this.props;
     const resource = this.props.match.params.object;

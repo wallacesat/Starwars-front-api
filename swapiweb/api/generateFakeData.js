@@ -13,8 +13,6 @@ jsf.format("avatar", () => {
 });
 
 jsf.resolve(schema).then(sample => {
-  console.log(sample);
-
   fs.writeFile(
     path.resolve("./api/fakeData/db.json"),
     JSON.stringify(sample),
