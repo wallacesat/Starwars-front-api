@@ -5,7 +5,8 @@ import { createLogger } from "redux-logger";
 // importando o 'container' de reducers como rootReducer
 import rootReducer from "./reducers";
 
-const middleware = [thunk, createLogger()];
+const middleware =
+  process.env.NODE_ENV === "development" ? [thunk, createLogger()] : [thunk];
 
 /*
     CRIANDO O ESTADO GLOBAL DA APLICAÇÃO   

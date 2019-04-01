@@ -44,6 +44,8 @@
     "body-parser": "^1.18.3",
     "chalk": "^2.4.2",
     "chance": "^1.0.18",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "express": "^4.16.4",
     "json-schema-faker": "^0.5.0-rc16",
     "nodemon": "^1.18.10",
