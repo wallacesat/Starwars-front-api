@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Pagination Action Should create an action to change the page showed 1`] = `
+Array [
+  Object {
+    "pagination": Object {
+      "page": 3,
+    },
+    "type": "PAGE_SELECTED",
+  },
+]
+`;
+
+exports[`Testing People Action Shold create an action to fetching people data 1`] = `
+Array [
+  Object {
+    "type": "FETCH_PEOPLE_STARTED",
+  },
+  Object {
+    "people": Object {
+      "page": 1,
+      "pageCount": 1,
+      "results": Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+          "birth_year": "18BBY",
+          "eye_color": "iljolu",
+          "gender": "Female",
+          "hair_color": "kiovuj",
+          "height": 195,
+          "idItem": 1,
+          "mass": 36,
+          "name": "Herman Patton",
+          "skin_color": "zewojf",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+          "birth_year": "28BBY",
+          "eye_color": "idenio",
+          "gender": "Male",
+          "hair_color": "rivren",
+          "height": 131,
+          "idItem": 2,
+          "mass": 135,
+          "name": "Justin Davidson",
+          "skin_color": "udjisl",
+        },
+      ],
+    },
+    "type": "FETCH_PEOPLE_SUCCEEDED",
+  },
+]
+`;
