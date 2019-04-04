@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Pagination Reducer Should handle PAGE_SELECTED 1`] = `
+Object {
+  "page": 3,
+}
+`;
+
+exports[`Testing Pagination Reducer Should return the initial state = page: 1 1`] = `
+Object {
+  "page": 1,
+}
+`;

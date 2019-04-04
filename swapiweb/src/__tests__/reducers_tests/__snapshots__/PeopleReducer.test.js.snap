@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing People Reducer Should handle FETCH_PEOPLE_FAILED 1`] = `
+Object {
+  "error": "Error to Fetching people",
+  "isFetching": false,
+}
+`;
+
+exports[`Testing People Reducer Should handle FETCH_PEOPLE_STARTED 1`] = `
+Object {
+  "isFetching": true,
+}
+`;
+
+exports[`Testing People Reducer Should handle FETCH_PEOPLE_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 4,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing People Reducer Should handle UPDATE_PEOPLE_FAILED 1`] = `
+Object {
+  "error": "Error to Fetching Update people",
+  "isFetching": false,
+  "pageCount": 4,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing People Reducer Should handle UPDATE_PEOPLE_IS_FETCHING 1`] = `
+Object {
+  "isFetching": true,
+  "pageCount": 4,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing People Reducer Should handle UPDATE_PEOPLE_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 4,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+    Object {
+      "list": Array [
+        Object {},
+        Object {},
+      ],
+      "page": 2,
+    },
+  ],
+}
+`;
+
+exports[`Testing People Reducer Should return initial state = null 1`] = `null`;

@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing vehicles Reducer Should handle FETCH_VEHICLES_FAILED 1`] = `
+Object {
+  "error": "Error to fetching vehicles",
+  "isFetching": false,
+}
+`;
+
+exports[`Testing vehicles Reducer Should handle FETCH_VEHICLES_STARTED 1`] = `
+Object {
+  "isFetching": true,
+}
+`;
+
+exports[`Testing vehicles Reducer Should handle FETCH_VEHICLES_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing vehicles Reducer Should handle UPDATE_VEHICLES_FAILED 1`] = `
+Object {
+  "error": "Error to fetching Update vehicles",
+  "isFetching": false,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing vehicles Reducer Should handle UPDATE_VEHICLES_IS_FETCHING 1`] = `
+Object {
+  "isFetching": true,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing vehicles Reducer Should handle UPDATE_VEHICLES_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+    Object {
+      "list": Array [
+        Object {},
+        Object {},
+      ],
+      "page": 2,
+    },
+  ],
+}
+`;
+
+exports[`Testing vehicles Reducer Should return initial state = null 1`] = `null`;

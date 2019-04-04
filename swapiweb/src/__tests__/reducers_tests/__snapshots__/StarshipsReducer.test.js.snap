@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Starships Reducer Should handle FETCH_STARSHIPS_FAILED 1`] = `
+Object {
+  "error": "Error to fetching starships",
+  "isFetching": false,
+}
+`;
+
+exports[`Testing Starships Reducer Should handle FETCH_STARSHIPS_STARTED 1`] = `
+Object {
+  "isFetching": true,
+}
+`;
+
+exports[`Testing Starships Reducer Should handle FETCH_STARSHIPS_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing Starships Reducer Should handle UPDATE_STARSHIPS_FAILED 1`] = `
+Object {
+  "error": "Error to fetching Update starships",
+  "isFetching": false,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing Starships Reducer Should handle UPDATE_STARSHIPS_IS_FETCHING 1`] = `
+Object {
+  "isFetching": true,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing Starships Reducer Should handle UPDATE_STARSHIPS_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 5,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+    Object {
+      "list": Array [
+        Object {},
+        Object {},
+      ],
+      "page": 2,
+    },
+  ],
+}
+`;
+
+exports[`Testing Starships Reducer Should return initial state = null 1`] = `null`;

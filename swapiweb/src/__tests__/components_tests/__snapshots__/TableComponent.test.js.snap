@@ -1,0 +1,1690 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TableComponent Should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TableComponent
+    columns={
+      Array [
+        "Name",
+        "Gender",
+        "Eyes Color",
+      ]
+    }
+    items={
+      Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+          "birth_year": "18BBY",
+          "eye_color": "iljolu",
+          "gender": "Female",
+          "hair_color": "kiovuj",
+          "height": 195,
+          "idItem": 1,
+          "mass": 36,
+          "name": "Herman Patton",
+          "skin_color": "zewojf",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+          "birth_year": "28BBY",
+          "eye_color": "idenio",
+          "gender": "Male",
+          "hair_color": "rivren",
+          "height": 131,
+          "idItem": 2,
+          "mass": 135,
+          "name": "Justin Davidson",
+          "skin_color": "udjisl",
+        },
+      ]
+    }
+    resource="peoples"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <WithStyles(TableHead)
+          className="d-flex witdh={1}"
+        >
+          <WithStyles(TableRow)
+            className="d-flex align-items-end w-100"
+          >
+            <WithStyles(TableCell)
+              className="col-2"
+            >
+              Avatar
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              className="col-4"
+            >
+              Name
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              className="col-4"
+            >
+              Gender
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              className="col-2"
+            >
+              Eyes Color
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>
+        </WithStyles(TableHead)>,
+        <WithStyles(TableBody)>
+          <Link
+            className="d-flex width={1}"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to={
+              Object {
+                "pathname": "/peoples/1",
+                "state": Array [
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                    "birth_year": "18BBY",
+                    "eye_color": "iljolu",
+                    "gender": "Female",
+                    "hair_color": "kiovuj",
+                    "height": 195,
+                    "idItem": 1,
+                    "mass": 36,
+                    "name": "Herman Patton",
+                    "skin_color": "zewojf",
+                  },
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                    "birth_year": "28BBY",
+                    "eye_color": "idenio",
+                    "gender": "Male",
+                    "hair_color": "rivren",
+                    "height": 131,
+                    "idItem": 2,
+                    "mass": 135,
+                    "name": "Justin Davidson",
+                    "skin_color": "udjisl",
+                  },
+                ],
+              }
+            }
+          >
+            <WithStyles(TableRow)
+              className="d-flex w-100 align-items-end"
+              hover={true}
+            >
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                <img
+                  alt=""
+                  className="img-fluid border border-ligth rounded-circle"
+                  src="http://i.pravatar.cc/40?img=0.751236428999503"
+                />
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Herman Patton
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Female
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                iljolu
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+          </Link>
+          <Link
+            className="d-flex width={1}"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to={
+              Object {
+                "pathname": "/peoples/2",
+                "state": Array [
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                    "birth_year": "18BBY",
+                    "eye_color": "iljolu",
+                    "gender": "Female",
+                    "hair_color": "kiovuj",
+                    "height": 195,
+                    "idItem": 1,
+                    "mass": 36,
+                    "name": "Herman Patton",
+                    "skin_color": "zewojf",
+                  },
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                    "birth_year": "28BBY",
+                    "eye_color": "idenio",
+                    "gender": "Male",
+                    "hair_color": "rivren",
+                    "height": 131,
+                    "idItem": 2,
+                    "mass": 135,
+                    "name": "Justin Davidson",
+                    "skin_color": "udjisl",
+                  },
+                ],
+              }
+            }
+          >
+            <WithStyles(TableRow)
+              className="d-flex w-100 align-items-end"
+              hover={true}
+            >
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                <img
+                  alt=""
+                  className="img-fluid border border-ligth rounded-circle"
+                  src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                />
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Justin Davidson
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Male
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                idenio
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+          </Link>
+        </WithStyles(TableBody)>,
+      ],
+      "className": "table-responsive",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(TableRow)
+            className="d-flex align-items-end w-100"
+          >
+            <WithStyles(TableCell)
+              className="col-2"
+            >
+              Avatar
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              className="col-4"
+            >
+              Name
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              className="col-4"
+            >
+              Gender
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              className="col-2"
+            >
+              Eyes Color
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>,
+          "className": "d-flex witdh={1}",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                Avatar
+              </WithStyles(TableCell)>,
+              Array [
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Name
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Gender
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  Eyes Color
+                </WithStyles(TableCell)>,
+              ],
+            ],
+            "className": "d-flex align-items-end w-100",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Avatar",
+                "className": "col-2",
+              },
+              "ref": null,
+              "rendered": "Avatar",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": "Name",
+                "className": "col-4",
+              },
+              "ref": null,
+              "rendered": "Name",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": "Gender",
+                "className": "col-4",
+              },
+              "ref": null,
+              "rendered": "Gender",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "children": "Eyes Color",
+                "className": "col-2",
+              },
+              "ref": null,
+              "rendered": "Eyes Color",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="d-flex width={1}"
+              replace={false}
+              style={
+                Object {
+                  "textDecoration": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/peoples/1",
+                  "state": Array [
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      "birth_year": "18BBY",
+                      "eye_color": "iljolu",
+                      "gender": "Female",
+                      "hair_color": "kiovuj",
+                      "height": 195,
+                      "idItem": 1,
+                      "mass": 36,
+                      "name": "Herman Patton",
+                      "skin_color": "zewojf",
+                    },
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      "birth_year": "28BBY",
+                      "eye_color": "idenio",
+                      "gender": "Male",
+                      "hair_color": "rivren",
+                      "height": 131,
+                      "idItem": 2,
+                      "mass": 135,
+                      "name": "Justin Davidson",
+                      "skin_color": "udjisl",
+                    },
+                  ],
+                }
+              }
+            >
+              <WithStyles(TableRow)
+                className="d-flex w-100 align-items-end"
+                hover={true}
+              >
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="http://i.pravatar.cc/40?img=0.751236428999503"
+                  />
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Herman Patton
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Female
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  iljolu
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>
+            </Link>,
+            <Link
+              className="d-flex width={1}"
+              replace={false}
+              style={
+                Object {
+                  "textDecoration": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/peoples/2",
+                  "state": Array [
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      "birth_year": "18BBY",
+                      "eye_color": "iljolu",
+                      "gender": "Female",
+                      "hair_color": "kiovuj",
+                      "height": 195,
+                      "idItem": 1,
+                      "mass": 36,
+                      "name": "Herman Patton",
+                      "skin_color": "zewojf",
+                    },
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      "birth_year": "28BBY",
+                      "eye_color": "idenio",
+                      "gender": "Male",
+                      "hair_color": "rivren",
+                      "height": 131,
+                      "idItem": 2,
+                      "mass": 135,
+                      "name": "Justin Davidson",
+                      "skin_color": "udjisl",
+                    },
+                  ],
+                }
+              }
+            >
+              <WithStyles(TableRow)
+                className="d-flex w-100 align-items-end"
+                hover={true}
+              >
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                  />
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Justin Davidson
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Male
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  idenio
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>
+            </Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(TableRow)
+                className="d-flex w-100 align-items-end"
+                hover={true}
+              >
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="http://i.pravatar.cc/40?img=0.751236428999503"
+                  />
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Herman Patton
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Female
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  iljolu
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>,
+              "className": "d-flex width={1}",
+              "replace": false,
+              "style": Object {
+                "textDecoration": "none",
+              },
+              "to": Object {
+                "pathname": "/peoples/1",
+                "state": Array [
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                    "birth_year": "18BBY",
+                    "eye_color": "iljolu",
+                    "gender": "Female",
+                    "hair_color": "kiovuj",
+                    "height": 195,
+                    "idItem": 1,
+                    "mass": 36,
+                    "name": "Herman Patton",
+                    "skin_color": "zewojf",
+                  },
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                    "birth_year": "28BBY",
+                    "eye_color": "idenio",
+                    "gender": "Male",
+                    "hair_color": "rivren",
+                    "height": 131,
+                    "idItem": 2,
+                    "mass": 135,
+                    "name": "Justin Davidson",
+                    "skin_color": "udjisl",
+                  },
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.751236428999503"
+                    />
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Herman Patton
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Female
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    iljolu
+                  </WithStyles(TableCell)>,
+                ],
+                "className": "d-flex w-100 align-items-end",
+                "hover": true,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.751236428999503"
+                    />,
+                    "className": "col-2",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "img-fluid border border-ligth rounded-circle",
+                      "src": "http://i.pravatar.cc/40?img=0.751236428999503",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Herman Patton",
+                    "className": "col-4",
+                  },
+                  "ref": null,
+                  "rendered": "Herman Patton",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Female",
+                    "className": "col-4",
+                  },
+                  "ref": null,
+                  "rendered": "Female",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "iljolu",
+                    "className": "col-2",
+                  },
+                  "ref": null,
+                  "rendered": "iljolu",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(TableRow)
+                className="d-flex w-100 align-items-end"
+                hover={true}
+              >
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                  />
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Justin Davidson
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Male
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  idenio
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>,
+              "className": "d-flex width={1}",
+              "replace": false,
+              "style": Object {
+                "textDecoration": "none",
+              },
+              "to": Object {
+                "pathname": "/peoples/2",
+                "state": Array [
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                    "birth_year": "18BBY",
+                    "eye_color": "iljolu",
+                    "gender": "Female",
+                    "hair_color": "kiovuj",
+                    "height": 195,
+                    "idItem": 1,
+                    "mass": 36,
+                    "name": "Herman Patton",
+                    "skin_color": "zewojf",
+                  },
+                  Object {
+                    "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                    "birth_year": "28BBY",
+                    "eye_color": "idenio",
+                    "gender": "Male",
+                    "hair_color": "rivren",
+                    "height": 131,
+                    "idItem": 2,
+                    "mass": 135,
+                    "name": "Justin Davidson",
+                    "skin_color": "udjisl",
+                  },
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                    />
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Justin Davidson
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Male
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    idenio
+                  </WithStyles(TableCell)>,
+                ],
+                "className": "d-flex w-100 align-items-end",
+                "hover": true,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                    />,
+                    "className": "col-2",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "img-fluid border border-ligth rounded-circle",
+                      "src": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Justin Davidson",
+                    "className": "col-4",
+                  },
+                  "ref": null,
+                  "rendered": "Justin Davidson",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Male",
+                    "className": "col-4",
+                  },
+                  "ref": null,
+                  "rendered": "Male",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "idenio",
+                    "className": "col-2",
+                  },
+                  "ref": null,
+                  "rendered": "idenio",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <WithStyles(TableHead)
+            className="d-flex witdh={1}"
+          >
+            <WithStyles(TableRow)
+              className="d-flex align-items-end w-100"
+            >
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                Avatar
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Name
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Gender
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                Eyes Color
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+          </WithStyles(TableHead)>,
+          <WithStyles(TableBody)>
+            <Link
+              className="d-flex width={1}"
+              replace={false}
+              style={
+                Object {
+                  "textDecoration": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/peoples/1",
+                  "state": Array [
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      "birth_year": "18BBY",
+                      "eye_color": "iljolu",
+                      "gender": "Female",
+                      "hair_color": "kiovuj",
+                      "height": 195,
+                      "idItem": 1,
+                      "mass": 36,
+                      "name": "Herman Patton",
+                      "skin_color": "zewojf",
+                    },
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      "birth_year": "28BBY",
+                      "eye_color": "idenio",
+                      "gender": "Male",
+                      "hair_color": "rivren",
+                      "height": 131,
+                      "idItem": 2,
+                      "mass": 135,
+                      "name": "Justin Davidson",
+                      "skin_color": "udjisl",
+                    },
+                  ],
+                }
+              }
+            >
+              <WithStyles(TableRow)
+                className="d-flex w-100 align-items-end"
+                hover={true}
+              >
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="http://i.pravatar.cc/40?img=0.751236428999503"
+                  />
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Herman Patton
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Female
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  iljolu
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>
+            </Link>
+            <Link
+              className="d-flex width={1}"
+              replace={false}
+              style={
+                Object {
+                  "textDecoration": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/peoples/2",
+                  "state": Array [
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      "birth_year": "18BBY",
+                      "eye_color": "iljolu",
+                      "gender": "Female",
+                      "hair_color": "kiovuj",
+                      "height": 195,
+                      "idItem": 1,
+                      "mass": 36,
+                      "name": "Herman Patton",
+                      "skin_color": "zewojf",
+                    },
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      "birth_year": "28BBY",
+                      "eye_color": "idenio",
+                      "gender": "Male",
+                      "hair_color": "rivren",
+                      "height": 131,
+                      "idItem": 2,
+                      "mass": 135,
+                      "name": "Justin Davidson",
+                      "skin_color": "udjisl",
+                    },
+                  ],
+                }
+              }
+            >
+              <WithStyles(TableRow)
+                className="d-flex w-100 align-items-end"
+                hover={true}
+              >
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                  />
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Justin Davidson
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-4"
+                >
+                  Male
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  idenio
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>
+            </Link>
+          </WithStyles(TableBody)>,
+        ],
+        "className": "table-responsive",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(TableRow)
+              className="d-flex align-items-end w-100"
+            >
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                Avatar
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Name
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-4"
+              >
+                Gender
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                className="col-2"
+              >
+                Eyes Color
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>,
+            "className": "d-flex witdh={1}",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(TableCell)
+                  className="col-2"
+                >
+                  Avatar
+                </WithStyles(TableCell)>,
+                Array [
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Name
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Gender
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    Eyes Color
+                  </WithStyles(TableCell)>,
+                ],
+              ],
+              "className": "d-flex align-items-end w-100",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Avatar",
+                  "className": "col-2",
+                },
+                "ref": null,
+                "rendered": "Avatar",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Name",
+                  "className": "col-4",
+                },
+                "ref": null,
+                "rendered": "Name",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Gender",
+                  "className": "col-4",
+                },
+                "ref": null,
+                "rendered": "Gender",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Eyes Color",
+                  "className": "col-2",
+                },
+                "ref": null,
+                "rendered": "Eyes Color",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="d-flex width={1}"
+                replace={false}
+                style={
+                  Object {
+                    "textDecoration": "none",
+                  }
+                }
+                to={
+                  Object {
+                    "pathname": "/peoples/1",
+                    "state": Array [
+                      Object {
+                        "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                        "birth_year": "18BBY",
+                        "eye_color": "iljolu",
+                        "gender": "Female",
+                        "hair_color": "kiovuj",
+                        "height": 195,
+                        "idItem": 1,
+                        "mass": 36,
+                        "name": "Herman Patton",
+                        "skin_color": "zewojf",
+                      },
+                      Object {
+                        "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                        "birth_year": "28BBY",
+                        "eye_color": "idenio",
+                        "gender": "Male",
+                        "hair_color": "rivren",
+                        "height": 131,
+                        "idItem": 2,
+                        "mass": 135,
+                        "name": "Justin Davidson",
+                        "skin_color": "udjisl",
+                      },
+                    ],
+                  }
+                }
+              >
+                <WithStyles(TableRow)
+                  className="d-flex w-100 align-items-end"
+                  hover={true}
+                >
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.751236428999503"
+                    />
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Herman Patton
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Female
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    iljolu
+                  </WithStyles(TableCell)>
+                </WithStyles(TableRow)>
+              </Link>,
+              <Link
+                className="d-flex width={1}"
+                replace={false}
+                style={
+                  Object {
+                    "textDecoration": "none",
+                  }
+                }
+                to={
+                  Object {
+                    "pathname": "/peoples/2",
+                    "state": Array [
+                      Object {
+                        "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                        "birth_year": "18BBY",
+                        "eye_color": "iljolu",
+                        "gender": "Female",
+                        "hair_color": "kiovuj",
+                        "height": 195,
+                        "idItem": 1,
+                        "mass": 36,
+                        "name": "Herman Patton",
+                        "skin_color": "zewojf",
+                      },
+                      Object {
+                        "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                        "birth_year": "28BBY",
+                        "eye_color": "idenio",
+                        "gender": "Male",
+                        "hair_color": "rivren",
+                        "height": 131,
+                        "idItem": 2,
+                        "mass": 135,
+                        "name": "Justin Davidson",
+                        "skin_color": "udjisl",
+                      },
+                    ],
+                  }
+                }
+              >
+                <WithStyles(TableRow)
+                  className="d-flex w-100 align-items-end"
+                  hover={true}
+                >
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                    />
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Justin Davidson
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Male
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    idenio
+                  </WithStyles(TableCell)>
+                </WithStyles(TableRow)>
+              </Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(TableRow)
+                  className="d-flex w-100 align-items-end"
+                  hover={true}
+                >
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.751236428999503"
+                    />
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Herman Patton
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Female
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    iljolu
+                  </WithStyles(TableCell)>
+                </WithStyles(TableRow)>,
+                "className": "d-flex width={1}",
+                "replace": false,
+                "style": Object {
+                  "textDecoration": "none",
+                },
+                "to": Object {
+                  "pathname": "/peoples/1",
+                  "state": Array [
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      "birth_year": "18BBY",
+                      "eye_color": "iljolu",
+                      "gender": "Female",
+                      "hair_color": "kiovuj",
+                      "height": 195,
+                      "idItem": 1,
+                      "mass": 36,
+                      "name": "Herman Patton",
+                      "skin_color": "zewojf",
+                    },
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      "birth_year": "28BBY",
+                      "eye_color": "idenio",
+                      "gender": "Male",
+                      "hair_color": "rivren",
+                      "height": 131,
+                      "idItem": 2,
+                      "mass": 135,
+                      "name": "Justin Davidson",
+                      "skin_color": "udjisl",
+                    },
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(TableCell)
+                      className="col-2"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="http://i.pravatar.cc/40?img=0.751236428999503"
+                      />
+                    </WithStyles(TableCell)>,
+                    <WithStyles(TableCell)
+                      className="col-4"
+                    >
+                      Herman Patton
+                    </WithStyles(TableCell)>,
+                    <WithStyles(TableCell)
+                      className="col-4"
+                    >
+                      Female
+                    </WithStyles(TableCell)>,
+                    <WithStyles(TableCell)
+                      className="col-2"
+                    >
+                      iljolu
+                    </WithStyles(TableCell)>,
+                  ],
+                  "className": "d-flex w-100 align-items-end",
+                  "hover": true,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="http://i.pravatar.cc/40?img=0.751236428999503"
+                      />,
+                      "className": "col-2",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "",
+                        "className": "img-fluid border border-ligth rounded-circle",
+                        "src": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Herman Patton",
+                      "className": "col-4",
+                    },
+                    "ref": null,
+                    "rendered": "Herman Patton",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Female",
+                      "className": "col-4",
+                    },
+                    "ref": null,
+                    "rendered": "Female",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "iljolu",
+                      "className": "col-2",
+                    },
+                    "ref": null,
+                    "rendered": "iljolu",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(TableRow)
+                  className="d-flex w-100 align-items-end"
+                  hover={true}
+                >
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                    />
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Justin Davidson
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-4"
+                  >
+                    Male
+                  </WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    className="col-2"
+                  >
+                    idenio
+                  </WithStyles(TableCell)>
+                </WithStyles(TableRow)>,
+                "className": "d-flex width={1}",
+                "replace": false,
+                "style": Object {
+                  "textDecoration": "none",
+                },
+                "to": Object {
+                  "pathname": "/peoples/2",
+                  "state": Array [
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+                      "birth_year": "18BBY",
+                      "eye_color": "iljolu",
+                      "gender": "Female",
+                      "hair_color": "kiovuj",
+                      "height": 195,
+                      "idItem": 1,
+                      "mass": 36,
+                      "name": "Herman Patton",
+                      "skin_color": "zewojf",
+                    },
+                    Object {
+                      "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      "birth_year": "28BBY",
+                      "eye_color": "idenio",
+                      "gender": "Male",
+                      "hair_color": "rivren",
+                      "height": 131,
+                      "idItem": 2,
+                      "mass": 135,
+                      "name": "Justin Davidson",
+                      "skin_color": "udjisl",
+                    },
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(TableCell)
+                      className="col-2"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                      />
+                    </WithStyles(TableCell)>,
+                    <WithStyles(TableCell)
+                      className="col-4"
+                    >
+                      Justin Davidson
+                    </WithStyles(TableCell)>,
+                    <WithStyles(TableCell)
+                      className="col-4"
+                    >
+                      Male
+                    </WithStyles(TableCell)>,
+                    <WithStyles(TableCell)
+                      className="col-2"
+                    >
+                      idenio
+                    </WithStyles(TableCell)>,
+                  ],
+                  "className": "d-flex w-100 align-items-end",
+                  "hover": true,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="http://i.pravatar.cc/40?img=0.9587430056915283"
+                      />,
+                      "className": "col-2",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "",
+                        "className": "img-fluid border border-ligth rounded-circle",
+                        "src": "http://i.pravatar.cc/40?img=0.9587430056915283",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Justin Davidson",
+                      "className": "col-4",
+                    },
+                    "ref": null,
+                    "rendered": "Justin Davidson",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Male",
+                      "className": "col-4",
+                    },
+                    "ref": null,
+                    "rendered": "Male",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "idenio",
+                      "className": "col-2",
+                    },
+                    "ref": null,
+                    "rendered": "idenio",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

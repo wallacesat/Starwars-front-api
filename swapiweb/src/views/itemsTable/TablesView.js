@@ -17,7 +17,7 @@ import swlogo from "../../images/swlogo.png";
 import PaginationComponent from "../../components/itemsTable/PaginationComponent";
 import TableComponent from "../../components/itemsTable/TableComponent";
 
-class TablesView extends Component {
+export class TablesView extends Component {
   constructor(props) {
     super(props);
 
@@ -121,8 +121,10 @@ class TablesView extends Component {
   render() {
     const { state } = this.props;
     const resource = this.props.match.params.object;
+
     return (
       <div
+        id="container"
         style={{
           position: "fixed",
           width: "100%",
@@ -131,7 +133,10 @@ class TablesView extends Component {
           backgroundColor: "#343a40"
         }}
       >
-        <div className="d-flex p-1 m-1 justify-content-between align-items-center">
+        <div
+          id="head"
+          className="d-flex p-1 m-1 justify-content-between align-items-center"
+        >
           <Paper
             elevation={5}
             className="d-flex justify-content-center align-items-center p-2"
@@ -145,11 +150,24 @@ class TablesView extends Component {
 
           <img src={swlogo} alt="" style={{ height: 100, width: "auto" }} />
         </div>
-        <div className="d-block bg-light h-75 align-items-center justify-content-center">
-          <div className="d-flex bg-light h-100" style={{ borderRadius: 8 }}>
+        <div
+          id="body"
+          className="d-block bg-light h-75 align-items-center justify-content-center"
+        >
+          <div
+            id="table"
+            className="d-flex bg-light h-100"
+            style={{ borderRadius: 8 }}
+          >
             {this.isLoading() ? (
-              <div className="d-flex flex-grow-1 justify-content-center align-content-center">
-                <div className="d-flex align-self-center flex-column align-items-center justify-content-center">
+              <div
+                id="loaderContainer"
+                className="d-flex flex-grow-1 justify-content-center align-content-center"
+              >
+                <div
+                  id="loader"
+                  className="d-flex align-self-center flex-column align-items-center justify-content-center"
+                >
                   <label className="p-4 lead">Data table in progress ...</label>
                   <CircularProgress color="inherit" />
                 </div>
@@ -162,18 +180,18 @@ class TablesView extends Component {
               />
             )}
           </div>
-          <div className="h-25 w-50 pt-3 pl-3">
+          <div id="paginator" className="h-25 w-50 pt-3 pl-3">
             {this.isLoading() ? (
               <Fragment />
             ) : (
               <PaginationComponent
                 handlePagination={e => this.handlePaginate(e)}
-                resource={resource}
+                resource="planets"
               />
             )}
           </div>
         </div>
-        <div className="d-block">
+        <div id="footer" className="d-block">
           <div className="d-flex justify-content-center pt-3">
             <Link
               to={{

@@ -1,0 +1,1093 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing detailsComponent Should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailsComponent
+    data={
+      Object {
+        "avatar": "http://i.pravatar.cc/40?img=0.10192561403480482",
+        "cargo_capacity": 3645260,
+        "consumables": 4,
+        "length": 328,
+        "manufacturer": "ca",
+        "max_atmosphering_speed": 418,
+        "model": "suwfena",
+        "name": "Gavin George",
+        "passengers": 164,
+        "vehicle_class": "nopedhus",
+      }
+    }
+    resource="vehicles"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+      >
+        <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Vehicle Class: 
+            </strong>
+             
+            nopedhus
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Model: 
+            </strong>
+             
+            suwfena
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Manufacturer: 
+            </strong>
+             
+            ca
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Cargo Capacity: 
+            </strong>
+             
+            3645260 Pounds
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Passengers: 
+            </strong>
+             
+            164 Persons
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Length: 
+            </strong>
+             
+            328 Meters
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Consumables: 
+            </strong>
+             
+            4
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Max Atmosphering Speed: 
+            </strong>
+             
+            418
+          </label>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Vehicle Class: 
+            </strong>
+             
+            nopedhus
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Model: 
+            </strong>
+             
+            suwfena
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Manufacturer: 
+            </strong>
+             
+            ca
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Cargo Capacity: 
+            </strong>
+             
+            3645260 Pounds
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Passengers: 
+            </strong>
+             
+            164 Persons
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Length: 
+            </strong>
+             
+            328 Meters
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Consumables: 
+            </strong>
+             
+            4
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Max Atmosphering Speed: 
+            </strong>
+             
+            418
+          </label>
+        </div>,
+        "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="lead"
+            >
+              <strong>
+                Vehicle Class: 
+              </strong>
+               
+              nopedhus
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Model: 
+              </strong>
+               
+              suwfena
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Manufacturer: 
+              </strong>
+               
+              ca
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Cargo Capacity: 
+              </strong>
+               
+              3645260 Pounds
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Passengers: 
+              </strong>
+               
+              164 Persons
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Length: 
+              </strong>
+               
+              328 Meters
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Consumables: 
+              </strong>
+               
+              4
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Max Atmosphering Speed: 
+              </strong>
+               
+              418
+            </label>,
+          ],
+          "className": "d-flex flex-column",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Vehicle Class: 
+                </strong>,
+                " ",
+                "nopedhus",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Vehicle Class: ",
+                },
+                "ref": null,
+                "rendered": "Vehicle Class: ",
+                "type": "strong",
+              },
+              " ",
+              "nopedhus",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Model: 
+                </strong>,
+                " ",
+                "suwfena",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Model: ",
+                },
+                "ref": null,
+                "rendered": "Model: ",
+                "type": "strong",
+              },
+              " ",
+              "suwfena",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Manufacturer: 
+                </strong>,
+                " ",
+                "ca",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Manufacturer: ",
+                },
+                "ref": null,
+                "rendered": "Manufacturer: ",
+                "type": "strong",
+              },
+              " ",
+              "ca",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Cargo Capacity: 
+                </strong>,
+                " ",
+                "3645260 Pounds",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Cargo Capacity: ",
+                },
+                "ref": null,
+                "rendered": "Cargo Capacity: ",
+                "type": "strong",
+              },
+              " ",
+              "3645260 Pounds",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Passengers: 
+                </strong>,
+                " ",
+                "164 Persons",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Passengers: ",
+                },
+                "ref": null,
+                "rendered": "Passengers: ",
+                "type": "strong",
+              },
+              " ",
+              "164 Persons",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Length: 
+                </strong>,
+                " ",
+                "328 Meters",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Length: ",
+                },
+                "ref": null,
+                "rendered": "Length: ",
+                "type": "strong",
+              },
+              " ",
+              "328 Meters",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Consumables: 
+                </strong>,
+                " ",
+                4,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Consumables: ",
+                },
+                "ref": null,
+                "rendered": "Consumables: ",
+                "type": "strong",
+              },
+              " ",
+              4,
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Max Atmosphering Speed: 
+                </strong>,
+                " ",
+                418,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Max Atmosphering Speed: ",
+                },
+                "ref": null,
+                "rendered": "Max Atmosphering Speed: ",
+                "type": "strong",
+              },
+              " ",
+              418,
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+        >
+          <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Vehicle Class: 
+              </strong>
+               
+              nopedhus
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Model: 
+              </strong>
+               
+              suwfena
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Manufacturer: 
+              </strong>
+               
+              ca
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Cargo Capacity: 
+              </strong>
+               
+              3645260 Pounds
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Passengers: 
+              </strong>
+               
+              164 Persons
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Length: 
+              </strong>
+               
+              328 Meters
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Consumables: 
+              </strong>
+               
+              4
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Max Atmosphering Speed: 
+              </strong>
+               
+              418
+            </label>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Vehicle Class: 
+              </strong>
+               
+              nopedhus
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Model: 
+              </strong>
+               
+              suwfena
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Manufacturer: 
+              </strong>
+               
+              ca
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Cargo Capacity: 
+              </strong>
+               
+              3645260 Pounds
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Passengers: 
+              </strong>
+               
+              164 Persons
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Length: 
+              </strong>
+               
+              328 Meters
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Consumables: 
+              </strong>
+               
+              4
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Max Atmosphering Speed: 
+              </strong>
+               
+              418
+            </label>
+          </div>,
+          "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="lead"
+              >
+                <strong>
+                  Vehicle Class: 
+                </strong>
+                 
+                nopedhus
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Model: 
+                </strong>
+                 
+                suwfena
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Manufacturer: 
+                </strong>
+                 
+                ca
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Cargo Capacity: 
+                </strong>
+                 
+                3645260 Pounds
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Passengers: 
+                </strong>
+                 
+                164 Persons
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Length: 
+                </strong>
+                 
+                328 Meters
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Consumables: 
+                </strong>
+                 
+                4
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Max Atmosphering Speed: 
+                </strong>
+                 
+                418
+              </label>,
+            ],
+            "className": "d-flex flex-column",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Vehicle Class: 
+                  </strong>,
+                  " ",
+                  "nopedhus",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Vehicle Class: ",
+                  },
+                  "ref": null,
+                  "rendered": "Vehicle Class: ",
+                  "type": "strong",
+                },
+                " ",
+                "nopedhus",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Model: 
+                  </strong>,
+                  " ",
+                  "suwfena",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Model: ",
+                  },
+                  "ref": null,
+                  "rendered": "Model: ",
+                  "type": "strong",
+                },
+                " ",
+                "suwfena",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Manufacturer: 
+                  </strong>,
+                  " ",
+                  "ca",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Manufacturer: ",
+                  },
+                  "ref": null,
+                  "rendered": "Manufacturer: ",
+                  "type": "strong",
+                },
+                " ",
+                "ca",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Cargo Capacity: 
+                  </strong>,
+                  " ",
+                  "3645260 Pounds",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Cargo Capacity: ",
+                  },
+                  "ref": null,
+                  "rendered": "Cargo Capacity: ",
+                  "type": "strong",
+                },
+                " ",
+                "3645260 Pounds",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Passengers: 
+                  </strong>,
+                  " ",
+                  "164 Persons",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Passengers: ",
+                  },
+                  "ref": null,
+                  "rendered": "Passengers: ",
+                  "type": "strong",
+                },
+                " ",
+                "164 Persons",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Length: 
+                  </strong>,
+                  " ",
+                  "328 Meters",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Length: ",
+                  },
+                  "ref": null,
+                  "rendered": "Length: ",
+                  "type": "strong",
+                },
+                " ",
+                "328 Meters",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Consumables: 
+                  </strong>,
+                  " ",
+                  4,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Consumables: ",
+                  },
+                  "ref": null,
+                  "rendered": "Consumables: ",
+                  "type": "strong",
+                },
+                " ",
+                4,
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Max Atmosphering Speed: 
+                  </strong>,
+                  " ",
+                  418,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Max Atmosphering Speed: ",
+                  },
+                  "ref": null,
+                  "rendered": "Max Atmosphering Speed: ",
+                  "type": "strong",
+                },
+                " ",
+                418,
+              ],
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

@@ -1,36 +1,13 @@
-import Enzyme from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
 import thunk from "redux-thunk";
 import configureMockStore from "redux-mock-store";
 import nock from "nock";
 
-import {
-  paginationAction,
-  peoplesAction
-} from "../../store/actions/actionsTypes";
-import { selectPagePagination } from "../../store/actions/pagination";
+import { peoplesAction } from "../../store/actions/actionsTypes";
 import { fetchPeople } from "../../store/actions/peoples";
+import BASE_URL from "./baseUrl";
 
-Enzyme.configure({ adapter: new Adapter() });
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
-
-describe("Testing Pagination Action", () => {
-  it("Should create an action to change the page showed", () => {
-    const page = 3;
-    const expectedAction = [
-      {
-        type: paginationAction.PAGE_SELECTED,
-        pagination: { page }
-      }
-    ];
-    const store = mockStore({ pagination: 1 });
-
-    store.dispatch(selectPagePagination(page));
-    expect(store.getActions()).toEqual(expectedAction);
-    expect(store.getActions()).toMatchSnapshot();
-  });
-});
 
 const mockResults = [
   {
@@ -65,9 +42,7 @@ describe("Testing People Action", () => {
       nock.cleanAll();
     });
 
-    nock(
-      "https://cors-anywhere.herokuapp.com/https://secure-dusk-28289.herokuapp.com/api"
-    )
+    nock(BASE_URL)
       .defaultReplyHeaders({ "access-control-allow-origin": "*" })
       .get("/people")
       .reply(200, {

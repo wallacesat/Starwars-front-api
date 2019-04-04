@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing LoadingComponent Should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoadingComponent />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="p-4 d-flex justify-content-end align-items-center flex-column h-50 w-50"
+        style={
+          Object {
+            "backgroundColor": "#e7e8ec",
+            "borderRadius": 10,
+          }
+        }
+      >
+        <label
+          className="p-4 display-4"
+        >
+          Please, wait loading...
+        </label>
+        <WithStyles(CircularProgress) />
+      </div>,
+      "className": "d-flex justify-content-center align-items-end",
+      "style": Object {
+        "height": 400,
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label
+            className="p-4 display-4"
+          >
+            Please, wait loading...
+          </label>,
+          <WithStyles(CircularProgress) />,
+        ],
+        "className": "p-4 d-flex justify-content-end align-items-center flex-column h-50 w-50",
+        "style": Object {
+          "backgroundColor": "#e7e8ec",
+          "borderRadius": 10,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Please, wait loading...",
+            "className": "p-4 display-4",
+          },
+          "ref": null,
+          "rendered": "Please, wait loading...",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="p-4 d-flex justify-content-end align-items-center flex-column h-50 w-50"
+          style={
+            Object {
+              "backgroundColor": "#e7e8ec",
+              "borderRadius": 10,
+            }
+          }
+        >
+          <label
+            className="p-4 display-4"
+          >
+            Please, wait loading...
+          </label>
+          <WithStyles(CircularProgress) />
+        </div>,
+        "className": "d-flex justify-content-center align-items-end",
+        "style": Object {
+          "height": 400,
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="p-4 display-4"
+            >
+              Please, wait loading...
+            </label>,
+            <WithStyles(CircularProgress) />,
+          ],
+          "className": "p-4 d-flex justify-content-end align-items-center flex-column h-50 w-50",
+          "style": Object {
+            "backgroundColor": "#e7e8ec",
+            "borderRadius": 10,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please, wait loading...",
+              "className": "p-4 display-4",
+            },
+            "ref": null,
+            "rendered": "Please, wait loading...",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
