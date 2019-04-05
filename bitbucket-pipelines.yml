@@ -11,6 +11,8 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
+          - pwd
+          - ls -al
           - npm install
           - npm test
           - pipe: atlassian/firebase-deploy:0.2.1
