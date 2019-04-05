@@ -145,8 +145,8 @@
       "jest-html-reporters"
     ],
     "watchPlugins": [
-      "<rootDir>\\node_modules\\jest-watch-typeahead\\filename.js",
-      "<rootDir>\\node_modules\\jest-watch-typeahead\\testname.js"
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
     ],
     "watchPathIgnorePatterns": [
       ".*jest-stare.*\\.js"
