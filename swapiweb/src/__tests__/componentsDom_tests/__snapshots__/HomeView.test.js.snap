@@ -1,0 +1,511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomeView Dom Component Sould render self and subcomponents 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomeView />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="d-block bg-light"
+          id="subContainer"
+        />,
+        <div
+          className="d-flex h-50 justify-content-center align-items-center"
+          id="head"
+          style={
+            Object {
+              "backgroundColor": "#2a2f35",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="swlogo.png"
+            style={
+              Object {
+                "height": "auto",
+                "width": 300,
+              }
+            }
+          />
+        </div>,
+        <div
+          className="d-flex flex-row justify-content-center h-50"
+          id="body"
+        >
+          <div
+            className="d-flex bg-dark w-75 h-100 flex-row align-items-center"
+            id="menu"
+          >
+            <MenuComponent
+              itemImage="_people.png"
+              itemName="Peoples"
+            />
+            <MenuComponent
+              itemImage="_planet.png"
+              itemName="Planets"
+            />
+            <MenuComponent
+              itemImage="_starship.png"
+              itemName="Starships"
+            />
+            <MenuComponent
+              itemImage="_vehicle.png"
+              itemName="Vehicles"
+            />
+          </div>
+        </div>,
+      ],
+      "id": "container",
+      "style": Object {
+        "backgroundColor": "#343a40",
+        "height": "100%",
+        "position": "fixed",
+        "width": "100%",
+        "zIndex": "-10",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "d-block bg-light",
+          "id": "subContainer",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt=""
+            src="swlogo.png"
+            style={
+              Object {
+                "height": "auto",
+                "width": 300,
+              }
+            }
+          />,
+          "className": "d-flex h-50 justify-content-center align-items-center",
+          "id": "head",
+          "style": Object {
+            "backgroundColor": "#2a2f35",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "",
+            "src": "swlogo.png",
+            "style": Object {
+              "height": "auto",
+              "width": 300,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="d-flex bg-dark w-75 h-100 flex-row align-items-center"
+            id="menu"
+          >
+            <MenuComponent
+              itemImage="_people.png"
+              itemName="Peoples"
+            />
+            <MenuComponent
+              itemImage="_planet.png"
+              itemName="Planets"
+            />
+            <MenuComponent
+              itemImage="_starship.png"
+              itemName="Starships"
+            />
+            <MenuComponent
+              itemImage="_vehicle.png"
+              itemName="Vehicles"
+            />
+          </div>,
+          "className": "d-flex flex-row justify-content-center h-50",
+          "id": "body",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <MenuComponent
+                itemImage="_people.png"
+                itemName="Peoples"
+              />,
+              <MenuComponent
+                itemImage="_planet.png"
+                itemName="Planets"
+              />,
+              <MenuComponent
+                itemImage="_starship.png"
+                itemName="Starships"
+              />,
+              <MenuComponent
+                itemImage="_vehicle.png"
+                itemName="Vehicles"
+              />,
+            ],
+            "className": "d-flex bg-dark w-75 h-100 flex-row align-items-center",
+            "id": "menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "itemImage": "_people.png",
+                "itemName": "Peoples",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "itemImage": "_planet.png",
+                "itemName": "Planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "itemImage": "_starship.png",
+                "itemName": "Starships",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "itemImage": "_vehicle.png",
+                "itemName": "Vehicles",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="d-block bg-light"
+            id="subContainer"
+          />,
+          <div
+            className="d-flex h-50 justify-content-center align-items-center"
+            id="head"
+            style={
+              Object {
+                "backgroundColor": "#2a2f35",
+              }
+            }
+          >
+            <img
+              alt=""
+              src="swlogo.png"
+              style={
+                Object {
+                  "height": "auto",
+                  "width": 300,
+                }
+              }
+            />
+          </div>,
+          <div
+            className="d-flex flex-row justify-content-center h-50"
+            id="body"
+          >
+            <div
+              className="d-flex bg-dark w-75 h-100 flex-row align-items-center"
+              id="menu"
+            >
+              <MenuComponent
+                itemImage="_people.png"
+                itemName="Peoples"
+              />
+              <MenuComponent
+                itemImage="_planet.png"
+                itemName="Planets"
+              />
+              <MenuComponent
+                itemImage="_starship.png"
+                itemName="Starships"
+              />
+              <MenuComponent
+                itemImage="_vehicle.png"
+                itemName="Vehicles"
+              />
+            </div>
+          </div>,
+        ],
+        "id": "container",
+        "style": Object {
+          "backgroundColor": "#343a40",
+          "height": "100%",
+          "position": "fixed",
+          "width": "100%",
+          "zIndex": "-10",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "d-block bg-light",
+            "id": "subContainer",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt=""
+              src="swlogo.png"
+              style={
+                Object {
+                  "height": "auto",
+                  "width": 300,
+                }
+              }
+            />,
+            "className": "d-flex h-50 justify-content-center align-items-center",
+            "id": "head",
+            "style": Object {
+              "backgroundColor": "#2a2f35",
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "src": "swlogo.png",
+              "style": Object {
+                "height": "auto",
+                "width": 300,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="d-flex bg-dark w-75 h-100 flex-row align-items-center"
+              id="menu"
+            >
+              <MenuComponent
+                itemImage="_people.png"
+                itemName="Peoples"
+              />
+              <MenuComponent
+                itemImage="_planet.png"
+                itemName="Planets"
+              />
+              <MenuComponent
+                itemImage="_starship.png"
+                itemName="Starships"
+              />
+              <MenuComponent
+                itemImage="_vehicle.png"
+                itemName="Vehicles"
+              />
+            </div>,
+            "className": "d-flex flex-row justify-content-center h-50",
+            "id": "body",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <MenuComponent
+                  itemImage="_people.png"
+                  itemName="Peoples"
+                />,
+                <MenuComponent
+                  itemImage="_planet.png"
+                  itemName="Planets"
+                />,
+                <MenuComponent
+                  itemImage="_starship.png"
+                  itemName="Starships"
+                />,
+                <MenuComponent
+                  itemImage="_vehicle.png"
+                  itemName="Vehicles"
+                />,
+              ],
+              "className": "d-flex bg-dark w-75 h-100 flex-row align-items-center",
+              "id": "menu",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "itemImage": "_people.png",
+                  "itemName": "Peoples",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "itemImage": "_planet.png",
+                  "itemName": "Planets",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "itemImage": "_starship.png",
+                  "itemName": "Starships",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "itemImage": "_vehicle.png",
+                  "itemName": "Vehicles",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

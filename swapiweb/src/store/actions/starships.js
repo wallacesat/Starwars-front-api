@@ -19,7 +19,7 @@ const fetchStarshipsFailed = error => ({
 export const fetchStarships = () => dispatch => {
   dispatch(fetchStarshipsStarted());
 
-  getStarships()
+  return getStarships()
     .then(response => {
       const { results, count } = response;
       dispatch(

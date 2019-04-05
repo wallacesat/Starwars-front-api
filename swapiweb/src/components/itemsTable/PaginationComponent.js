@@ -47,6 +47,7 @@ class PaginationComponent extends Component {
 
   render() {
     const { pageCount, selectedPage } = this.getDataState();
+
     return (
       <Pagination>
         <PaginationItem disabled={selectedPage === 1 ? true : false}>

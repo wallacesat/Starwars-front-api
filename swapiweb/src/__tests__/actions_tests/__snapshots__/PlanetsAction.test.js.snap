@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Planets Action Shold create an action to fetching planets data 1`] = `
+Array [
+  Object {
+    "type": "FETCH_PLANETS_STARTED",
+  },
+  Object {
+    "planets": Object {
+      "page": 1,
+      "pageCount": 2,
+      "results": Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.28152803167206786",
+          "climate": "murky",
+          "diameter": 7065,
+          "gravity": 2.5,
+          "idItem": 1,
+          "name": "Alma Hopkins",
+          "orbital_period": 459,
+          "population": 38727741060,
+          "rotation_period": 128,
+          "surface_water": 37,
+          "terrain": "swamp",
+        },
+      ],
+    },
+    "type": "FETCH_PLANETS_SUCCEEDED",
+  },
+]
+`;

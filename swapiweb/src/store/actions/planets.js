@@ -19,7 +19,7 @@ const fetchPlanetsFailed = error => ({
 export const fetchPlanets = () => dispatch => {
   dispatch(fetchPlanetsStarted());
 
-  getPlanets()
+  return getPlanets()
     .then(response => {
       const { results, count } = response;
       dispatch(

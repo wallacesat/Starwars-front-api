@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Pagination Action Should create an action to change the page showed 1`] = `
+Array [
+  Object {
+    "pagination": Object {
+      "page": 3,
+    },
+    "type": "PAGE_SELECTED",
+  },
+]
+`;

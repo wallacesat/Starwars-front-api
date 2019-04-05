@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing MenuComponent Should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MenuComponent
+    itemImage="_people.png"
+    itemName="Peoples"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <WithTheme(Fade)
+        in={true}
+        style={
+          Object {
+            "transitionDelay": "200ms",
+          }
+        }
+      >
+        <WithStyles(Paper)
+          className="flex-grow-1 d-flex flex-column justify-content-around align-items-center"
+          elevation={5}
+        >
+          <div
+            className="h-75 w-50 d-flex justify-content-center align-items-center"
+          >
+            <img
+              alt="Peoples"
+              className="img-fluid p-1 h-100 w-auto"
+              src="_people.png"
+            />
+          </div>
+          <div
+            className="d-flex"
+          >
+            <div
+              className="lead"
+            >
+              Peoples
+            </div>
+          </div>
+        </WithStyles(Paper)>
+      </WithTheme(Fade)>,
+      "className": "d-flex  h-50 w-25 m-2 paper",
+      "replace": false,
+      "style": Object {
+        "color": "#777",
+        "textDecoration": "none",
+        "textDecorationStyle": "none",
+      },
+      "to": Object {
+        "pathname": "peoples",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <WithStyles(Paper)
+          className="flex-grow-1 d-flex flex-column justify-content-around align-items-center"
+          elevation={5}
+        >
+          <div
+            className="h-75 w-50 d-flex justify-content-center align-items-center"
+          >
+            <img
+              alt="Peoples"
+              className="img-fluid p-1 h-100 w-auto"
+              src="_people.png"
+            />
+          </div>
+          <div
+            className="d-flex"
+          >
+            <div
+              className="lead"
+            >
+              Peoples
+            </div>
+          </div>
+        </WithStyles(Paper)>,
+        "in": true,
+        "style": Object {
+          "transitionDelay": "200ms",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <div
+              className="h-75 w-50 d-flex justify-content-center align-items-center"
+            >
+              <img
+                alt="Peoples"
+                className="img-fluid p-1 h-100 w-auto"
+                src="_people.png"
+              />
+            </div>,
+            <div
+              className="d-flex"
+            >
+              <div
+                className="lead"
+              >
+                Peoples
+              </div>
+            </div>,
+          ],
+          "className": "flex-grow-1 d-flex flex-column justify-content-around align-items-center",
+          "elevation": 5,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="Peoples"
+                className="img-fluid p-1 h-100 w-auto"
+                src="_people.png"
+              />,
+              "className": "h-75 w-50 d-flex justify-content-center align-items-center",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Peoples",
+                "className": "img-fluid p-1 h-100 w-auto",
+                "src": "_people.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="lead"
+              >
+                Peoples
+              </div>,
+              "className": "d-flex",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Peoples",
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": "Peoples",
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <WithTheme(Fade)
+          in={true}
+          style={
+            Object {
+              "transitionDelay": "200ms",
+            }
+          }
+        >
+          <WithStyles(Paper)
+            className="flex-grow-1 d-flex flex-column justify-content-around align-items-center"
+            elevation={5}
+          >
+            <div
+              className="h-75 w-50 d-flex justify-content-center align-items-center"
+            >
+              <img
+                alt="Peoples"
+                className="img-fluid p-1 h-100 w-auto"
+                src="_people.png"
+              />
+            </div>
+            <div
+              className="d-flex"
+            >
+              <div
+                className="lead"
+              >
+                Peoples
+              </div>
+            </div>
+          </WithStyles(Paper)>
+        </WithTheme(Fade)>,
+        "className": "d-flex  h-50 w-25 m-2 paper",
+        "replace": false,
+        "style": Object {
+          "color": "#777",
+          "textDecoration": "none",
+          "textDecorationStyle": "none",
+        },
+        "to": Object {
+          "pathname": "peoples",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(Paper)
+            className="flex-grow-1 d-flex flex-column justify-content-around align-items-center"
+            elevation={5}
+          >
+            <div
+              className="h-75 w-50 d-flex justify-content-center align-items-center"
+            >
+              <img
+                alt="Peoples"
+                className="img-fluid p-1 h-100 w-auto"
+                src="_people.png"
+              />
+            </div>
+            <div
+              className="d-flex"
+            >
+              <div
+                className="lead"
+              >
+                Peoples
+              </div>
+            </div>
+          </WithStyles(Paper)>,
+          "in": true,
+          "style": Object {
+            "transitionDelay": "200ms",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <div
+                className="h-75 w-50 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  alt="Peoples"
+                  className="img-fluid p-1 h-100 w-auto"
+                  src="_people.png"
+                />
+              </div>,
+              <div
+                className="d-flex"
+              >
+                <div
+                  className="lead"
+                >
+                  Peoples
+                </div>
+              </div>,
+            ],
+            "className": "flex-grow-1 d-flex flex-column justify-content-around align-items-center",
+            "elevation": 5,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Peoples"
+                  className="img-fluid p-1 h-100 w-auto"
+                  src="_people.png"
+                />,
+                "className": "h-75 w-50 d-flex justify-content-center align-items-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Peoples",
+                  "className": "img-fluid p-1 h-100 w-auto",
+                  "src": "_people.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="lead"
+                >
+                  Peoples
+                </div>,
+                "className": "d-flex",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Peoples",
+                  "className": "lead",
+                },
+                "ref": null,
+                "rendered": "Peoples",
+                "type": "div",
+              },
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

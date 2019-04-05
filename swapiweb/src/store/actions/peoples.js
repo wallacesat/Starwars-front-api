@@ -19,7 +19,7 @@ const fetchPeopleFailed = error => ({
 export const fetchPeople = () => dispatch => {
   dispatch(fetchPeopleStarted());
 
-  getPeople()
+  return getPeople()
     .then(response => {
       const { results, count } = response;
       dispatch(

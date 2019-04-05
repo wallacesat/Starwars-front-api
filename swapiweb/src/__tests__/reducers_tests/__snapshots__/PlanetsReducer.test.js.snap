@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Planets Reducer Should handle FETCH_PLANETS_FAILED 1`] = `
+Object {
+  "error": "Error to fetching planets",
+  "isFetching": false,
+}
+`;
+
+exports[`Testing Planets Reducer Should handle FETCH_PLANETS_STARTED 1`] = `
+Object {
+  "isFetching": true,
+}
+`;
+
+exports[`Testing Planets Reducer Should handle FETCH_PLANETS_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 6,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing Planets Reducer Should handle UPDATE_PLANETS_FAILED 1`] = `
+Object {
+  "error": "Error to fetching Update planets",
+  "isFetching": false,
+  "pageCount": 6,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing Planets Reducer Should handle UPDATE_PLANETS_IS_FETCHING 1`] = `
+Object {
+  "isFetching": true,
+  "pageCount": 6,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+  ],
+}
+`;
+
+exports[`Testing Planets Reducer Should handle UPDATE_PLANETS_SUCCEEDED 1`] = `
+Object {
+  "isFetching": false,
+  "pageCount": 6,
+  "pages": Array [
+    Object {
+      "list": Array [
+        Object {},
+      ],
+      "page": 1,
+    },
+    Object {
+      "list": Array [
+        Object {},
+        Object {},
+      ],
+      "page": 2,
+    },
+  ],
+}
+`;
+
+exports[`Testing Planets Reducer Should return initial state = null  1`] = `null`;

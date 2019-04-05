@@ -19,7 +19,7 @@ const fetchVehiclesFailed = error => ({
 export const fetchVehicles = () => dispatch => {
   dispatch(fetchVehiclesStarted());
 
-  getVehicles()
+  return getVehicles()
     .then(response => {
       const { results, count } = response;
       dispatch(

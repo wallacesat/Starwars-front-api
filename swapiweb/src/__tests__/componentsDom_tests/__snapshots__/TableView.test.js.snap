@@ -1,0 +1,1029 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TablesView Dom Component Should render self and subcomponents 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TablesView
+    currentPage={[Function]}
+    match={
+      Object {
+        "params": Object {
+          "object": "planets",
+        },
+      }
+    }
+    state={
+      Object {
+        "pagination": Object {
+          "page": 3,
+        },
+        "planets": Object {
+          "isFetching": false,
+          "pageCount": 6,
+          "pages": Array [
+            Object {
+              "list": Array [
+                Object {},
+              ],
+              "page": 1,
+            },
+          ],
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="d-flex p-1 m-1 justify-content-between align-items-center"
+          id="head"
+        >
+          <WithStyles(Paper)
+            className="d-flex justify-content-center align-items-center p-2"
+            elevation={5}
+          >
+            <img
+              alt=""
+              src="_planet.png"
+              style={
+                Object {
+                  "height": 90,
+                  "width": "auto",
+                }
+              }
+            />
+          </WithStyles(Paper)>
+          <img
+            alt=""
+            src="swlogo.png"
+            style={
+              Object {
+                "height": 100,
+                "width": "auto",
+              }
+            }
+          />
+        </div>,
+        <div
+          className="d-block bg-light h-75 align-items-center justify-content-center"
+          id="body"
+        >
+          <div
+            className="d-flex bg-light h-100"
+            id="table"
+            style={
+              Object {
+                "borderRadius": 8,
+              }
+            }
+          >
+            <TableComponent
+              columns={
+                Array [
+                  "Name",
+                  "Climate",
+                  "Orbital Peroid",
+                ]
+              }
+              items={
+                Array [
+                  Object {},
+                ]
+              }
+              resource="planets"
+            />
+          </div>
+          <div
+            className="h-25 w-50 pt-3 pl-3"
+            id="paginator"
+          >
+            <withRouter(Connect(PaginationComponent))
+              handlePagination={[Function]}
+              resource="planets"
+            />
+          </div>
+        </div>,
+        <div
+          className="d-block"
+          id="footer"
+        >
+          <div
+            className="d-flex justify-content-center pt-3"
+          >
+            <Link
+              onClick={[Function]}
+              replace={false}
+              style={
+                Object {
+                  "color": "#777",
+                  "textDecoration": "none",
+                  "textDecorationStyle": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/",
+                }
+              }
+            >
+              <WithStyles(Button)
+                color="inherit"
+                variant="contained"
+              >
+                <div
+                  className="lead"
+                >
+                  Voltar
+                </div>
+              </WithStyles(Button)>
+            </Link>
+          </div>
+        </div>,
+      ],
+      "id": "container",
+      "style": Object {
+        "backgroundColor": "#343a40",
+        "height": "100%",
+        "position": "fixed",
+        "width": "100%",
+        "zIndex": "-10",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Paper)
+              className="d-flex justify-content-center align-items-center p-2"
+              elevation={5}
+            >
+              <img
+                alt=""
+                src="_planet.png"
+                style={
+                  Object {
+                    "height": 90,
+                    "width": "auto",
+                  }
+                }
+              />
+            </WithStyles(Paper)>,
+            <img
+              alt=""
+              src="swlogo.png"
+              style={
+                Object {
+                  "height": 100,
+                  "width": "auto",
+                }
+              }
+            />,
+          ],
+          "className": "d-flex p-1 m-1 justify-content-between align-items-center",
+          "id": "head",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <img
+                alt=""
+                src="_planet.png"
+                style={
+                  Object {
+                    "height": 90,
+                    "width": "auto",
+                  }
+                }
+              />,
+              "className": "d-flex justify-content-center align-items-center p-2",
+              "elevation": 5,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "src": "_planet.png",
+                "style": Object {
+                  "height": 90,
+                  "width": "auto",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "src": "swlogo.png",
+              "style": Object {
+                "height": 100,
+                "width": "auto",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="d-flex bg-light h-100"
+              id="table"
+              style={
+                Object {
+                  "borderRadius": 8,
+                }
+              }
+            >
+              <TableComponent
+                columns={
+                  Array [
+                    "Name",
+                    "Climate",
+                    "Orbital Peroid",
+                  ]
+                }
+                items={
+                  Array [
+                    Object {},
+                  ]
+                }
+                resource="planets"
+              />
+            </div>,
+            <div
+              className="h-25 w-50 pt-3 pl-3"
+              id="paginator"
+            >
+              <withRouter(Connect(PaginationComponent))
+                handlePagination={[Function]}
+                resource="planets"
+              />
+            </div>,
+          ],
+          "className": "d-block bg-light h-75 align-items-center justify-content-center",
+          "id": "body",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <TableComponent
+                columns={
+                  Array [
+                    "Name",
+                    "Climate",
+                    "Orbital Peroid",
+                  ]
+                }
+                items={
+                  Array [
+                    Object {},
+                  ]
+                }
+                resource="planets"
+              />,
+              "className": "d-flex bg-light h-100",
+              "id": "table",
+              "style": Object {
+                "borderRadius": 8,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "columns": Array [
+                  "Name",
+                  "Climate",
+                  "Orbital Peroid",
+                ],
+                "items": Array [
+                  Object {},
+                ],
+                "resource": "planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <withRouter(Connect(PaginationComponent))
+                handlePagination={[Function]}
+                resource="planets"
+              />,
+              "className": "h-25 w-50 pt-3 pl-3",
+              "id": "paginator",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handlePagination": [Function],
+                "resource": "planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="d-flex justify-content-center pt-3"
+          >
+            <Link
+              onClick={[Function]}
+              replace={false}
+              style={
+                Object {
+                  "color": "#777",
+                  "textDecoration": "none",
+                  "textDecorationStyle": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/",
+                }
+              }
+            >
+              <WithStyles(Button)
+                color="inherit"
+                variant="contained"
+              >
+                <div
+                  className="lead"
+                >
+                  Voltar
+                </div>
+              </WithStyles(Button)>
+            </Link>
+          </div>,
+          "className": "d-block",
+          "id": "footer",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              onClick={[Function]}
+              replace={false}
+              style={
+                Object {
+                  "color": "#777",
+                  "textDecoration": "none",
+                  "textDecorationStyle": "none",
+                }
+              }
+              to={
+                Object {
+                  "pathname": "/",
+                }
+              }
+            >
+              <WithStyles(Button)
+                color="inherit"
+                variant="contained"
+              >
+                <div
+                  className="lead"
+                >
+                  Voltar
+                </div>
+              </WithStyles(Button)>
+            </Link>,
+            "className": "d-flex justify-content-center pt-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(Button)
+                color="inherit"
+                variant="contained"
+              >
+                <div
+                  className="lead"
+                >
+                  Voltar
+                </div>
+              </WithStyles(Button)>,
+              "onClick": [Function],
+              "replace": false,
+              "style": Object {
+                "color": "#777",
+                "textDecoration": "none",
+                "textDecorationStyle": "none",
+              },
+              "to": Object {
+                "pathname": "/",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <div
+                  className="lead"
+                >
+                  Voltar
+                </div>,
+                "color": "inherit",
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Voltar",
+                  "className": "lead",
+                },
+                "ref": null,
+                "rendered": "Voltar",
+                "type": "div",
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="d-flex p-1 m-1 justify-content-between align-items-center"
+            id="head"
+          >
+            <WithStyles(Paper)
+              className="d-flex justify-content-center align-items-center p-2"
+              elevation={5}
+            >
+              <img
+                alt=""
+                src="_planet.png"
+                style={
+                  Object {
+                    "height": 90,
+                    "width": "auto",
+                  }
+                }
+              />
+            </WithStyles(Paper)>
+            <img
+              alt=""
+              src="swlogo.png"
+              style={
+                Object {
+                  "height": 100,
+                  "width": "auto",
+                }
+              }
+            />
+          </div>,
+          <div
+            className="d-block bg-light h-75 align-items-center justify-content-center"
+            id="body"
+          >
+            <div
+              className="d-flex bg-light h-100"
+              id="table"
+              style={
+                Object {
+                  "borderRadius": 8,
+                }
+              }
+            >
+              <TableComponent
+                columns={
+                  Array [
+                    "Name",
+                    "Climate",
+                    "Orbital Peroid",
+                  ]
+                }
+                items={
+                  Array [
+                    Object {},
+                  ]
+                }
+                resource="planets"
+              />
+            </div>
+            <div
+              className="h-25 w-50 pt-3 pl-3"
+              id="paginator"
+            >
+              <withRouter(Connect(PaginationComponent))
+                handlePagination={[Function]}
+                resource="planets"
+              />
+            </div>
+          </div>,
+          <div
+            className="d-block"
+            id="footer"
+          >
+            <div
+              className="d-flex justify-content-center pt-3"
+            >
+              <Link
+                onClick={[Function]}
+                replace={false}
+                style={
+                  Object {
+                    "color": "#777",
+                    "textDecoration": "none",
+                    "textDecorationStyle": "none",
+                  }
+                }
+                to={
+                  Object {
+                    "pathname": "/",
+                  }
+                }
+              >
+                <WithStyles(Button)
+                  color="inherit"
+                  variant="contained"
+                >
+                  <div
+                    className="lead"
+                  >
+                    Voltar
+                  </div>
+                </WithStyles(Button)>
+              </Link>
+            </div>
+          </div>,
+        ],
+        "id": "container",
+        "style": Object {
+          "backgroundColor": "#343a40",
+          "height": "100%",
+          "position": "fixed",
+          "width": "100%",
+          "zIndex": "-10",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Paper)
+                className="d-flex justify-content-center align-items-center p-2"
+                elevation={5}
+              >
+                <img
+                  alt=""
+                  src="_planet.png"
+                  style={
+                    Object {
+                      "height": 90,
+                      "width": "auto",
+                    }
+                  }
+                />
+              </WithStyles(Paper)>,
+              <img
+                alt=""
+                src="swlogo.png"
+                style={
+                  Object {
+                    "height": 100,
+                    "width": "auto",
+                  }
+                }
+              />,
+            ],
+            "className": "d-flex p-1 m-1 justify-content-between align-items-center",
+            "id": "head",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <img
+                  alt=""
+                  src="_planet.png"
+                  style={
+                    Object {
+                      "height": 90,
+                      "width": "auto",
+                    }
+                  }
+                />,
+                "className": "d-flex justify-content-center align-items-center p-2",
+                "elevation": 5,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "",
+                  "src": "_planet.png",
+                  "style": Object {
+                    "height": 90,
+                    "width": "auto",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "src": "swlogo.png",
+                "style": Object {
+                  "height": 100,
+                  "width": "auto",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="d-flex bg-light h-100"
+                id="table"
+                style={
+                  Object {
+                    "borderRadius": 8,
+                  }
+                }
+              >
+                <TableComponent
+                  columns={
+                    Array [
+                      "Name",
+                      "Climate",
+                      "Orbital Peroid",
+                    ]
+                  }
+                  items={
+                    Array [
+                      Object {},
+                    ]
+                  }
+                  resource="planets"
+                />
+              </div>,
+              <div
+                className="h-25 w-50 pt-3 pl-3"
+                id="paginator"
+              >
+                <withRouter(Connect(PaginationComponent))
+                  handlePagination={[Function]}
+                  resource="planets"
+                />
+              </div>,
+            ],
+            "className": "d-block bg-light h-75 align-items-center justify-content-center",
+            "id": "body",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <TableComponent
+                  columns={
+                    Array [
+                      "Name",
+                      "Climate",
+                      "Orbital Peroid",
+                    ]
+                  }
+                  items={
+                    Array [
+                      Object {},
+                    ]
+                  }
+                  resource="planets"
+                />,
+                "className": "d-flex bg-light h-100",
+                "id": "table",
+                "style": Object {
+                  "borderRadius": 8,
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "columns": Array [
+                    "Name",
+                    "Climate",
+                    "Orbital Peroid",
+                  ],
+                  "items": Array [
+                    Object {},
+                  ],
+                  "resource": "planets",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <withRouter(Connect(PaginationComponent))
+                  handlePagination={[Function]}
+                  resource="planets"
+                />,
+                "className": "h-25 w-50 pt-3 pl-3",
+                "id": "paginator",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handlePagination": [Function],
+                  "resource": "planets",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="d-flex justify-content-center pt-3"
+            >
+              <Link
+                onClick={[Function]}
+                replace={false}
+                style={
+                  Object {
+                    "color": "#777",
+                    "textDecoration": "none",
+                    "textDecorationStyle": "none",
+                  }
+                }
+                to={
+                  Object {
+                    "pathname": "/",
+                  }
+                }
+              >
+                <WithStyles(Button)
+                  color="inherit"
+                  variant="contained"
+                >
+                  <div
+                    className="lead"
+                  >
+                    Voltar
+                  </div>
+                </WithStyles(Button)>
+              </Link>
+            </div>,
+            "className": "d-block",
+            "id": "footer",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                onClick={[Function]}
+                replace={false}
+                style={
+                  Object {
+                    "color": "#777",
+                    "textDecoration": "none",
+                    "textDecorationStyle": "none",
+                  }
+                }
+                to={
+                  Object {
+                    "pathname": "/",
+                  }
+                }
+              >
+                <WithStyles(Button)
+                  color="inherit"
+                  variant="contained"
+                >
+                  <div
+                    className="lead"
+                  >
+                    Voltar
+                  </div>
+                </WithStyles(Button)>
+              </Link>,
+              "className": "d-flex justify-content-center pt-3",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(Button)
+                  color="inherit"
+                  variant="contained"
+                >
+                  <div
+                    className="lead"
+                  >
+                    Voltar
+                  </div>
+                </WithStyles(Button)>,
+                "onClick": [Function],
+                "replace": false,
+                "style": Object {
+                  "color": "#777",
+                  "textDecoration": "none",
+                  "textDecorationStyle": "none",
+                },
+                "to": Object {
+                  "pathname": "/",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <div
+                    className="lead"
+                  >
+                    Voltar
+                  </div>,
+                  "color": "inherit",
+                  "variant": "contained",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Voltar",
+                    "className": "lead",
+                  },
+                  "ref": null,
+                  "rendered": "Voltar",
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

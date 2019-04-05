@@ -77,7 +77,7 @@ class DetailsComponent extends Component {
         <div className="d-flex flex-row h-75 w-75 align-items-start justify-content-between">
           <div className="d-flex flex-column">
             {data.map((item, i) => (
-              <label className="lead">
+              <label className="lead" key={i}>
                 <strong>{item.title}</strong> {item.desc}
               </label>
             ))}

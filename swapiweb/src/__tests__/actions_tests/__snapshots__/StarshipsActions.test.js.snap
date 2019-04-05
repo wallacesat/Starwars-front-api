@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Starships Action Shold create an action to fetching starships data 1`] = `
+Array [
+  Object {
+    "type": "FETCH_STARSHIPS_STARTED",
+  },
+  Object {
+    "starships": Object {
+      "page": 1,
+      "pageCount": 2,
+      "results": Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.7474128780010723",
+          "cargo_capacity": 5579622,
+          "consumables": 1,
+          "idItem": 1,
+          "length": 191,
+          "manufacturer": "vajcez",
+          "max_atmosphering_speed": 205,
+          "model": "so",
+          "name": "Dale Jackson",
+          "passengers": 1473,
+          "starship_class": "rukvu",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.7575125938238629",
+          "cargo_capacity": 2861477,
+          "consumables": 5,
+          "idItem": 2,
+          "length": 17,
+          "manufacturer": "nubodivas",
+          "max_atmosphering_speed": 522,
+          "model": "ejvoj",
+          "name": "Sylvia Barton",
+          "passengers": 96,
+          "starship_class": "lu",
+        },
+      ],
+    },
+    "type": "FETCH_STARSHIPS_SUCCEEDED",
+  },
+]
+`;
