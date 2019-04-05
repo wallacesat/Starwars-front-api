@@ -1,5 +1,4 @@
 process.env.BABEL_ENV = "development";
-process.env.NODE_ENV = "development";
 
 import jsf from "json-schema-faker";
 import { red, inverse, green } from "chalk";

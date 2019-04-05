@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm-run-all -p watch:back start:front",
     "watch:back": "nodemon --exec \"npm run start:back\" api --ignore api/fakeData/db.json",
-    "prestart:back": "npx babel-node ./api/generateFakeData.js --presets @babel/preset-env",
-    "start:back": "npx babel-node ./api/index.js --presets @babel/preset-env",
+    "prestart:back": "cross-env NODE_ENV=development npx babel-node ./api/generateFakeData.js --presets @babel/preset-env",
+    "start:back": "cross-env NODE_ENV=development npx babel-node ./api/index.js --presets @babel/preset-env",
     "start:front": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --verbose"
