@@ -145,8 +145,8 @@
       "jest-html-reporters"
     ],
     "watchPlugins": [
-      "C:\\Users\\Wallace Silva\\Documents\\ReactCourse\\swapi\\swapiweb\\swapiweb\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\Users\\Wallace Silva\\Documents\\ReactCourse\\swapi\\swapiweb\\swapiweb\\node_modules\\jest-watch-typeahead\\testname.js"
+      "<rootDir>\\node_modules\\jest-watch-typeahead\\filename.js",
+      "<rootDir>\\node_modules\\jest-watch-typeahead\\testname.js"
     ],
     "watchPathIgnorePatterns": [
       ".*jest-stare.*\\.js"
