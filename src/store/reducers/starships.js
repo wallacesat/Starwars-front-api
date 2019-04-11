@@ -30,7 +30,7 @@ export default function starships(state = null, action) {
     case starshipsAction.UPDATE_STARSHIPS_SUCCEEDED:
       return Object.assign({}, state, {
         pages: [
-          ...(state.pages || []),
+          ...state.pages,
           { page: action.starships.page, list: action.starships.results }
         ],
         pageCount: action.starships.pageCount,

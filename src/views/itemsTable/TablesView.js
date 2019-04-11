@@ -85,8 +85,6 @@ export class TablesView extends Component {
           fetchVehicles();
         }
         break;
-      default:
-        break;
     }
   }
 
@@ -192,7 +190,10 @@ export class TablesView extends Component {
           </div>
         </div>
         <div id="footer" className="d-block">
-          <div className="d-flex justify-content-center pt-3">
+          <div
+            id="footerContainer"
+            className="d-flex justify-content-center pt-3"
+          >
             <Link
               to={{
                 pathname: "/"
@@ -215,7 +216,7 @@ export class TablesView extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => ({
+export const mapStateToProps = (state, ownProps) => ({
   state,
   findInState: page => {
     const resource = ownProps.match.params.object;
@@ -232,7 +233,7 @@ const mapStateToProps = (state, ownProps) => ({
   }
 });
 
-const mapDispatchToProps = {
+export const mapDispatchToProps = {
   fetchPeople,
   updatePeople,
   fetchPlanets,

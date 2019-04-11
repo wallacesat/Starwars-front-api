@@ -40,3 +40,68 @@ Array [
   },
 ]
 `;
+
+exports[`Testing People Action Should create an action to update people data 1`] = `
+Array [
+  Object {
+    "type": "UPDATE_PEOPLE_IS_FETCHING",
+  },
+  Object {
+    "people": Object {
+      "page": 1,
+      "pageCount": 1,
+      "results": Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.751236428999503",
+          "birth_year": "18BBY",
+          "eye_color": "iljolu",
+          "gender": "Female",
+          "hair_color": "kiovuj",
+          "height": 195,
+          "idItem": 1,
+          "mass": 36,
+          "name": "Herman Patton",
+          "skin_color": "zewojf",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.9587430056915283",
+          "birth_year": "28BBY",
+          "eye_color": "idenio",
+          "gender": "Male",
+          "hair_color": "rivren",
+          "height": 131,
+          "idItem": 2,
+          "mass": 135,
+          "name": "Justin Davidson",
+          "skin_color": "udjisl",
+        },
+      ],
+    },
+    "type": "UPDATE_PEOPLE_SUCCEEDED",
+  },
+]
+`;
+
+exports[`Testing People Action Should return ERROR in fetching people data 1`] = `
+Array [
+  Object {
+    "type": "FETCH_PEOPLE_STARTED",
+  },
+  Object {
+    "error": [Error: Request failed with status code 400],
+    "type": "FETCH_PEOPLE_FAILED",
+  },
+]
+`;
+
+exports[`Testing People Action Should return ERROR on updating people data 1`] = `
+Array [
+  Object {
+    "type": "UPDATE_PEOPLE_IS_FETCHING",
+  },
+  Object {
+    "error": [Error: Request failed with status code 400],
+    "type": "UPDATE_PEOPLE_FAILED",
+  },
+]
+`;

@@ -5,7 +5,7 @@ import { Paper, Button } from "@material-ui/core";
 import LoadingComponent from "../../components/details/LoadingComponent";
 import DetailsComponent from "../../components/details/detailsComponent";
 
-class DetailsView extends Component {
+export class DetailsView extends Component {
   render() {
     let data = this.props.location.state.find(
       item => item.idItem === +this.props.match.params.id
@@ -14,6 +14,7 @@ class DetailsView extends Component {
 
     return data ? (
       <div
+        id="container"
         style={{
           position: "fixed",
           width: "100%",
@@ -22,13 +23,14 @@ class DetailsView extends Component {
           background: "#343a40"
         }}
       >
-        <div className="d-flexflex-column">
-          <div className="col-12 bg-dark">
+        <div id="subContainer" className="d-flexflex-column">
+          <div id="head" className="col-12 bg-dark">
             <label className="lead" style={{ color: "white" }}>
               <strong>Details Page: {resource} </strong>
             </label>
           </div>
           <div
+            id="body"
             className="d-flex justify-content-center align-items-stretch"
             style={{ height: 600 }}
           >
@@ -38,6 +40,7 @@ class DetailsView extends Component {
               style={{ margin: 20 }}
             >
               <div
+                id="paperContainer"
                 className="d-flex h-50 flex-column align-items-center justify-content-start"
                 style={{ marginTop: 10 }}
               >
@@ -70,6 +73,7 @@ class DetailsView extends Component {
       </div>
     ) : (
       <div
+        id="loading"
         style={{
           position: "fixed",
           width: "100%",
@@ -84,7 +88,7 @@ class DetailsView extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   state
 });
 

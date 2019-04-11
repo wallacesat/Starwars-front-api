@@ -14,7 +14,7 @@ import MenuComponent from "../../components/home/MenuComponent";
 const wrapper = shallow(<HomeView />);
 
 describe("Testing HomeView Dom Component", () => {
-  it("Sould render self and subcomponents", () => {
+  it("Should render self and subcomponents", () => {
     const propsContainer = wrapper.find("div#container").props();
     expect(propsContainer.style.backgroundColor).toEqual("#343a40");
     expect(propsContainer.style.position).toEqual("fixed");

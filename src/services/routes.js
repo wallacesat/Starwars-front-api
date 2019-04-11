@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import DetailsView from "../views/details/DetailsView";
 import HomeView from "../views/home/HomeView";
 import TablesView from "../views/itemsTable/TablesView";

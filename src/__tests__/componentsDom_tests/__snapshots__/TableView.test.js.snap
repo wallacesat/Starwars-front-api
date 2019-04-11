@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing TablesView Dom Component Should render self and subcomponents 1`] = `
+exports[`Testing TablesView Dom Component Should render self and subcomponents with object params 'planets'  1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TablesView
@@ -23,9 +23,27 @@ ShallowWrapper {
           "pages": Array [
             Object {
               "list": Array [
-                Object {},
+                Object {
+                  "page1": "1",
+                },
               ],
               "page": 1,
+            },
+            Object {
+              "list": Array [
+                Object {
+                  "page2": "2",
+                },
+              ],
+              "page": 2,
+            },
+            Object {
+              "list": Array [
+                Object {
+                  "page3": "3",
+                },
+              ],
+              "page": 3,
             },
           ],
         },
@@ -100,7 +118,9 @@ ShallowWrapper {
               }
               items={
                 Array [
-                  Object {},
+                  Object {
+                    "page1": "1",
+                  },
                 ]
               }
               resource="planets"
@@ -122,6 +142,7 @@ ShallowWrapper {
         >
           <div
             className="d-flex justify-content-center pt-3"
+            id="footerContainer"
           >
             <Link
               onClick={[Function]}
@@ -282,7 +303,9 @@ ShallowWrapper {
                 }
                 items={
                   Array [
-                    Object {},
+                    Object {
+                      "page1": "1",
+                    },
                   ]
                 }
                 resource="planets"
@@ -318,7 +341,9 @@ ShallowWrapper {
                 }
                 items={
                   Array [
-                    Object {},
+                    Object {
+                      "page1": "1",
+                    },
                   ]
                 }
                 resource="planets"
@@ -341,7 +366,9 @@ ShallowWrapper {
                   "Orbital Peroid",
                 ],
                 "items": Array [
-                  Object {},
+                  Object {
+                    "page1": "1",
+                  },
                 ],
                 "resource": "planets",
               },
@@ -388,6 +415,7 @@ ShallowWrapper {
         "props": Object {
           "children": <div
             className="d-flex justify-content-center pt-3"
+            id="footerContainer"
           >
             <Link
               onClick={[Function]}
@@ -454,6 +482,7 @@ ShallowWrapper {
               </WithStyles(Button)>
             </Link>,
             "className": "d-flex justify-content-center pt-3",
+            "id": "footerContainer",
           },
           "ref": null,
           "rendered": Object {
@@ -580,7 +609,9 @@ ShallowWrapper {
                 }
                 items={
                   Array [
-                    Object {},
+                    Object {
+                      "page1": "1",
+                    },
                   ]
                 }
                 resource="planets"
@@ -602,6 +633,7 @@ ShallowWrapper {
           >
             <div
               className="d-flex justify-content-center pt-3"
+              id="footerContainer"
             >
               <Link
                 onClick={[Function]}
@@ -762,7 +794,9 @@ ShallowWrapper {
                   }
                   items={
                     Array [
-                      Object {},
+                      Object {
+                        "page1": "1",
+                      },
                     ]
                   }
                   resource="planets"
@@ -798,7 +832,9 @@ ShallowWrapper {
                   }
                   items={
                     Array [
-                      Object {},
+                      Object {
+                        "page1": "1",
+                      },
                     ]
                   }
                   resource="planets"
@@ -821,7 +857,9 @@ ShallowWrapper {
                     "Orbital Peroid",
                   ],
                   "items": Array [
-                    Object {},
+                    Object {
+                      "page1": "1",
+                    },
                   ],
                   "resource": "planets",
                 },
@@ -868,6 +906,7 @@ ShallowWrapper {
           "props": Object {
             "children": <div
               className="d-flex justify-content-center pt-3"
+              id="footerContainer"
             >
               <Link
                 onClick={[Function]}
@@ -934,6 +973,7 @@ ShallowWrapper {
                 </WithStyles(Button)>
               </Link>,
               "className": "d-flex justify-content-center pt-3",
+              "id": "footerContainer",
             },
             "ref": null,
             "rendered": Object {

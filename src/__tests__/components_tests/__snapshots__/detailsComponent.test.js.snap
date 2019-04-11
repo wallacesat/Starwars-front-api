@@ -1,6 +1,3281 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing detailsComponent Should render correctly 1`] = `
+exports[`Testing detailsComponent Should render correctly when people data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailsComponent
+    data={
+      Object {
+        "avatar": "http://i.pravatar.cc/40?img=0.3293042978387226",
+        "birth_year": "29BBY",
+        "eye_color": "sugpuk",
+        "gender": "Female",
+        "hair_color": "cetfeb",
+        "height": 237,
+        "mass": 30,
+        "name": "Edith Cohen",
+        "skin_color": "wupjat",
+      }
+    }
+    resource="peoples"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+      >
+        <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Gender: 
+            </strong>
+             
+            Female
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Eye Color: 
+            </strong>
+             
+            sugpuk
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Hair Color: 
+            </strong>
+             
+            cetfeb
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Height: 
+            </strong>
+             
+            237 Centimeters
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Skin Color: 
+            </strong>
+             
+            wupjat
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Mass: 
+            </strong>
+             
+            30 pounds
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Birth Year: 
+            </strong>
+             
+            29BBY
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Vehicles: 
+            </strong>
+             
+            n/a
+          </label>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Gender: 
+            </strong>
+             
+            Female
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Eye Color: 
+            </strong>
+             
+            sugpuk
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Hair Color: 
+            </strong>
+             
+            cetfeb
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Height: 
+            </strong>
+             
+            237 Centimeters
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Skin Color: 
+            </strong>
+             
+            wupjat
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Mass: 
+            </strong>
+             
+            30 pounds
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Birth Year: 
+            </strong>
+             
+            29BBY
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Vehicles: 
+            </strong>
+             
+            n/a
+          </label>
+        </div>,
+        "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="lead"
+            >
+              <strong>
+                Gender: 
+              </strong>
+               
+              Female
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Eye Color: 
+              </strong>
+               
+              sugpuk
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Hair Color: 
+              </strong>
+               
+              cetfeb
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Height: 
+              </strong>
+               
+              237 Centimeters
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Skin Color: 
+              </strong>
+               
+              wupjat
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Mass: 
+              </strong>
+               
+              30 pounds
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Birth Year: 
+              </strong>
+               
+              29BBY
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Vehicles: 
+              </strong>
+               
+              n/a
+            </label>,
+          ],
+          "className": "d-flex flex-column",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Gender: 
+                </strong>,
+                " ",
+                "Female",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Gender: ",
+                },
+                "ref": null,
+                "rendered": "Gender: ",
+                "type": "strong",
+              },
+              " ",
+              "Female",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Eye Color: 
+                </strong>,
+                " ",
+                "sugpuk",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Eye Color: ",
+                },
+                "ref": null,
+                "rendered": "Eye Color: ",
+                "type": "strong",
+              },
+              " ",
+              "sugpuk",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Hair Color: 
+                </strong>,
+                " ",
+                "cetfeb",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Hair Color: ",
+                },
+                "ref": null,
+                "rendered": "Hair Color: ",
+                "type": "strong",
+              },
+              " ",
+              "cetfeb",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Height: 
+                </strong>,
+                " ",
+                "237 Centimeters",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Height: ",
+                },
+                "ref": null,
+                "rendered": "Height: ",
+                "type": "strong",
+              },
+              " ",
+              "237 Centimeters",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Skin Color: 
+                </strong>,
+                " ",
+                "wupjat",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Skin Color: ",
+                },
+                "ref": null,
+                "rendered": "Skin Color: ",
+                "type": "strong",
+              },
+              " ",
+              "wupjat",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Mass: 
+                </strong>,
+                " ",
+                "30 pounds",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mass: ",
+                },
+                "ref": null,
+                "rendered": "Mass: ",
+                "type": "strong",
+              },
+              " ",
+              "30 pounds",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Birth Year: 
+                </strong>,
+                " ",
+                "29BBY",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Birth Year: ",
+                },
+                "ref": null,
+                "rendered": "Birth Year: ",
+                "type": "strong",
+              },
+              " ",
+              "29BBY",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Vehicles: 
+                </strong>,
+                " ",
+                "n/a",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Vehicles: ",
+                },
+                "ref": null,
+                "rendered": "Vehicles: ",
+                "type": "strong",
+              },
+              " ",
+              "n/a",
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+        >
+          <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Gender: 
+              </strong>
+               
+              Female
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Eye Color: 
+              </strong>
+               
+              sugpuk
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Hair Color: 
+              </strong>
+               
+              cetfeb
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Height: 
+              </strong>
+               
+              237 Centimeters
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Skin Color: 
+              </strong>
+               
+              wupjat
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Mass: 
+              </strong>
+               
+              30 pounds
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Birth Year: 
+              </strong>
+               
+              29BBY
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Vehicles: 
+              </strong>
+               
+              n/a
+            </label>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Gender: 
+              </strong>
+               
+              Female
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Eye Color: 
+              </strong>
+               
+              sugpuk
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Hair Color: 
+              </strong>
+               
+              cetfeb
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Height: 
+              </strong>
+               
+              237 Centimeters
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Skin Color: 
+              </strong>
+               
+              wupjat
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Mass: 
+              </strong>
+               
+              30 pounds
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Birth Year: 
+              </strong>
+               
+              29BBY
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Vehicles: 
+              </strong>
+               
+              n/a
+            </label>
+          </div>,
+          "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="lead"
+              >
+                <strong>
+                  Gender: 
+                </strong>
+                 
+                Female
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Eye Color: 
+                </strong>
+                 
+                sugpuk
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Hair Color: 
+                </strong>
+                 
+                cetfeb
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Height: 
+                </strong>
+                 
+                237 Centimeters
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Skin Color: 
+                </strong>
+                 
+                wupjat
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Mass: 
+                </strong>
+                 
+                30 pounds
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Birth Year: 
+                </strong>
+                 
+                29BBY
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Vehicles: 
+                </strong>
+                 
+                n/a
+              </label>,
+            ],
+            "className": "d-flex flex-column",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Gender: 
+                  </strong>,
+                  " ",
+                  "Female",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gender: ",
+                  },
+                  "ref": null,
+                  "rendered": "Gender: ",
+                  "type": "strong",
+                },
+                " ",
+                "Female",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Eye Color: 
+                  </strong>,
+                  " ",
+                  "sugpuk",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Eye Color: ",
+                  },
+                  "ref": null,
+                  "rendered": "Eye Color: ",
+                  "type": "strong",
+                },
+                " ",
+                "sugpuk",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Hair Color: 
+                  </strong>,
+                  " ",
+                  "cetfeb",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hair Color: ",
+                  },
+                  "ref": null,
+                  "rendered": "Hair Color: ",
+                  "type": "strong",
+                },
+                " ",
+                "cetfeb",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Height: 
+                  </strong>,
+                  " ",
+                  "237 Centimeters",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Height: ",
+                  },
+                  "ref": null,
+                  "rendered": "Height: ",
+                  "type": "strong",
+                },
+                " ",
+                "237 Centimeters",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Skin Color: 
+                  </strong>,
+                  " ",
+                  "wupjat",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Skin Color: ",
+                  },
+                  "ref": null,
+                  "rendered": "Skin Color: ",
+                  "type": "strong",
+                },
+                " ",
+                "wupjat",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Mass: 
+                  </strong>,
+                  " ",
+                  "30 pounds",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mass: ",
+                  },
+                  "ref": null,
+                  "rendered": "Mass: ",
+                  "type": "strong",
+                },
+                " ",
+                "30 pounds",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Birth Year: 
+                  </strong>,
+                  " ",
+                  "29BBY",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Birth Year: ",
+                  },
+                  "ref": null,
+                  "rendered": "Birth Year: ",
+                  "type": "strong",
+                },
+                " ",
+                "29BBY",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Vehicles: 
+                  </strong>,
+                  " ",
+                  "n/a",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Vehicles: ",
+                  },
+                  "ref": null,
+                  "rendered": "Vehicles: ",
+                  "type": "strong",
+                },
+                " ",
+                "n/a",
+              ],
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Testing detailsComponent Should render correctly when planets data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailsComponent
+    data={
+      Object {
+        "avatar": "http://i.pravatar.cc/40?img=0.7007931360164223",
+        "climate": "murky",
+        "diameter": 14424,
+        "gravity": 1.8,
+        "name": "Evelyn Hammond",
+        "orbital_period": 818,
+        "population": 74070497137,
+        "rotation_period": 254,
+        "surface_water": 36,
+        "terrain": "jungles",
+      }
+    }
+    resource="planets"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+      >
+        <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Terrain: 
+            </strong>
+             
+            jungles
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Gravity: 
+            </strong>
+             
+            1.8
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Diameter: 
+            </strong>
+             
+            14424
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Climate: 
+            </strong>
+             
+            murky
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Population: 
+            </strong>
+             
+            74070497137
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Orbital Period: 
+            </strong>
+             
+            818 Days
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Rotation Period: 
+            </strong>
+             
+            254 Days
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Surface Water: 
+            </strong>
+             
+            36
+          </label>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Terrain: 
+            </strong>
+             
+            jungles
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Gravity: 
+            </strong>
+             
+            1.8
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Diameter: 
+            </strong>
+             
+            14424
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Climate: 
+            </strong>
+             
+            murky
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Population: 
+            </strong>
+             
+            74070497137
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Orbital Period: 
+            </strong>
+             
+            818 Days
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Rotation Period: 
+            </strong>
+             
+            254 Days
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Surface Water: 
+            </strong>
+             
+            36
+          </label>
+        </div>,
+        "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="lead"
+            >
+              <strong>
+                Terrain: 
+              </strong>
+               
+              jungles
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Gravity: 
+              </strong>
+               
+              1.8
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Diameter: 
+              </strong>
+               
+              14424
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Climate: 
+              </strong>
+               
+              murky
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Population: 
+              </strong>
+               
+              74070497137
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Orbital Period: 
+              </strong>
+               
+              818 Days
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Rotation Period: 
+              </strong>
+               
+              254 Days
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Surface Water: 
+              </strong>
+               
+              36
+            </label>,
+          ],
+          "className": "d-flex flex-column",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Terrain: 
+                </strong>,
+                " ",
+                "jungles",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Terrain: ",
+                },
+                "ref": null,
+                "rendered": "Terrain: ",
+                "type": "strong",
+              },
+              " ",
+              "jungles",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Gravity: 
+                </strong>,
+                " ",
+                1.8,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Gravity: ",
+                },
+                "ref": null,
+                "rendered": "Gravity: ",
+                "type": "strong",
+              },
+              " ",
+              1.8,
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Diameter: 
+                </strong>,
+                " ",
+                14424,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Diameter: ",
+                },
+                "ref": null,
+                "rendered": "Diameter: ",
+                "type": "strong",
+              },
+              " ",
+              14424,
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Climate: 
+                </strong>,
+                " ",
+                "murky",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Climate: ",
+                },
+                "ref": null,
+                "rendered": "Climate: ",
+                "type": "strong",
+              },
+              " ",
+              "murky",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Population: 
+                </strong>,
+                " ",
+                74070497137,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Population: ",
+                },
+                "ref": null,
+                "rendered": "Population: ",
+                "type": "strong",
+              },
+              " ",
+              74070497137,
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Orbital Period: 
+                </strong>,
+                " ",
+                "818 Days",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Orbital Period: ",
+                },
+                "ref": null,
+                "rendered": "Orbital Period: ",
+                "type": "strong",
+              },
+              " ",
+              "818 Days",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Rotation Period: 
+                </strong>,
+                " ",
+                "254 Days",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Rotation Period: ",
+                },
+                "ref": null,
+                "rendered": "Rotation Period: ",
+                "type": "strong",
+              },
+              " ",
+              "254 Days",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Surface Water: 
+                </strong>,
+                " ",
+                36,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Surface Water: ",
+                },
+                "ref": null,
+                "rendered": "Surface Water: ",
+                "type": "strong",
+              },
+              " ",
+              36,
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+        >
+          <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Terrain: 
+              </strong>
+               
+              jungles
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Gravity: 
+              </strong>
+               
+              1.8
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Diameter: 
+              </strong>
+               
+              14424
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Climate: 
+              </strong>
+               
+              murky
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Population: 
+              </strong>
+               
+              74070497137
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Orbital Period: 
+              </strong>
+               
+              818 Days
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Rotation Period: 
+              </strong>
+               
+              254 Days
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Surface Water: 
+              </strong>
+               
+              36
+            </label>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Terrain: 
+              </strong>
+               
+              jungles
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Gravity: 
+              </strong>
+               
+              1.8
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Diameter: 
+              </strong>
+               
+              14424
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Climate: 
+              </strong>
+               
+              murky
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Population: 
+              </strong>
+               
+              74070497137
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Orbital Period: 
+              </strong>
+               
+              818 Days
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Rotation Period: 
+              </strong>
+               
+              254 Days
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Surface Water: 
+              </strong>
+               
+              36
+            </label>
+          </div>,
+          "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="lead"
+              >
+                <strong>
+                  Terrain: 
+                </strong>
+                 
+                jungles
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Gravity: 
+                </strong>
+                 
+                1.8
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Diameter: 
+                </strong>
+                 
+                14424
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Climate: 
+                </strong>
+                 
+                murky
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Population: 
+                </strong>
+                 
+                74070497137
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Orbital Period: 
+                </strong>
+                 
+                818 Days
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Rotation Period: 
+                </strong>
+                 
+                254 Days
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Surface Water: 
+                </strong>
+                 
+                36
+              </label>,
+            ],
+            "className": "d-flex flex-column",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Terrain: 
+                  </strong>,
+                  " ",
+                  "jungles",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Terrain: ",
+                  },
+                  "ref": null,
+                  "rendered": "Terrain: ",
+                  "type": "strong",
+                },
+                " ",
+                "jungles",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Gravity: 
+                  </strong>,
+                  " ",
+                  1.8,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gravity: ",
+                  },
+                  "ref": null,
+                  "rendered": "Gravity: ",
+                  "type": "strong",
+                },
+                " ",
+                1.8,
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Diameter: 
+                  </strong>,
+                  " ",
+                  14424,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Diameter: ",
+                  },
+                  "ref": null,
+                  "rendered": "Diameter: ",
+                  "type": "strong",
+                },
+                " ",
+                14424,
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Climate: 
+                  </strong>,
+                  " ",
+                  "murky",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Climate: ",
+                  },
+                  "ref": null,
+                  "rendered": "Climate: ",
+                  "type": "strong",
+                },
+                " ",
+                "murky",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Population: 
+                  </strong>,
+                  " ",
+                  74070497137,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Population: ",
+                  },
+                  "ref": null,
+                  "rendered": "Population: ",
+                  "type": "strong",
+                },
+                " ",
+                74070497137,
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Orbital Period: 
+                  </strong>,
+                  " ",
+                  "818 Days",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Orbital Period: ",
+                  },
+                  "ref": null,
+                  "rendered": "Orbital Period: ",
+                  "type": "strong",
+                },
+                " ",
+                "818 Days",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Rotation Period: 
+                  </strong>,
+                  " ",
+                  "254 Days",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rotation Period: ",
+                  },
+                  "ref": null,
+                  "rendered": "Rotation Period: ",
+                  "type": "strong",
+                },
+                " ",
+                "254 Days",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Surface Water: 
+                  </strong>,
+                  " ",
+                  36,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Surface Water: ",
+                  },
+                  "ref": null,
+                  "rendered": "Surface Water: ",
+                  "type": "strong",
+                },
+                " ",
+                36,
+              ],
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Testing detailsComponent Should render correctly when starships data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailsComponent
+    data={
+      Object {
+        "avatar": "http://i.pravatar.cc/40?img=0.08821247686377953",
+        "cargo_capacity": 5170939,
+        "consumables": 5,
+        "length": 292,
+        "manufacturer": "demutu",
+        "max_atmosphering_speed": 538,
+        "model": "osozelu",
+        "name": "Lou Grant",
+        "passengers": 1278,
+        "starship_class": "iju",
+      }
+    }
+    resource="starships"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+      >
+        <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Starship Class: 
+            </strong>
+             
+            iju
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Model: 
+            </strong>
+             
+            osozelu
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Manufacturer: 
+            </strong>
+             
+            demutu
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Cargo Capacity: 
+            </strong>
+             
+            5170939 Pounds
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Passengers: 
+            </strong>
+             
+            1278 Persons
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Length: 
+            </strong>
+             
+            292 Meters
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Consumables: 
+            </strong>
+             
+            5
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Max Atmosphering Speed: 
+            </strong>
+             
+            538
+          </label>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-column"
+        >
+          <label
+            className="lead"
+          >
+            <strong>
+              Starship Class: 
+            </strong>
+             
+            iju
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Model: 
+            </strong>
+             
+            osozelu
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Manufacturer: 
+            </strong>
+             
+            demutu
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Cargo Capacity: 
+            </strong>
+             
+            5170939 Pounds
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Passengers: 
+            </strong>
+             
+            1278 Persons
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Length: 
+            </strong>
+             
+            292 Meters
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Consumables: 
+            </strong>
+             
+            5
+          </label>
+          <label
+            className="lead"
+          >
+            <strong>
+              Max Atmosphering Speed: 
+            </strong>
+             
+            538
+          </label>
+        </div>,
+        "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="lead"
+            >
+              <strong>
+                Starship Class: 
+              </strong>
+               
+              iju
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Model: 
+              </strong>
+               
+              osozelu
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Manufacturer: 
+              </strong>
+               
+              demutu
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Cargo Capacity: 
+              </strong>
+               
+              5170939 Pounds
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Passengers: 
+              </strong>
+               
+              1278 Persons
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Length: 
+              </strong>
+               
+              292 Meters
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Consumables: 
+              </strong>
+               
+              5
+            </label>,
+            <label
+              className="lead"
+            >
+              <strong>
+                Max Atmosphering Speed: 
+              </strong>
+               
+              538
+            </label>,
+          ],
+          "className": "d-flex flex-column",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Starship Class: 
+                </strong>,
+                " ",
+                "iju",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Starship Class: ",
+                },
+                "ref": null,
+                "rendered": "Starship Class: ",
+                "type": "strong",
+              },
+              " ",
+              "iju",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Model: 
+                </strong>,
+                " ",
+                "osozelu",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Model: ",
+                },
+                "ref": null,
+                "rendered": "Model: ",
+                "type": "strong",
+              },
+              " ",
+              "osozelu",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Manufacturer: 
+                </strong>,
+                " ",
+                "demutu",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Manufacturer: ",
+                },
+                "ref": null,
+                "rendered": "Manufacturer: ",
+                "type": "strong",
+              },
+              " ",
+              "demutu",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Cargo Capacity: 
+                </strong>,
+                " ",
+                "5170939 Pounds",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Cargo Capacity: ",
+                },
+                "ref": null,
+                "rendered": "Cargo Capacity: ",
+                "type": "strong",
+              },
+              " ",
+              "5170939 Pounds",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Passengers: 
+                </strong>,
+                " ",
+                "1278 Persons",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Passengers: ",
+                },
+                "ref": null,
+                "rendered": "Passengers: ",
+                "type": "strong",
+              },
+              " ",
+              "1278 Persons",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Length: 
+                </strong>,
+                " ",
+                "292 Meters",
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Length: ",
+                },
+                "ref": null,
+                "rendered": "Length: ",
+                "type": "strong",
+              },
+              " ",
+              "292 Meters",
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Consumables: 
+                </strong>,
+                " ",
+                5,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Consumables: ",
+                },
+                "ref": null,
+                "rendered": "Consumables: ",
+                "type": "strong",
+              },
+              " ",
+              5,
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                  Max Atmosphering Speed: 
+                </strong>,
+                " ",
+                538,
+              ],
+              "className": "lead",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Max Atmosphering Speed: ",
+                },
+                "ref": null,
+                "rendered": "Max Atmosphering Speed: ",
+                "type": "strong",
+              },
+              " ",
+              538,
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="d-flex flex-row h-75 w-75 align-items-start justify-content-between"
+        >
+          <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Starship Class: 
+              </strong>
+               
+              iju
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Model: 
+              </strong>
+               
+              osozelu
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Manufacturer: 
+              </strong>
+               
+              demutu
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Cargo Capacity: 
+              </strong>
+               
+              5170939 Pounds
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Passengers: 
+              </strong>
+               
+              1278 Persons
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Length: 
+              </strong>
+               
+              292 Meters
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Consumables: 
+              </strong>
+               
+              5
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Max Atmosphering Speed: 
+              </strong>
+               
+              538
+            </label>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="d-flex flex-column"
+          >
+            <label
+              className="lead"
+            >
+              <strong>
+                Starship Class: 
+              </strong>
+               
+              iju
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Model: 
+              </strong>
+               
+              osozelu
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Manufacturer: 
+              </strong>
+               
+              demutu
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Cargo Capacity: 
+              </strong>
+               
+              5170939 Pounds
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Passengers: 
+              </strong>
+               
+              1278 Persons
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Length: 
+              </strong>
+               
+              292 Meters
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Consumables: 
+              </strong>
+               
+              5
+            </label>
+            <label
+              className="lead"
+            >
+              <strong>
+                Max Atmosphering Speed: 
+              </strong>
+               
+              538
+            </label>
+          </div>,
+          "className": "d-flex flex-row h-75 w-75 align-items-start justify-content-between",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="lead"
+              >
+                <strong>
+                  Starship Class: 
+                </strong>
+                 
+                iju
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Model: 
+                </strong>
+                 
+                osozelu
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Manufacturer: 
+                </strong>
+                 
+                demutu
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Cargo Capacity: 
+                </strong>
+                 
+                5170939 Pounds
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Passengers: 
+                </strong>
+                 
+                1278 Persons
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Length: 
+                </strong>
+                 
+                292 Meters
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Consumables: 
+                </strong>
+                 
+                5
+              </label>,
+              <label
+                className="lead"
+              >
+                <strong>
+                  Max Atmosphering Speed: 
+                </strong>
+                 
+                538
+              </label>,
+            ],
+            "className": "d-flex flex-column",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Starship Class: 
+                  </strong>,
+                  " ",
+                  "iju",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Starship Class: ",
+                  },
+                  "ref": null,
+                  "rendered": "Starship Class: ",
+                  "type": "strong",
+                },
+                " ",
+                "iju",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Model: 
+                  </strong>,
+                  " ",
+                  "osozelu",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Model: ",
+                  },
+                  "ref": null,
+                  "rendered": "Model: ",
+                  "type": "strong",
+                },
+                " ",
+                "osozelu",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Manufacturer: 
+                  </strong>,
+                  " ",
+                  "demutu",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Manufacturer: ",
+                  },
+                  "ref": null,
+                  "rendered": "Manufacturer: ",
+                  "type": "strong",
+                },
+                " ",
+                "demutu",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Cargo Capacity: 
+                  </strong>,
+                  " ",
+                  "5170939 Pounds",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Cargo Capacity: ",
+                  },
+                  "ref": null,
+                  "rendered": "Cargo Capacity: ",
+                  "type": "strong",
+                },
+                " ",
+                "5170939 Pounds",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Passengers: 
+                  </strong>,
+                  " ",
+                  "1278 Persons",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Passengers: ",
+                  },
+                  "ref": null,
+                  "rendered": "Passengers: ",
+                  "type": "strong",
+                },
+                " ",
+                "1278 Persons",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Length: 
+                  </strong>,
+                  " ",
+                  "292 Meters",
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Length: ",
+                  },
+                  "ref": null,
+                  "rendered": "Length: ",
+                  "type": "strong",
+                },
+                " ",
+                "292 Meters",
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Consumables: 
+                  </strong>,
+                  " ",
+                  5,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Consumables: ",
+                  },
+                  "ref": null,
+                  "rendered": "Consumables: ",
+                  "type": "strong",
+                },
+                " ",
+                5,
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                    Max Atmosphering Speed: 
+                  </strong>,
+                  " ",
+                  538,
+                ],
+                "className": "lead",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Max Atmosphering Speed: ",
+                  },
+                  "ref": null,
+                  "rendered": "Max Atmosphering Speed: ",
+                  "type": "strong",
+                },
+                " ",
+                538,
+              ],
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Testing detailsComponent Should render correctly when vehicles data 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DetailsComponent

@@ -55,3 +55,83 @@ Array [
   },
 ]
 `;
+
+exports[`Testing Vehicles Action Should create an action to update vehicles data 1`] = `
+Array [
+  Object {
+    "type": "UPDATE_VEHICLES_IS_FETCHING",
+  },
+  Object {
+    "type": "UPDATE_VEHICLES_SUCCEEDED",
+    "vehicles": Object {
+      "page": 1,
+      "pageCount": 2,
+      "results": Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.7765365288473662",
+          "cargo_capacity": 3015845,
+          "consumables": 1,
+          "idItem": 1,
+          "length": 917,
+          "manufacturer": "demat",
+          "max_atmosphering_speed": 532,
+          "model": "liaj",
+          "name": "Updating Gilbert",
+          "passengers": 1856,
+          "vehicle_class": "urdo",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.10192561403480482",
+          "cargo_capacity": 3645260,
+          "consumables": 4,
+          "idItem": 2,
+          "length": 328,
+          "manufacturer": "ca",
+          "max_atmosphering_speed": 418,
+          "model": "suwfena",
+          "name": "Updating George",
+          "passengers": 164,
+          "vehicle_class": "nopedhus",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.11335424551707507",
+          "cargo_capacity": 5694589,
+          "consumables": 4,
+          "idItem": 3,
+          "length": 810,
+          "manufacturer": "zepceb",
+          "max_atmosphering_speed": 674,
+          "model": "az",
+          "name": "Edward Cruz",
+          "passengers": 1728,
+          "vehicle_class": "lu",
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`Testing Vehicles Action Should return ERROR in fetching vehicles data 1`] = `
+Array [
+  Object {
+    "type": "FETCH_VEHICLES_STARTED",
+  },
+  Object {
+    "error": [Error: Request failed with status code 400],
+    "type": "FETCH_VEHICLES_FAILED",
+  },
+]
+`;
+
+exports[`Testing Vehicles Action Should return ERROR on updating vehicles data 1`] = `
+Array [
+  Object {
+    "type": "UPDATE_VEHICLES_IS_FETCHING",
+  },
+  Object {
+    "error": [Error: Request failed with status code 400],
+    "type": "UPDATE_VEHICLES_FAILED",
+  },
+]
+`;

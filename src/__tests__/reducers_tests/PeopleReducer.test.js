@@ -12,7 +12,7 @@ const mockActionSucceeded = {
 
 const mockActionFailed = {
   type: peoplesAction.FETCH_PEOPLE_FAILED,
-  error: "Error to Fetching people"
+  error: "Error to fetching people"
 };
 
 const mockPreviousState = {
@@ -32,7 +32,7 @@ const mockActionUpdateSucceeded = {
 
 const mockActionUpdateFailed = {
   type: peoplesAction.UPDATE_PEOPLE_FAILED,
-  error: "Error to Fetching Update people"
+  error: "Error to fetching Update people"
 };
 
 describe("Testing People Reducer", () => {
@@ -67,7 +67,7 @@ describe("Testing People Reducer", () => {
 
   it("Should handle FETCH_PEOPLE_FAILED", () => {
     expect(peoples({ isFetching: true }, mockActionFailed)).toEqual({
-      error: "Error to Fetching people",
+      error: "Error to fetching people",
       isFetching: false
     });
     expect(peoples({ isFetching: true }, mockActionFailed)).not.toBeNull();
@@ -131,7 +131,7 @@ describe("Testing People Reducer", () => {
       pages: [{ page: 1, list: [{}] }],
       pageCount: 4,
       isFetching: false,
-      error: "Error to Fetching Update people"
+      error: "Error to fetching Update people"
     });
     expect(
       peoples(

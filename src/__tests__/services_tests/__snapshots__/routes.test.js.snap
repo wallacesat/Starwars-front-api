@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Routes Service Should render correctly DetailsView component to route '/:object/:id' 1`] = `[Function]`;
+
+exports[`Testing Routes Service Should render correctly HomeView component to route '/' 1`] = `[Function]`;
+
+exports[`Testing Routes Service Should render correctly TablesView component to route '/:object' 1`] = `[Function]`;

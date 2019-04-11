@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing store redux component Should render correctly store with initial state 1`] = `
+Object {
+  "pagination": Object {
+    "page": 1,
+  },
+  "peoples": null,
+  "planets": null,
+  "starships": null,
+  "vehicles": null,
+}
+`;

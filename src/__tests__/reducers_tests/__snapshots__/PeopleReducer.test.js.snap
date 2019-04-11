@@ -2,7 +2,7 @@
 
 exports[`Testing People Reducer Should handle FETCH_PEOPLE_FAILED 1`] = `
 Object {
-  "error": "Error to Fetching people",
+  "error": "Error to fetching people",
   "isFetching": false,
 }
 `;
@@ -30,7 +30,7 @@ Object {
 
 exports[`Testing People Reducer Should handle UPDATE_PEOPLE_FAILED 1`] = `
 Object {
-  "error": "Error to Fetching Update people",
+  "error": "Error to fetching Update people",
   "isFetching": false,
   "pageCount": 4,
   "pages": Array [
