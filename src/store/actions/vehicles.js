@@ -51,7 +51,7 @@ const updateVehiclesFailed = error => ({
 
 export const updateVehicles = page => dispatch => {
   dispatch(updateVehiclesIsFetching());
-  getVehicles(page)
+  return getVehicles(page)
     .then(response => {
       const { results, count } = response;
       dispatch(

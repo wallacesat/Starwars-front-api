@@ -1,0 +1,1403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DetailsView Dom Component Should render self and subcomponents 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailsView
+    location={
+      Object {
+        "state": Array [
+          Object {
+            "avatar": "url/40",
+            "idItem": 1,
+            "name": "Test",
+          },
+        ],
+      }
+    }
+    match={
+      Object {
+        "params": Object {
+          "id": 1,
+          "object": "planets",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="d-flexflex-column"
+        id="subContainer"
+      >
+        <div
+          className="col-12 bg-dark"
+          id="head"
+        >
+          <label
+            className="lead"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+          >
+            <strong>
+              Details Page: 
+              planets
+               
+            </strong>
+          </label>
+        </div>
+        <div
+          className="d-flex justify-content-center align-items-stretch"
+          id="body"
+          style={
+            Object {
+              "height": 600,
+            }
+          }
+        >
+          <WithStyles(Paper)
+            className="w-50 h-100 d-flex flex-column align-items-center"
+            elevation={1}
+            style={
+              Object {
+                "margin": 20,
+              }
+            }
+          >
+            <div
+              className="d-flex h-50 flex-column align-items-center justify-content-start"
+              id="paperContainer"
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid border border-ligth rounded-circle"
+                  src="url/40"
+                />
+              </div>
+              <div>
+                <label
+                  className="display-4"
+                >
+                  Test
+                </label>
+              </div>
+            </div>
+            <DetailsComponent
+              data={
+                Object {
+                  "avatar": "url/40",
+                  "idItem": 1,
+                  "name": "Test",
+                }
+              }
+              resource="planets"
+            />
+            <div
+              style={
+                Object {
+                  "marginBottom": 20,
+                }
+              }
+            >
+              <Link
+                replace={false}
+                style={
+                  Object {
+                    "textDecoration": "none",
+                  }
+                }
+                to={
+                  Object {
+                    "pathname": "/planets",
+                    "state": Array [
+                      Object {
+                        "avatar": "url/40",
+                        "idItem": 1,
+                        "name": "Test",
+                      },
+                    ],
+                  }
+                }
+              >
+                <WithStyles(Button)
+                  variant="contained"
+                >
+                  To Back
+                </WithStyles(Button)>
+              </Link>
+            </div>
+          </WithStyles(Paper)>
+        </div>
+      </div>,
+      "id": "container",
+      "style": Object {
+        "background": "#343a40",
+        "height": "100%",
+        "position": "fixed",
+        "width": "100%",
+        "zIndex": "-10",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-12 bg-dark"
+            id="head"
+          >
+            <label
+              className="lead"
+              style={
+                Object {
+                  "color": "white",
+                }
+              }
+            >
+              <strong>
+                Details Page: 
+                planets
+                 
+              </strong>
+            </label>
+          </div>,
+          <div
+            className="d-flex justify-content-center align-items-stretch"
+            id="body"
+            style={
+              Object {
+                "height": 600,
+              }
+            }
+          >
+            <WithStyles(Paper)
+              className="w-50 h-100 d-flex flex-column align-items-center"
+              elevation={1}
+              style={
+                Object {
+                  "margin": 20,
+                }
+              }
+            >
+              <div
+                className="d-flex h-50 flex-column align-items-center justify-content-start"
+                id="paperContainer"
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <div>
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="url/40"
+                  />
+                </div>
+                <div>
+                  <label
+                    className="display-4"
+                  >
+                    Test
+                  </label>
+                </div>
+              </div>
+              <DetailsComponent
+                data={
+                  Object {
+                    "avatar": "url/40",
+                    "idItem": 1,
+                    "name": "Test",
+                  }
+                }
+                resource="planets"
+              />
+              <div
+                style={
+                  Object {
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "textDecoration": "none",
+                    }
+                  }
+                  to={
+                    Object {
+                      "pathname": "/planets",
+                      "state": Array [
+                        Object {
+                          "avatar": "url/40",
+                          "idItem": 1,
+                          "name": "Test",
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <WithStyles(Button)
+                    variant="contained"
+                  >
+                    To Back
+                  </WithStyles(Button)>
+                </Link>
+              </div>
+            </WithStyles(Paper)>
+          </div>,
+        ],
+        "className": "d-flexflex-column",
+        "id": "subContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <label
+              className="lead"
+              style={
+                Object {
+                  "color": "white",
+                }
+              }
+            >
+              <strong>
+                Details Page: 
+                planets
+                 
+              </strong>
+            </label>,
+            "className": "col-12 bg-dark",
+            "id": "head",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <strong>
+                Details Page: 
+                planets
+                 
+              </strong>,
+              "className": "lead",
+              "style": Object {
+                "color": "white",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Details Page: ",
+                  "planets",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Details Page: ",
+                "planets",
+                " ",
+              ],
+              "type": "strong",
+            },
+            "type": "label",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <WithStyles(Paper)
+              className="w-50 h-100 d-flex flex-column align-items-center"
+              elevation={1}
+              style={
+                Object {
+                  "margin": 20,
+                }
+              }
+            >
+              <div
+                className="d-flex h-50 flex-column align-items-center justify-content-start"
+                id="paperContainer"
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <div>
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="url/40"
+                  />
+                </div>
+                <div>
+                  <label
+                    className="display-4"
+                  >
+                    Test
+                  </label>
+                </div>
+              </div>
+              <DetailsComponent
+                data={
+                  Object {
+                    "avatar": "url/40",
+                    "idItem": 1,
+                    "name": "Test",
+                  }
+                }
+                resource="planets"
+              />
+              <div
+                style={
+                  Object {
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "textDecoration": "none",
+                    }
+                  }
+                  to={
+                    Object {
+                      "pathname": "/planets",
+                      "state": Array [
+                        Object {
+                          "avatar": "url/40",
+                          "idItem": 1,
+                          "name": "Test",
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <WithStyles(Button)
+                    variant="contained"
+                  >
+                    To Back
+                  </WithStyles(Button)>
+                </Link>
+              </div>
+            </WithStyles(Paper)>,
+            "className": "d-flex justify-content-center align-items-stretch",
+            "id": "body",
+            "style": Object {
+              "height": 600,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="d-flex h-50 flex-column align-items-center justify-content-start"
+                  id="paperContainer"
+                  style={
+                    Object {
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <div>
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="url/40"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      className="display-4"
+                    >
+                      Test
+                    </label>
+                  </div>
+                </div>,
+                <DetailsComponent
+                  data={
+                    Object {
+                      "avatar": "url/40",
+                      "idItem": 1,
+                      "name": "Test",
+                    }
+                  }
+                  resource="planets"
+                />,
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 20,
+                    }
+                  }
+                >
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "textDecoration": "none",
+                      }
+                    }
+                    to={
+                      Object {
+                        "pathname": "/planets",
+                        "state": Array [
+                          Object {
+                            "avatar": "url/40",
+                            "idItem": 1,
+                            "name": "Test",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <WithStyles(Button)
+                      variant="contained"
+                    >
+                      To Back
+                    </WithStyles(Button)>
+                  </Link>
+                </div>,
+              ],
+              "className": "w-50 h-100 d-flex flex-column align-items-center",
+              "elevation": 1,
+              "style": Object {
+                "margin": 20,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div>
+                      <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="url/40"
+                      />
+                    </div>,
+                    <div>
+                      <label
+                        className="display-4"
+                      >
+                        Test
+                      </label>
+                    </div>,
+                  ],
+                  "className": "d-flex h-50 flex-column align-items-center justify-content-start",
+                  "id": "paperContainer",
+                  "style": Object {
+                    "marginTop": 10,
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="url/40"
+                      />,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "",
+                        "className": "img-fluid border border-ligth rounded-circle",
+                        "src": "url/40",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <label
+                        className="display-4"
+                      >
+                        Test
+                      </label>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Test",
+                        "className": "display-4",
+                      },
+                      "ref": null,
+                      "rendered": "Test",
+                      "type": "label",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "data": Object {
+                    "avatar": "url/40",
+                    "idItem": 1,
+                    "name": "Test",
+                  },
+                  "resource": "planets",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "textDecoration": "none",
+                      }
+                    }
+                    to={
+                      Object {
+                        "pathname": "/planets",
+                        "state": Array [
+                          Object {
+                            "avatar": "url/40",
+                            "idItem": 1,
+                            "name": "Test",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <WithStyles(Button)
+                      variant="contained"
+                    >
+                      To Back
+                    </WithStyles(Button)>
+                  </Link>,
+                  "style": Object {
+                    "marginBottom": 20,
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <WithStyles(Button)
+                      variant="contained"
+                    >
+                      To Back
+                    </WithStyles(Button)>,
+                    "replace": false,
+                    "style": Object {
+                      "textDecoration": "none",
+                    },
+                    "to": Object {
+                      "pathname": "/planets",
+                      "state": Array [
+                        Object {
+                          "avatar": "url/40",
+                          "idItem": 1,
+                          "name": "Test",
+                        },
+                      ],
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "To Back",
+                      "variant": "contained",
+                    },
+                    "ref": null,
+                    "rendered": "To Back",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="d-flexflex-column"
+          id="subContainer"
+        >
+          <div
+            className="col-12 bg-dark"
+            id="head"
+          >
+            <label
+              className="lead"
+              style={
+                Object {
+                  "color": "white",
+                }
+              }
+            >
+              <strong>
+                Details Page: 
+                planets
+                 
+              </strong>
+            </label>
+          </div>
+          <div
+            className="d-flex justify-content-center align-items-stretch"
+            id="body"
+            style={
+              Object {
+                "height": 600,
+              }
+            }
+          >
+            <WithStyles(Paper)
+              className="w-50 h-100 d-flex flex-column align-items-center"
+              elevation={1}
+              style={
+                Object {
+                  "margin": 20,
+                }
+              }
+            >
+              <div
+                className="d-flex h-50 flex-column align-items-center justify-content-start"
+                id="paperContainer"
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+              >
+                <div>
+                  <img
+                    alt=""
+                    className="img-fluid border border-ligth rounded-circle"
+                    src="url/40"
+                  />
+                </div>
+                <div>
+                  <label
+                    className="display-4"
+                  >
+                    Test
+                  </label>
+                </div>
+              </div>
+              <DetailsComponent
+                data={
+                  Object {
+                    "avatar": "url/40",
+                    "idItem": 1,
+                    "name": "Test",
+                  }
+                }
+                resource="planets"
+              />
+              <div
+                style={
+                  Object {
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "textDecoration": "none",
+                    }
+                  }
+                  to={
+                    Object {
+                      "pathname": "/planets",
+                      "state": Array [
+                        Object {
+                          "avatar": "url/40",
+                          "idItem": 1,
+                          "name": "Test",
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <WithStyles(Button)
+                    variant="contained"
+                  >
+                    To Back
+                  </WithStyles(Button)>
+                </Link>
+              </div>
+            </WithStyles(Paper)>
+          </div>
+        </div>,
+        "id": "container",
+        "style": Object {
+          "background": "#343a40",
+          "height": "100%",
+          "position": "fixed",
+          "width": "100%",
+          "zIndex": "-10",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-12 bg-dark"
+              id="head"
+            >
+              <label
+                className="lead"
+                style={
+                  Object {
+                    "color": "white",
+                  }
+                }
+              >
+                <strong>
+                  Details Page: 
+                  planets
+                   
+                </strong>
+              </label>
+            </div>,
+            <div
+              className="d-flex justify-content-center align-items-stretch"
+              id="body"
+              style={
+                Object {
+                  "height": 600,
+                }
+              }
+            >
+              <WithStyles(Paper)
+                className="w-50 h-100 d-flex flex-column align-items-center"
+                elevation={1}
+                style={
+                  Object {
+                    "margin": 20,
+                  }
+                }
+              >
+                <div
+                  className="d-flex h-50 flex-column align-items-center justify-content-start"
+                  id="paperContainer"
+                  style={
+                    Object {
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <div>
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="url/40"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      className="display-4"
+                    >
+                      Test
+                    </label>
+                  </div>
+                </div>
+                <DetailsComponent
+                  data={
+                    Object {
+                      "avatar": "url/40",
+                      "idItem": 1,
+                      "name": "Test",
+                    }
+                  }
+                  resource="planets"
+                />
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 20,
+                    }
+                  }
+                >
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "textDecoration": "none",
+                      }
+                    }
+                    to={
+                      Object {
+                        "pathname": "/planets",
+                        "state": Array [
+                          Object {
+                            "avatar": "url/40",
+                            "idItem": 1,
+                            "name": "Test",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <WithStyles(Button)
+                      variant="contained"
+                    >
+                      To Back
+                    </WithStyles(Button)>
+                  </Link>
+                </div>
+              </WithStyles(Paper)>
+            </div>,
+          ],
+          "className": "d-flexflex-column",
+          "id": "subContainer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <label
+                className="lead"
+                style={
+                  Object {
+                    "color": "white",
+                  }
+                }
+              >
+                <strong>
+                  Details Page: 
+                  planets
+                   
+                </strong>
+              </label>,
+              "className": "col-12 bg-dark",
+              "id": "head",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <strong>
+                  Details Page: 
+                  planets
+                   
+                </strong>,
+                "className": "lead",
+                "style": Object {
+                  "color": "white",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Details Page: ",
+                    "planets",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Details Page: ",
+                  "planets",
+                  " ",
+                ],
+                "type": "strong",
+              },
+              "type": "label",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <WithStyles(Paper)
+                className="w-50 h-100 d-flex flex-column align-items-center"
+                elevation={1}
+                style={
+                  Object {
+                    "margin": 20,
+                  }
+                }
+              >
+                <div
+                  className="d-flex h-50 flex-column align-items-center justify-content-start"
+                  id="paperContainer"
+                  style={
+                    Object {
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <div>
+                    <img
+                      alt=""
+                      className="img-fluid border border-ligth rounded-circle"
+                      src="url/40"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      className="display-4"
+                    >
+                      Test
+                    </label>
+                  </div>
+                </div>
+                <DetailsComponent
+                  data={
+                    Object {
+                      "avatar": "url/40",
+                      "idItem": 1,
+                      "name": "Test",
+                    }
+                  }
+                  resource="planets"
+                />
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 20,
+                    }
+                  }
+                >
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "textDecoration": "none",
+                      }
+                    }
+                    to={
+                      Object {
+                        "pathname": "/planets",
+                        "state": Array [
+                          Object {
+                            "avatar": "url/40",
+                            "idItem": 1,
+                            "name": "Test",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <WithStyles(Button)
+                      variant="contained"
+                    >
+                      To Back
+                    </WithStyles(Button)>
+                  </Link>
+                </div>
+              </WithStyles(Paper)>,
+              "className": "d-flex justify-content-center align-items-stretch",
+              "id": "body",
+              "style": Object {
+                "height": 600,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="d-flex h-50 flex-column align-items-center justify-content-start"
+                    id="paperContainer"
+                    style={
+                      Object {
+                        "marginTop": 10,
+                      }
+                    }
+                  >
+                    <div>
+                      <img
+                        alt=""
+                        className="img-fluid border border-ligth rounded-circle"
+                        src="url/40"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        className="display-4"
+                      >
+                        Test
+                      </label>
+                    </div>
+                  </div>,
+                  <DetailsComponent
+                    data={
+                      Object {
+                        "avatar": "url/40",
+                        "idItem": 1,
+                        "name": "Test",
+                      }
+                    }
+                    resource="planets"
+                  />,
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": 20,
+                      }
+                    }
+                  >
+                    <Link
+                      replace={false}
+                      style={
+                        Object {
+                          "textDecoration": "none",
+                        }
+                      }
+                      to={
+                        Object {
+                          "pathname": "/planets",
+                          "state": Array [
+                            Object {
+                              "avatar": "url/40",
+                              "idItem": 1,
+                              "name": "Test",
+                            },
+                          ],
+                        }
+                      }
+                    >
+                      <WithStyles(Button)
+                        variant="contained"
+                      >
+                        To Back
+                      </WithStyles(Button)>
+                    </Link>
+                  </div>,
+                ],
+                "className": "w-50 h-100 d-flex flex-column align-items-center",
+                "elevation": 1,
+                "style": Object {
+                  "margin": 20,
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div>
+                        <img
+                          alt=""
+                          className="img-fluid border border-ligth rounded-circle"
+                          src="url/40"
+                        />
+                      </div>,
+                      <div>
+                        <label
+                          className="display-4"
+                        >
+                          Test
+                        </label>
+                      </div>,
+                    ],
+                    "className": "d-flex h-50 flex-column align-items-center justify-content-start",
+                    "id": "paperContainer",
+                    "style": Object {
+                      "marginTop": 10,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <img
+                          alt=""
+                          className="img-fluid border border-ligth rounded-circle"
+                          src="url/40"
+                        />,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "",
+                          "className": "img-fluid border border-ligth rounded-circle",
+                          "src": "url/40",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <label
+                          className="display-4"
+                        >
+                          Test
+                        </label>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Test",
+                          "className": "display-4",
+                        },
+                        "ref": null,
+                        "rendered": "Test",
+                        "type": "label",
+                      },
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "data": Object {
+                      "avatar": "url/40",
+                      "idItem": 1,
+                      "name": "Test",
+                    },
+                    "resource": "planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      style={
+                        Object {
+                          "textDecoration": "none",
+                        }
+                      }
+                      to={
+                        Object {
+                          "pathname": "/planets",
+                          "state": Array [
+                            Object {
+                              "avatar": "url/40",
+                              "idItem": 1,
+                              "name": "Test",
+                            },
+                          ],
+                        }
+                      }
+                    >
+                      <WithStyles(Button)
+                        variant="contained"
+                      >
+                        To Back
+                      </WithStyles(Button)>
+                    </Link>,
+                    "style": Object {
+                      "marginBottom": 20,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <WithStyles(Button)
+                        variant="contained"
+                      >
+                        To Back
+                      </WithStyles(Button)>,
+                      "replace": false,
+                      "style": Object {
+                        "textDecoration": "none",
+                      },
+                      "to": Object {
+                        "pathname": "/planets",
+                        "state": Array [
+                          Object {
+                            "avatar": "url/40",
+                            "idItem": 1,
+                            "name": "Test",
+                          },
+                        ],
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "To Back",
+                        "variant": "contained",
+                      },
+                      "ref": null,
+                      "rendered": "To Back",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

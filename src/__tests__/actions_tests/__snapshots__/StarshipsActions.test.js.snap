@@ -42,3 +42,70 @@ Array [
   },
 ]
 `;
+
+exports[`Testing Starships Action Should create an action to update starships data 1`] = `
+Array [
+  Object {
+    "type": "UPDATE_STARSHIPS_IS_FETCHING",
+  },
+  Object {
+    "starships": Object {
+      "page": 1,
+      "pageCount": 2,
+      "results": Array [
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.7474128780010723",
+          "cargo_capacity": 5579622,
+          "consumables": 1,
+          "idItem": 1,
+          "length": 191,
+          "manufacturer": "vajcez",
+          "max_atmosphering_speed": 205,
+          "model": "so",
+          "name": "Updating Jackson",
+          "passengers": 1473,
+          "starship_class": "rukvu",
+        },
+        Object {
+          "avatar": "http://i.pravatar.cc/40?img=0.7575125938238629",
+          "cargo_capacity": 2861477,
+          "consumables": 5,
+          "idItem": 2,
+          "length": 17,
+          "manufacturer": "nubodivas",
+          "max_atmosphering_speed": 522,
+          "model": "ejvoj",
+          "name": "Updating Barton",
+          "passengers": 96,
+          "starship_class": "lu",
+        },
+      ],
+    },
+    "type": "UPDATE_STARSHIPS_SUCCEEDED",
+  },
+]
+`;
+
+exports[`Testing Starships Action Should return ERROR in fetching starships data 1`] = `
+Array [
+  Object {
+    "type": "FETCH_STARSHIPS_STARTED",
+  },
+  Object {
+    "error": [Error: Request failed with status code 400],
+    "type": "FETCH_STARSHIPS_FAILED",
+  },
+]
+`;
+
+exports[`Testing Starships Action Should return ERROR on updating starships data 1`] = `
+Array [
+  Object {
+    "type": "UPDATE_STARSHIPS_IS_FETCHING",
+  },
+  Object {
+    "error": [Error: Request failed with status code 400],
+    "type": "UPDATE_STARSHIPS_FAILED",
+  },
+]
+`;

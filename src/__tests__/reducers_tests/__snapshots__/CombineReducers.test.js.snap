@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing combineReducers method in index.js from reducers Should render correctly pagination reducer 1`] = `
+Object {
+  "page": 1,
+}
+`;
+
+exports[`Testing combineReducers method in index.js from reducers Should render correctly peoples reducer 1`] = `null`;
+
+exports[`Testing combineReducers method in index.js from reducers Should render correctly planets reducer 1`] = `null`;
+
+exports[`Testing combineReducers method in index.js from reducers Should render correctly starships reducer 1`] = `null`;
+
+exports[`Testing combineReducers method in index.js from reducers Should render correctly vehicles reducer 1`] = `null`;

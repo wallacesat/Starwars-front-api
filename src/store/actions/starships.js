@@ -51,7 +51,7 @@ const updateStarshipsFailed = error => ({
 
 export const updateStarships = page => dispatch => {
   dispatch(updateStarshipsIsFetching());
-  getStarships(page)
+  return getStarships(page)
     .then(response => {
       const { results, count } = response;
       dispatch(

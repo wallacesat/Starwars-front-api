@@ -30,7 +30,7 @@ export default function planets(state = null, action) {
     case planetsAction.UPDATE_PLANETS_SUCCEEDED:
       return Object.assign({}, state, {
         pages: [
-          ...(state.pages || []),
+          ...state.pages,
           { page: action.planets.page, list: action.planets.results }
         ],
         pageCount: action.planets.pageCount,

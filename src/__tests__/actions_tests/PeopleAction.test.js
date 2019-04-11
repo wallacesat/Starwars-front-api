@@ -3,7 +3,7 @@ import configureMockStore from "redux-mock-store";
 import nock from "nock";
 
 import { peoplesAction } from "../../store/actions/actionsTypes";
-import { fetchPeople } from "../../store/actions/peoples";
+import { fetchPeople, updatePeople } from "../../store/actions/peoples";
 import BASE_URL from "./baseUrl";
 
 const middlewares = [thunk];
@@ -64,6 +64,88 @@ describe("Testing People Action", () => {
 
     const store = mockStore({ people: {} });
     return store.dispatch(fetchPeople()).then(() => {
+      expect(store.getActions()).toEqual(expectedAction);
+      expect(store.getActions()).toMatchSnapshot();
+    });
+  });
+
+  it("Should return ERROR in fetching people data", () => {
+    afterEach(() => {
+      nock.cleanAll();
+    });
+
+    nock(BASE_URL)
+      .defaultReplyHeaders({ "access-control-allow-origin": "*" })
+      .get("/people")
+      .reply(400, {});
+
+    const expectedAction = [
+      { type: peoplesAction.FETCH_PEOPLE_STARTED },
+      {
+        type: peoplesAction.FETCH_PEOPLE_FAILED,
+        error: new Error("Request failed with status code 400")
+      }
+    ];
+
+    const store = mockStore({ people: {} });
+    return store.dispatch(fetchPeople()).then(() => {
+      expect(store.getActions()).toEqual(expectedAction);
+      expect(store.getActions()).toMatchSnapshot();
+    });
+  });
+
+  it("Should create an action to update people data", () => {
+    afterEach(() => {
+      nock.cleanAll();
+    });
+
+    nock(BASE_URL)
+      .defaultReplyHeaders({ "access-control-allow-origin": "*" })
+      .get("/people/page=1")
+      .reply(200, {
+        count: 2,
+        results: mockResults
+      });
+
+    const expectedAction = [
+      { type: peoplesAction.UPDATE_PEOPLE_IS_FETCHING },
+      {
+        type: peoplesAction.UPDATE_PEOPLE_SUCCEEDED,
+        people: {
+          page: 1,
+          results: mockResults,
+          pageCount: 1
+        }
+      }
+    ];
+
+    const store = mockStore({ people: {} });
+    return store.dispatch(updatePeople(1)).then(() => {
+      expect(store.getActions()).toEqual(expectedAction);
+      expect(store.getActions()).toMatchSnapshot();
+    });
+  });
+
+  it("Should return ERROR on updating people data", () => {
+    afterEach(() => {
+      nock.cleanAll();
+    });
+
+    nock(BASE_URL)
+      .defaultReplyHeaders({ "access-control-allow-origin": "*" })
+      .get("/people/page=1")
+      .reply(400, {});
+
+    const expectedAction = [
+      { type: peoplesAction.UPDATE_PEOPLE_IS_FETCHING },
+      {
+        type: peoplesAction.UPDATE_PEOPLE_FAILED,
+        error: new Error("Request failed with status code 400")
+      }
+    ];
+
+    const store = mockStore({ people: {} });
+    return store.dispatch(updatePeople(1)).then(() => {
       expect(store.getActions()).toEqual(expectedAction);
       expect(store.getActions()).toMatchSnapshot();
     });

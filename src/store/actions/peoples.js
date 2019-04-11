@@ -52,7 +52,7 @@ const updatePeopleFailed = error => ({
 export const updatePeople = page => dispatch => {
   dispatch(updatePeopleIsFetching());
 
-  getPeople(page)
+  return getPeople(page)
     .then(response => {
       const { results, count } = response;
       dispatch(

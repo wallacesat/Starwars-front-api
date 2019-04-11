@@ -9,6 +9,7 @@ const middleware =
   process.env.NODE_ENV === "development" ? [thunk, createLogger()] : [thunk];
 
 /*
+
     CRIANDO O ESTADO GLOBAL DA APLICAÇÃO   
 
     Essa função createStore() recebe como parâmetro o stado da aplicação,

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing HomeView Dom Component Sould render self and subcomponents 1`] = `
+exports[`Testing HomeView Dom Component Should render self and subcomponents 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <HomeView />,

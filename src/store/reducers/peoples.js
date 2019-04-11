@@ -30,7 +30,7 @@ export default function peoples(state = null, action) {
     case peoplesAction.UPDATE_PEOPLE_SUCCEEDED:
       return Object.assign({}, state, {
         pages: [
-          ...(state.pages || []),
+          ...state.pages,
           { page: action.people.page, list: action.people.results }
         ],
         pageCount: action.people.pageCount,

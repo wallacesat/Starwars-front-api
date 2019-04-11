@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 
 import { selectPagePagination } from "../../store/actions/pagination";
 
-class PaginationComponent extends Component {
+export class PaginationComponent extends Component {
   getDataState() {
     const { state, resource } = this.props;
 
@@ -50,13 +50,16 @@ class PaginationComponent extends Component {
 
     return (
       <Pagination>
-        <PaginationItem disabled={selectedPage === 1 ? true : false}>
+        <PaginationItem id="first" disabled={selectedPage === 1 ? true : false}>
           <PaginationLink first="true" onClick={() => this.selectPage(1)}>
             First
           </PaginationLink>
         </PaginationItem>
         {this.handlePagination()}
-        <PaginationItem disabled={selectedPage === pageCount ? true : false}>
+        <PaginationItem
+          id="last"
+          disabled={selectedPage === pageCount ? true : false}
+        >
           <PaginationLink
             last="true"
             onClick={() => this.selectPage(pageCount)}

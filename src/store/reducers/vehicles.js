@@ -30,7 +30,7 @@ export default function vehicles(state = null, action) {
     case vehiclesAction.UPDATE_VEHICLES_SUCCEEDED:
       return Object.assign({}, state, {
         pages: [
-          ...(state.pages || []),
+          ...state.pages,
           { page: action.vehicles.page, list: action.vehicles.results }
         ],
         pageCount: action.vehicles.pageCount,
