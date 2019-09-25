@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Starwars front-end API
 
-## Available Scripts
+![](src/images/docs/starwarsapifront.png)
 
-In the project directory, you can run:
+A simple web application that makes use of a fictional Star Wars data api and displays them on screen, sorting them into a table according to the selected category, these categories being people, spaceships, planets and vehicles.
 
-### `npm start`
+## Getting started
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### In your prefer local path:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- `git clone https://github.com/wallacesat/Starwars-front-api`
+- `cd Starwars-front-api`
+- `yarn install`
+- `yarn start`
+  > If you prefer, use `npm` instead of `yarn`
 
-### `npm test`
+After the server starts successfully, you can make requests to the end points of this api.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> #### NOTE
+>
+> You will need internet access, because even if the API is running locally, the data collection is stored in an online database.
 
-### `npm run build`
+## Getting tested
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### In your local path project:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- `yarn test`
+- `then press 'a' keyto test all components`
+  > If you prefer, use `npm` instead of `yarn`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### The test result will be printed on the terminal as the example below:
 
-### `npm run eject`
+![](src/images/docs/test-result.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Frameworks
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### [Axios](https://github.com/axios/axios)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To handle HTTP browser requests.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### [Reactstrap](https://reactstrap.github.io/)
 
-## Learn More
+In this application this module was used for the implementation of the tables.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### [React-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For managing internal navigation, between the pages of this application.
 
-### Code Splitting
+#### [Redux](https://redux.js.org/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+For centralization and management of application state.
 
-### Analyzing the Bundle Size
+#### [ExpressJS](https://expressjs.com/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+For management of routing system, routes, HTTP requests and responses.
 
-### Making a Progressive Web App
+#### [Cross-env](https://www.npmjs.com/package/cross-env)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+For multiplatform environment variable definition.
 
-### Advanced Configuration
+#### [Npm-run-all](https://www.npmjs.com/package/npm-run-all)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+To enable the execution of multiple scripts. This allows two applications to be started in parallel.
 
-### Deployment
+## Fake API and Database
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+#### [Json-schema-faker](https://github.com/json-schema-faker/json-schema-faker)
 
-### `npm run build` fails to minify
+For simulating an API with fake data. Enables front-end development without prior access to a real API.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### [Chance](https://chancejs.com/)
+
+To generate the random data that will compose the api fake database.
+
+#### [Chalk](https://github.com/chalk/chalk)
+
+To color the words printed on the terminal output.
+
+## Test tools
+
+#### [Jest](https://jestjs.io/)
+
+To perform unit testing of application components.
+
+#### [Enzyme](https://airbnb.io/enzyme/)
+
+For the simulation of the states and returns of attributes and properties of components, thus enabling the unit test on each component separately, detaching them from the dependencies of other isolated components.
+
+#### [Redux-mock-store](https://github.com/dmitry-zaets/redux-mock-store)
+
+To perform the tests on the components linked to the application store, which in this case is managed by Redux.
+
+#### [Nock](https://github.com/nock/nock)
+
+To simulate the return of HTTP requests, manipulating the data and status, thus enabling the test alone in the components that perform this type of request.
+
+## Languages
+
+- Javascript - [w3school: JS tutorial](https://www.w3schools.com/js/)
+- ES6 - [ECMAScript 2015: Specification](https://www.ecma-international.org/ecma-262/6.0/)
+- JSX Sintax - [React: JXS introduction](https://pt-br.reactjs.org/docs/introducing-jsx.html)
+- CSS - [w3school: CSS tutorial](https://www.w3schools.com/css/)
+
+## License
+
+MIT © [wallacesat](https://github.com/wallacesat/)
