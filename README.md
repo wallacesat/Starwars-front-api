@@ -26,7 +26,7 @@ After the server starts successfully, you can make requests to the end points of
 ##### In your local path project:
 
 - `yarn test`
-- `then press 'a' keyto test all components`
+- `then press 'a' key to test all components`
 
 > If you prefer, use `npm` instead of `yarn`
 
